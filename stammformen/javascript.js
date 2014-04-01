@@ -31,6 +31,71 @@ function lek16 (){window.n = 20;window.plusN = 390; go();}
 function lek17 (){window.n = 18;window.plusN = 410; go();}
 
 function go () {
+	if (unitSelect == 1) {
+		window.n = 	63;
+		window.plusN = 1;
+	};
+	if (unitSelect == 3) {
+		window.n = 	34;
+		window.plusN = 63;
+	};
+	if (unitSelect == 4) {
+		window.n = 	18;
+		window.plusN = 97;
+	};
+	if (unitSelect == 5) {
+		window.n = 	12;
+		window.plusN = 116;
+	};
+	if (unitSelect == 6) {
+		window.n = 	38;
+		window.plusN = 128;
+	};
+	if (unitSelect == 7) {
+		window.n = 	36;
+		window.plusN = 146;
+	};
+	if (unitSelect == 8) {
+		window.n = 	36;
+		window.plusN = 182;
+	};
+	if (unitSelect == 9) {
+		window.n = 	18;
+		window.plusN = 218;
+	};
+	if (unitSelect == 10) {
+		window.n = 	43;
+		window.plusN = 236;
+	};
+	if (unitSelect == 11) {
+		window.n = 	9;
+		window.plusN = 279;
+	};
+	if (unitSelect == 12) {
+		window.n = 	30;
+		window.plusN = 288;
+	};
+	if (unitSelect == 13) {
+		window.n = 	21;
+		window.plusN = 318;
+	};
+	if (unitSelect == 14) {
+		window.n = 27;
+		window.plusN = 339;
+	};
+	if (unitSelect == 15) {
+		window.n = 24;
+		window.plusN = 366;
+	};
+	if (unitSelect == 16) {
+		window.n = 20;
+		window.plusN = 390;
+	};
+	if (unitSelect == 17) {
+		window.n = 18;
+		window.plusN = 410;
+	};
+	
 	document.getElementById('question0').style.display = "none";
 	window.random = Math.floor((Math.random()*n)+plusN);
 	console.log(random);

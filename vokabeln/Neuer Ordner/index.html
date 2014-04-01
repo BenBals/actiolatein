@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+	<script src="../../jquery-2.1.0.min.js"></script>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="../../select/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="../../bootstrap/js/transition.min.js"></script>
+    <script type="text/javascript" src="../../bootstrap/js/collapse.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../select/bootstrap-select.min.css">
+    <script type="text/javascript" src="../../bootstrap/js/dropdown.js"></script>
+	<link href="../../css/flat-ui.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+</head>
+<body>
+<div id="inbody">
+	<div id="question0">
+		<button class="btn btn-go btn-mghg" onclick="go();">Let´s GO!</button>
+	</div>
+
+	<div id="question1">
+		<h4>QuestionHere</h4>
+		<form action="javascript:check3();"><input class="form-control input-sm" id="input1_1"type="text"></form>
+		<form action="javascript:check3();"><input class="form-control input-sm" id="input2_1"type="text"></form>
+		<form action="javascript:check3();"><input class="form-control input-sm" id="input3_1"type="text"></form>
+		<button class="btn btn-primary" onclick="check3()">Check</button>
+		<p class="rightEx" style="display:none">Richtig!</p>
+		<p class="wrongEx" style="display:none">Falsch!</p>
+		<p class="answer" id="answer1_1">1</p>
+		<p class="answer" id="answer1_2">2</p>
+		<p class="answer" id="answer1_3">3</p>
+	</div>
+
+	<script type="text/javascript" src="javascript.js"></script>
+</div>
+</body>

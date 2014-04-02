@@ -10,7 +10,7 @@ window.random = 0;
 window.score = 0;
 
 $(".answer").css("display","none");
-
+ 
 function go () {
 	document.getElementById("question"+0).style.display="none";
 	window.random = Math.floor((Math.random()*n)+plusN);
@@ -22,22 +22,25 @@ function check3 () {
 	var input1 = document.getElementById("input1_"+window.random).value.toLowerCase();
 	var input2 = document.getElementById("input2_"+window.random).value.toLowerCase();
 	var input3 = document.getElementById("input3_"+window.random).value.toLowerCase();
-	var answer1 = document.getElementById("answer1_"+window.random).value.toLowerCase();
-	var answer2 = document.getElementById("answer2_"+window.random).value.toLowerCase();
-	var answer3 = document.getElementById("answer3_"+window.random).value.toLowerCase();
+	var answer1 = document.getElementById("input1_"+window.random).value.toLowerCase();
+	var answer2 = document.getElementById("input2_"+window.random).value.toLowerCase();
+	var answer3 = document.getElementById("input3_"+window.random).value.toLowerCase();
 
 	if (input1 == answer1 || input1 == answer2 || input1 == answer3)
 	{
 		window.score++;
 		window.upTo3++;
+		window.questionN++;
 	}
 	if (input2 == answer1 || input2 == answer2 || input2 == answer3) {
 		window.score++;
 		window.upTo3++;
+		window.questionN++;
 	}
 	if (input3 == answer1 || input3 == answer2 || input3 == answer3) {
 		window.score++;
 		window.upTo3++;
+		window.questionN++;
 	}
 	if (window.upTo3 == 3) {
 		//go to next question instantly

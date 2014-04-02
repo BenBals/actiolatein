@@ -19,12 +19,13 @@ function go () {
 
 //Check 3 answers
 function check3 () {
+	console.log("lol");
 	var input1 = document.getElementById("input1_"+window.random).value.toLowerCase();
 	var input2 = document.getElementById("input2_"+window.random).value.toLowerCase();
 	var input3 = document.getElementById("input3_"+window.random).value.toLowerCase();
-	var answer1 = document.getElementById("input1_"+window.random).value.toLowerCase();
-	var answer2 = document.getElementById("input2_"+window.random).value.toLowerCase();
-	var answer3 = document.getElementById("input3_"+window.random).value.toLowerCase();
+	var answer1 = document.getElementById("answer1_"+window.random).value.toLowerCase();
+	var answer2 = document.getElementById("answer2_"+window.random).value.toLowerCase();
+	var answer3 = document.getElementById("answer3_"+window.random).value.toLowerCase();
 
 	if (input1 == answer1 || input1 == answer2 || input1 == answer3)
 	{
@@ -43,24 +44,46 @@ function check3 () {
 		window.questionN++;
 	}
 	if (window.upTo3 == 3) {
-		//go to next question instantly
-		$ ("*").css("color","#000000");
-		$ (".btn").css("color","#FFF");
-		$ (".rightEx").css("color","#69BB9C");
-		$ (".wrongEx").css("color","#e74c3c");
-		$ (".rightEx").css("display","none");
-		$ (".wrongEx").css("display","none");
-   		document.getElementById('question'+random).style.display = "none";
-   		document.getElementById("input1_"+random).value = '';
-   		document.getElementById("input2_"+random).value = '';
-   		document.getElementById("input3_"+random).value = '';
-		window.random = Math.floor((Math.random()*n)+plusN);
-		console.log(random);
-		document.getElementById("question"+random).style.display="block";
-		document.getElementById("input1_"+random).focus();
-		$ (".answer").css("display","none");
+		$ (".rightEx").css("display","block");
+		window.setTimeout(function(){
+			$ ("*").css("color","#000000");
+			$ (".btn").css("color","#FFF");
+			$ (".rightEx").css("color","#69BB9C");
+			$ (".wrongEx").css("color","#e74c3c");
+			$ (".rightEx").css("display","none");
+			$ (".wrongEx").css("display","none");
+   			document.getElementById('question'+random).style.display = "none";
+   			document.getElementById("input1_"+random).value = '';
+	   		document.getElementById("input2_"+random).value = '';
+   			document.getElementById("input3_"+random).value = '';
+			window.random = Math.floor((Math.random()*n)+plusN);
+			console.log(random);
+			document.getElementById("question"+random).style.display="block";
+			document.getElementById("input1_"+random).focus();
+			$ (".answer").css("display","none");
+		},400)
+		
 	}
 	else {
-		//show solutions, than next question
+		console.log("XD");
+		$ (".wrongEx").css("display","block");
+		$ (".answer").css("display","block");
+		window.setTimeout(function(){
+			$ ("*").css("color","#000000");
+			$ (".btn").css("color","#FFF");
+			$ (".rightEx").css("color","#69BB9C");
+			$ (".wrongEx").css("color","#e74c3c");
+			$ (".rightEx").css("display","none");
+			$ (".wrongEx").css("display","none");
+   			document.getElementById('question'+random).style.display = "none";
+   			document.getElementById("input1_"+random).value = '';
+	   		document.getElementById("input2_"+random).value = '';
+   			document.getElementById("input3_"+random).value = '';
+			window.random = Math.floor((Math.random()*n)+plusN);
+			console.log(random);
+			document.getElementById("question"+random).style.display="block";
+			document.getElementById("input1_"+random).focus();
+			$ (".answer").css("display","none");
+		},3500)
 	}
 }

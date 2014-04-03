@@ -1,5 +1,5 @@
 //How many questions are there? or Number of questions in that unit (ony changed by funtion go NOT manually)
-window.n = 3;
+window.n = 35;
 //Lowest questionnumber of given unit
 window.plusN = 1;
 //Number of Questions already answerd

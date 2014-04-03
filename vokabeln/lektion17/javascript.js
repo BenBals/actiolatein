@@ -6,6 +6,7 @@ window.plusN = 1;
 window.questionN = 0;
 
 window.upTo3 = 0;
+window.upTo2 = 0;
 window.random = 0;
 window.score = 0;
  
@@ -25,7 +26,7 @@ function check1 () {
 
 	window.questionN++;
 
-	if (input1 == answer1 || input1 == answer2)
+	if (input1 == answer1)
 	{
 		window.score++;
 		window.upTo2++;
@@ -80,8 +81,8 @@ function check2 () {
 	var answer2 = document.getElementById("answer2_"+window.random).innerHTML;
 	console.log(answer2);
 
-
-	window.questionN++;window.questionN++;
+	window.upTo2 = 0;
+	window.questionN++; window.questionN++;
 
 	if (input1 == answer1 || input1 == answer2)
 	{
@@ -93,7 +94,8 @@ function check2 () {
 		window.upTo2++;
 	}
 
-	if (window.upTo2 == 2) {
+	if (upTo2 == 2) {
+		window.upTo2 = 0;
 		$ (".rightEx").css("display","block");
 		window.setTimeout(function(){
 			$ ("*").css("color","#000000");
@@ -114,6 +116,7 @@ function check2 () {
 		
 	}
 	else {
+		window.upTo2 = 0;
 		console.log("XD");
 		$ (".wrongEx").css("display","block");
 		$ (".answer").css("display","block");
@@ -167,6 +170,7 @@ function check3 () {
 		window.upTo3++;
 	}
 	if (window.upTo3 == 3) {
+		window.upTo3 = 0;
 		$ (".rightEx").css("display","block");
 		window.setTimeout(function(){
 			$ ("*").css("color","#000000");
@@ -188,6 +192,7 @@ function check3 () {
 		
 	}
 	else {
+		window.upTo3 = 0;
 		console.log("XD");
 		$ (".wrongEx").css("display","block");
 		$ (".answer").css("display","block");

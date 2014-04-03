@@ -14,11 +14,13 @@
 <body>
 <div id="inbody">
 	<div id="question0">
+		<h2>Willkommen zum Quiz zu den Vokabeln der Lektion 17!</h2>
 		<button class="btn btn-go btn-mghg" onclick="go();">Let´s GO!</button>
+		<p>Da die Fragen zufällig ausgesucht werden kann es sein, dass eine Frage mehrmals hintereinander gestellt wird oder das einige Fragen öfter gestellt werden (dies gleicht sich mit der Zeit aus). Das hier ist ein Schülerprojekt es können Fehler auftreten! <a href="mailto:benjustusbals@gmail.com">Fehler melden</a>. Ich übernehme für nichts Gewähr!</p>
 	</div>
 
 	<div id="question1" style="display:none;">
-		<h4>QuestionHere</h4>
+		<h4>Question Here</h4>
 		<form action="javascript:check3();"><input class="form-control input-sm" id="input1_1"type="text"></form>
 		<form action="javascript:check3();"><input class="form-control input-sm" id="input2_1"type="text"></form>
 		<form action="javascript:check3();"><input class="form-control input-sm" id="input3_1"type="text"></form>
@@ -28,6 +30,27 @@
 		<p class="answer" id="answer1_1">a</p>
 		<p class="answer" id="answer2_1">b</p>
 		<p class="answer" id="answer3_1">c</p>
+	</div>
+
+	<div id="question2" style="display:none;">
+		<h4>Question Here</h4>
+		<form action="javascript:check2();"><input class="form-control input-sm" id="input1_2"type="text"></form>
+		<form action="javascript:check2();"><input class="form-control input-sm" id="input2_2"type="text"></form>
+		<button class="btn btn-primary" onclick="check2()">Check</button>
+		<p class="rightEx" style="display:none">Richtig!</p>
+		<p class="wrongEx" style="display:none">Falsch!</p>
+		<p class="answer" id="answer1_2">a</p>
+		<p class="answer" id="answer2_2">b</p>
+	</div>
+
+	<div id="question3" style="display:none;">
+		<h4>Question here</h4>
+		<form action="javascript:check1();"><input class="form-control input-sm" id="input1_3"type="text"></form>
+		<button class="btn btn-primary" onclick="check1()">Check</button>
+		<p class="rightEx" style="display:none">Richtig!</p>
+		<p class="wrongEx" style="display:none">Falsch!</p>
+		<p class="answer" id="answer1_3">a</p>
+
 	</div>
 
 	<script type="text/javascript" src="javascript.js"></script>

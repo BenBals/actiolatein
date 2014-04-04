@@ -127,12 +127,7 @@ function newG () {
 
 //home
 function home () {
-	document.getElementById("question"+window.random).style.display="none";
-	document.getElementById('navben').style.display="none";
-	document.getElementById('question0').style.display = "block";
-	window.questionN = 0;
-	window.score = 0;
-	window.random = 0;
+	window.location.href = "../index.html";
 }
 
 //showSettings

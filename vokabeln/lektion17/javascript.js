@@ -72,6 +72,7 @@ function check1 () {
 
 //check 2 answers
 function check2 () {
+	window.upTo2 = 0;
 	var input1 = document.getElementById("input1_"+window.random).value.toLowerCase();
 	console.log(input1);
 	var input2 = document.getElementById("input2_"+window.random).value.toLowerCase();
@@ -95,7 +96,6 @@ function check2 () {
 	}
 
 	if (upTo2 == 2) {
-		window.upTo2 = 0;
 		$ (".rightEx").css("display","block");
 		window.setTimeout(function(){
 			$ ("*").css("color","#000000");

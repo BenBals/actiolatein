@@ -1,5 +1,5 @@
 function stammformenGoTo () {
-	window.location.href = "../stammformen/index.html";
+	window.location.href = "../actiolatein/index.html";
 }
 function vokabelnGoTo () {
 	window.location.href = "../actiolatein/vokabeln/index.html";

@@ -17,6 +17,11 @@ function go () {
 	$ (".answer").css("display","none");
 }
 
+//home
+function home() {
+	window.location.href = "../../index.html";
+}
+
 //check 1 answer
 function check1 () {
 	var input1 = document.getElementById("input1_"+window.random).value.toLowerCase();

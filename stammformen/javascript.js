@@ -157,11 +157,6 @@ function showRight () {window.showRight=400;}
 //Richtig nicht anzeigen
 function dontShowRight () {window.showRight=0;}
 
-//Download App
-function dlapp () {
-	window.open('https://s3-eu-west-1.amazonaws.com/stammformenapp/Stammformen.apk', '_blank');
-}
-
 //colorDance
 function colorDance () {
 	document.getElementById("question"+window.random).style.background = "#48FF00";

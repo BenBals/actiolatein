@@ -7,3 +7,6 @@ function vokabelnGoTo () {
 function dlapp () {
 	window.open('https://s3-eu-west-1.amazonaws.com/stammformenapp/Actiolatein.apk', '_blank');
 }
+function home () {
+	window.location.href = "index.html";
+}

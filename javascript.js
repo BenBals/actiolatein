@@ -19,4 +19,5 @@ function home () {
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-49782176-1', 'benbals.github.io');
+  ga('require', 'displayfeatures');
   ga('send', 'pageview');

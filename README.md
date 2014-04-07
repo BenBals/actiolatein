@@ -8,6 +8,6 @@ Mit der Website kannst du folgendes lernen:
 Stammformen der Lektionen 1-17
 
 Vokabeln der Lektionen:
-17
+17 (unvollständig)
 
 Dies ist ein kleines Hobbyprojekt, um das lernen mit dem/für das Actio Lateinbuch einfacher zu machen!

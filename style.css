@@ -1,3 +1,4 @@
+@import "css/flat-ui.css";
 /*Mobile*/
 @media screen and (min-device-width: 639px) and (max-device-width: 641px) {
   * {
@@ -113,4 +114,25 @@ a {
 }
 .rightEx {
 	color: #69BB9C;
+}
+
+.allRight {
+  color: #69BB9C;
+}
+
+.notAllRight {
+  color: #E6C40A;
+}
+
+.nothingRight {
+  color: #CB4C39;
+}
+
+.answerKonj {
+  display: none;
+  color: #69BB9C;
+}
+
+.ex {
+  display: none;
 }

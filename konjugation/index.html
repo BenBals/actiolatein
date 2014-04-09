@@ -4,38 +4,48 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="../select/bootstrap-select.min.css">
-	<link href="../css/flat-ui.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../style.css"></head>
 <body>
 	<div id="question0">
 		<h2>Konjugationsübungen!</h2>
 		<p>Hier kannst du die Konjugation trainieren! Wie immer: ich überneheme für nichts Gewähr! Das hier ist ein Beta-Projekt und noch nicht ausgereift! Bis jetzt ist das hier nur ein Proof of Concept! <a href="mailto:benjustusbals@gmail.com">Email senden</a></p>
-		<button class="btn btn-primary" onclick="aKonj">a-Konjugation</button>
+		<button class="btn btn-primary" onclick="aKonj();">a-Konjugation</button>
 	</div>
 
-	<div id="aKonj">
+	<div id="aKonj" style="display:none;">
 		<h3>laudare</h3>
+
+		<h4 class="allRight ex">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
 		<p>1. Person Singular: </p>
-		<form action="javascript:checkAnswer();"><input class="form-control input-sm" id="input1s_a"type="text"></form><br>
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_a"type="text"></form><br>
+		<p class="answerKonj" id="answer1s_a">laudo</p><br class="answerKonj">
+
 		<p>2. Person Singular: </p>
-		<form action="javascript:checkAnswer();"><input class="form-control input-sm" id="input2s_a"type="text"></form><br>
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_a"type="text"></form><br>
+		<p class="answerKonj" id="answer2s_a">ludas</p><br class="answerKonj">
+
 		<p>3. Person Singular:</p>
-		<form action="javascript:checkAnswer();"><input class="form-control input-sm" id="input3s_a"type="text"></form><br>
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_a"type="text"></form><br>
+		<p class="answerKonj" id="answer3s_a">ludat</p><br class="answerKonj">
+		
 		<p>1. Person Plural: </p>
-		<form action="javascript:checkAnswer();"><input class="form-control input-sm" id="input1p_a"type="text"></form><br>
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_a"type="text"></form><br>
+		<p class="answerKonj" id="answer1p_a">laudamus</p><br class="answerKonj">
+
 		<p>2. Person Plural: </p>
-		<form action="javascript:checkAnswer();"><input class="form-control input-sm" id="input2p_a"type="text"></form><br>
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_a"type="text"></form><br>
+		<p class="answerKonj" id="answer2p_a">laudatis</p><br class="answerKonj">
+
 		<p>3. Person Plural: </p>
 		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_a"type="text"></form><br>
-		<p id="answer1s_a">laudo</p><br>
-		<p id="answer2s_a">ludas</p><br>
-		<p id="answer3s_a">laudat</p><br>
-		<p id="answer1p_a">laudamus</p><br>
-		<p id="answer2p_a">laudatis</p><br>
-		<p id="answer3p_a">laudant</p><br>
-		<button class="btn btn-primary" onclick="checkAnswer()">Check</button>
+		<p class="answerKonj" id="answer3p_a">laudant</p><br class="answerKonj">
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
 	</div>
 	
-	<script src="javascript.js"></script>
+	<script src="min/javascript-ck.js"></script>
 	<script src="../main.js"></script>
 </body>

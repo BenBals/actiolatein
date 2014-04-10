@@ -151,20 +151,3 @@ function shortSolution() {window.showSolution=2000;}
 function showRight () {window.showRight=400;}
 //Richtig nicht anzeigen
 function dontShowRight () {window.showRight=0;}
-
-//colorDance
-function colorDance () {
-	document.getElementById("question"+window.random).style.background = "#48FF00";
-	setTimeout(function(){$("#question"+window.random).css("background-color","pink")},250);
-	setTimeout(function(){$("#question"+window.random).css("background-color","blue")},250);
-	setTimeout(function(){$("#question"+window.random).css("background-color","yellow")},250);
-	setTimeout(function(){$("#question"+window.random).css("background-color","orange")},250);
-	setTimeout(function(){$("#question"+window.random).css("background-color","red")},250);
-	setTimeout(function(){$("#question"+window.random).css("background-color","teal")},250);
-	setTimeout(function(){$("#question"+window.random).css("background-color","violet")},250);
-	setTimeout(function(){$("#question"+window.random).css("background-color","pink")},250);
-	setTimeout(function(){$("#question"+window.random).css("background-color","pink")},250);
-	setTimeout(function(){$("#question"+window.random).css("background-color","pink")},250);
-	setTimeout(function(){$("#question"+window.random).css("background-color","pink")},250);
-	setTimeout(function(){$("#question"+window.random).css("background-color","pink")},250);
-}

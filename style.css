@@ -136,3 +136,12 @@ a {
 .ex {
   display: none;
 }
+
+.beta {
+	font-size: 30px;
+	background-color: #bbbbbb;
+	color: white;
+	display: inline;
+	border: 4px solid #bbb;
+	-webkit-border-radius: 12px;
+}

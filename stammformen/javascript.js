@@ -12,7 +12,11 @@ window.random = 0;
 window.showSolution = 2000;
 window.showRight = 400;
 
-function lekAlle () {go();};
+function showLekSelect () {
+	$(".lekSelect").css("display","block");
+}
+
+function lekAlle () {go();}
 function lek1 (){window.n = 63;window.plusN = 1; go(); console.log("rofl")}
 function lek3 (){window.n = 34;window.plusN = 63; go();}
 function lek4 (){window.n = 18;window.plusN = 97; go();}

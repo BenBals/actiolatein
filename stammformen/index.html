@@ -3,8 +3,6 @@
 	<title>Stammformen - Actiolatein</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../select/bootstrap-select.min.css">
-	<link href="../css/flat-ui.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
@@ -34,8 +32,8 @@
 			<p>Es kann auftreten, dass eine Frage mehrmals gestellt wird und das passiert auf Grund der niedrigen Anzahl von Fragen pro Lektion leider sehr häufig, wenn ihr nur eine Lektion übt. Wenn es die verlangte Stammform nicht gibt, das Feld bitte leer lassen. Das heißt auch, wenn ihr nur falsch seht und keine richtige Antwort, dass es die verlangte Stammform nicht gibt. Bitte kontrolliert, wenn ihr könnt, die Lösungen noch einmal. Für Fehler: <a href="mailto:benjustusbals@gmail.com">Email senden</a>. Ich übernehme für nichts Gewähr!</p>
 			<p>by Ben Bals</p>
 			<div class="dropdown">
-				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Nur bestimmte Lektionen lernen</button>
-				<ul id="dropdown" class="dropdown-menu">
+				<button class="btn btn-primary dropdown-toggle" onlick="showLekSelect();">Nur bestimmte Lektionen lernen</button>
+				<ul id="dropdown" class="dropdown-menu lekSelect">
 					<li><a id="lekAlle" onclick="lekAlle();">Alle Lektionen</a></li>
 					<li><a id="nurLek1" onclick="lek1();">Nur Lektionen 1 und 2</a></li>
 					<li><a id="nurLek3" onclick="lek3();">Nur Lektion 3</a></li>

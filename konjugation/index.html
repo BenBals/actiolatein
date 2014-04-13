@@ -15,6 +15,7 @@
 		<button class="btn btn-primary" onclick="aKonjPraAk();">a-Konjugation</button>
 		<button class="btn btn-primary" onclick="eKonjPraAk();">e-Konjugation</button>
 		<button class="btn btn-primary" onclick="iKonjPraAk();">i-Konjugation</button>
+		<button class="btn btn-primary" onclick="gemKonjPraAk();">gemischte Konjugation</button>
 	</div>
 
 	<div id="aKonj_pra_ak" style="display:none;">
@@ -115,6 +116,40 @@
 		<p>3. Person Plural: </p>
 		<p class="answerKonj" id="answer3p_pra_ak_i">audiunt</p><br class="answerKonj">
 		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_pra_ak_i"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	
+	<div id="gemKonj_pra_ak" style="display:none;">
+		<h3>capere</h3>
+
+		<h4 class="allRight ex">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_pra_ak_gem">capio</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_pra_ak_gem"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_pra_ak_gem">capis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_pra_ak_gem"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_pra_ak_gem">capit</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_pra_ak_gem"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_pra_ak_gem">capimus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_pra_ak_gem"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_pra_ak_gem">capitis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_pra_ak_gem"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_pra_ak_gem">capiunt</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_pra_ak_gem"type="text"></form><br>
 		
 		<button class="btn btn-primary" onclick="checkIt();">Check</button>
 	</div>

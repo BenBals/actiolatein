@@ -23,7 +23,7 @@ function iKonjPraAk () {
 	window.zeit = "pra";
 	$(".aw").css("display","inline");
 	$("#question0").css("display","none");
-	$("#eKonj_pra_ak").css("display","block");
+	$("#iKonj_pra_ak").css("display","block");
 }
 function gemKonjPraAk () {
 	window.konj = "gem";
@@ -31,8 +31,58 @@ function gemKonjPraAk () {
 	window.zeit = "pra";
 	$(".aw").css("display","inline");
 	$("#question0").css("display","none");
-	$("#eKonj_pra_ak").css("display","block");
+	$("#gemKonj_pra_ak").css("display","block");
 }
+function konsKonjPraAk () {
+	window.konj = "kons";
+	window.akPa = "ak";
+	window.zeit = "pra";
+	$(".aw").css("display","inline");
+	$("#question0").css("display","none");
+	$("#konsKonj_pra_ak").css("display","block");
+}
+
+function aKonjPraPa () {
+	window.konj = "a";
+	window.akPa = "pa";
+	window.zeit = "pra";
+	$(".aw").css("display","inline");
+	$("#question0").css("display","none");
+	$("#aKonj_pra_pa").css("display","block");
+}
+function eKonjPraPa () {
+	window.konj = "e";
+	window.akPa = "pa";
+	window.zeit = "pra";
+	$(".aw").css("display","inline");
+	$("#question0").css("display","none");
+	$("#eKonj_pra_pa").css("display","block");
+}
+function iKonjPraPa () {
+	window.konj = "i";
+	window.akPa = "pa";
+	window.zeit = "pra";
+	$(".aw").css("display","inline");
+	$("#question0").css("display","none");
+	$("#iKonj_pra_pa").css("display","block");
+}
+function gemKonjPraPa () {
+	window.konj = "gem";
+	window.akPa = "pa";
+	window.zeit = "pra";
+	$(".aw").css("display","inline");
+	$("#question0").css("display","none");
+	$("#gemKonj_pra_pa").css("display","block");
+}
+function konsKonjPraPa () {
+	window.konj = "kons";
+	window.akPa = "pa";
+	window.zeit = "pra";
+	$(".aw").css("display","inline");
+	$("#question0").css("display","none");
+	$("#konsKonj_pra_pa").css("display","block");
+}
+
 
 function homeKonj () {
 	window.location.href = "../index.html";
@@ -127,5 +177,6 @@ function checkIt () {
 			$(".notAllRight").css("display","block");
 		}
 	}
+	window.location.hash = "#"+window.konj+"Konj_"+window.zeit+"_"+window.akPa;
 	window.upTo6 = 0;
 }

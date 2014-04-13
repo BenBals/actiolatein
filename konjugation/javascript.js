@@ -17,6 +17,14 @@ function eKonjPraAk () {
 	$("#question0").css("display","none");
 	$("#eKonj_pra_ak").css("display","block");
 }
+function iKonjPraAk () {
+	window.konj = "i";
+	window.akPa = "ak";
+	window.zeit = "pra";
+	$(".aw").css("display","inline");
+	$("#question0").css("display","none");
+	$("#eKonj_pra_ak").css("display","block");
+}
 
 function homeKonj () {
 	window.location.href = "../index.html";

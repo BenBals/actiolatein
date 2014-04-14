@@ -14,6 +14,10 @@ function home () {
 	window.location.href = "index.html";
 }
 
+//DictTable
+$("*").css("color","pink");
+$("#dictTable").css("display","none");
+
 
 //GOOGLE ANALYTICS
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -1,0 +1,1 @@
+cd git&&cd actiolatein&&git push origin&&git push bitbucket

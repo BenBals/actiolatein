@@ -52,11 +52,7 @@ function getHigh () {
 		console.log(cookieObj);
 	}
 	window.high1 = cookieObj.high1;
-	window.high1 = cookieObj.high1;
-	window.high1 = cookieObj.high1;
 	console.log("High1: "+window.high1);
-	
-	
 }
 
 function checkForHigh () {
@@ -80,27 +76,26 @@ function checkForHigh () {
 	else {
 		getHigh ();
 		document.cookie = 'high1=0;expires='+window.now.toGMTString()+';path=/';
-	}
-	if (cookieObj.hasOwnProperty("high2")) {
-	}
-	else {
 		getHigh ();
-		document.cookie = 'high2=0;expires='+window.now.toGMTString()+';path=/';
+		window.location.reload();
 	}
-	if (cookieObj.hasOwnProperty("high3")) {
+}
+
+function checkIfHigherScore () {
+	console.log("hey");
+	console.log("score: "+window.score);
+	getHigh();
+	if (window.score > window.high1) {
+		document.cookie = "high1="+window.score+";expires="+window.now.toGMTString()+";path=/";
+		getHigh();
+		alert("Neuer Highscore!!! Dein Highscore ist jetzt "+window.high1+"!");
 	}
-	else {
-		getHigh ();
-		document.cookie = 'high3=0;expires='+window.now.toGMTString()+';path=/';
-	}
-	
-	
 }
 
 function go () {
 	document.getElementById('question0').style.display = "none";
 	window.random = Math.floor((Math.random()*window.n)+window.plusN);
-	console.log(random);
+	console.log("Frage: "+window.random);
 	document.getElementById('navben').style.display="block";
 	document.getElementById("question"+random).style.display="block";
 	$ (".rightEx").css("color","#69BB9C");
@@ -116,9 +111,10 @@ function checkAnswer () {
 	var answer = document.getElementById("answer"+random).innerHTML;
 	if (input == answer) {
 		if (showRight == 400) {
-			$('.rightEx', $('#question'+random)).css("display","block")
+			$('.rightEx', $('#question'+random)).css("display","block");
+			window.score++;
+			checkIfHigherScore ();
 			setTimeout (function(){
-				window.score++;
 				console.log("Richtig!");
 				$ ("*").css("color","#000000");
 				$ (".btn").css("color","#FFF");
@@ -130,7 +126,7 @@ function checkAnswer () {
    				document.getElementById('question'+random).style.display = "none";
    				document.getElementById("input"+random).value = '';
 				window.random = Math.floor((Math.random()*n)+plusN);
-				console.log(random);
+				console.log("Frage: "+window.random);
 				document.getElementById("question"+random).style.display="block";
 				document.getElementById("input"+random).focus();
 				$ (".answer").css("display","none");
@@ -139,6 +135,7 @@ function checkAnswer () {
 		}
 		else {
 			window.score++;
+			checkIfHigherScore ();
 			console.log("Richtig!");
 			$ ("*").css("color","#000000");
 			$ (".btn").css("color","#FFF");
@@ -150,13 +147,14 @@ function checkAnswer () {
    			document.getElementById('question'+random).style.display = "none";
    			document.getElementById("input"+random).value = '';
 			window.random = Math.floor((Math.random()*n)+plusN);
-			console.log(random);
+			console.log("Frage: "+window.random);
 			document.getElementById("question"+random).style.display="block";
 			document.getElementById("input"+random).focus();
 			$ (".answer").css("display","none");
 		}
 	}
 	else {
+		checkIfHigherScore ();
 		document.getElementById("answer"+window.random).style.display = "block";
 		$('.wrongEx', $('#question'+window.random)).css("display","block");
 		document.getElementById('answer'+window.random).style.color = "#69BB9C";
@@ -171,7 +169,7 @@ function checkAnswer () {
    			document.getElementById('question'+window.random).style.display = "none";
    			document.getElementById("input"+window.random).value = '';
 			window.random = Math.floor((Math.random()*window.n)+window.plusN);
-			console.log(window.random);
+			console.log("Frage: "+window.random);
 			document.getElementById("question"+window.random).style.display="block";
 			document.getElementById("input"+window.random).focus();
 			$ (".answer").css("display","none");

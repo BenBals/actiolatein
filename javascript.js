@@ -15,8 +15,9 @@ function home () {
 }
 
 //DictTable
-$("*").css("color","pink");
-$("#dictTable").css("display","none");
+$(document).ready(function() {
+	$('#dictTable').dataTable();
+} );
 
 
 //GOOGLE ANALYTICS

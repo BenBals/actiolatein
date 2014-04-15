@@ -17,7 +17,7 @@ function showLekSelect () {
 }
 
 function lekAlle () {go();}
-function lek1 (){window.n = 63;window.plusN = 1; go(); console.log("rofl")}
+function lek1 (){window.n = 63;window.plusN = 1; go(); console.log("rofl");}
 function lek3 (){window.n = 34;window.plusN = 63; go();}
 function lek4 (){window.n = 18;window.plusN = 97; go();}
 function lek5 (){window.n = 12;window.plusN = 116; go();}
@@ -36,7 +36,7 @@ function lek17 (){window.n = 18;window.plusN = 410; go();}
 
 function go () {
 	document.getElementById('question0').style.display = "none";
-	window.random = Math.floor((Math.random()*n)+plusN);
+	window.random = Math.floor((Math.random()*window.n)+window.plusN);
 	console.log(random);
 	document.getElementById('navben').style.display="block";
 	document.getElementById("question"+random).style.display="block";
@@ -56,6 +56,7 @@ function checkAnswer () {
 				console.log("Richtig!");
 				$ ("*").css("color","#000000");
 				$ (".btn").css("color","#FFF");
+				$ (".fa-cog").css("color","white");
 				$ (".rightEx").css("color","#69BB9C");
 				$ (".wrongEx").css("color","#e74c3c");
 				$ (".rightEx").css("display","none");
@@ -75,6 +76,7 @@ function checkAnswer () {
 			console.log("Richtig!");
 			$ ("*").css("color","#000000");
 			$ (".btn").css("color","#FFF");
+			$ (".fa-cog").css("color","white");
 			$ (".rightEx").css("color","#69BB9C");
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
@@ -89,30 +91,27 @@ function checkAnswer () {
 		}
 	}
 	else {
-		document.getElementById("answer"+random).style.display = "block";
-		$('.wrongEx', $('#question'+random)).css("display","block")
-		document.getElementById('answer'+random).style.color = "#69BB9C";
+		document.getElementById("answer"+window.random).style.display = "block";
+		$('.wrongEx', $('#question'+window.random)).css("display","block");
+		document.getElementById('answer'+window.random).style.color = "#69BB9C";
 		setTimeout(function(){
     		$ ("*").css("color","#000000");
     		$ (".btn").css("color","#FFF");
+    		$ (".fa-cog").css("color","white");
     		$ (".rightEx").css("color","#69BB9C");
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
 			$ (".wrongEx").css("display","none");
-   			document.getElementById('question'+random).style.display = "none";
-   			document.getElementById("input"+random).value = '';
-			window.random = Math.floor((Math.random()*n)+plusN);
-			console.log(random);
-			document.getElementById("question"+random).style.display="block";
-			document.getElementById("input"+random).focus();
+   			document.getElementById('question'+window.random).style.display = "none";
+   			document.getElementById("input"+window.random).value = '';
+			window.random = Math.floor((Math.random()*window.n)+window.plusN);
+			console.log(window.random);
+			document.getElementById("question"+window.random).style.display="block";
+			document.getElementById("input"+window.random).focus();
 			$ (".answer").css("display","none");
-    		}
-    	,window.showSolution);
+			}
+		,window.showSolution);
 	}
-	if (window.questionN == score == 10) {
-		alert("Juhu! Du hast 10 von 10 Fragen richtig beantwortet!")
-		colorDance();
-	};
 }
 
 //Show Points
@@ -136,13 +135,15 @@ function home () {
 
 //showSettings
 function showSettings () {
-	$ ("#settings").css("display","block");
-	$ ("#question"+window.random).css("display","none");
+	$("#settings").css("display","block");
+	$(".fa-cog").addClass("fa-spin");
+	$("#question"+window.random).css("display","none");
 }
 
 //hideSettings
 function hideSettings () {
-	$ ("#settings").css("display","none");
+	$("#settings").css("display","none");
+	$(".fa-cog").removeClass("fa-spin");
 	document.getElementById("question"+window.random).style.display="block";
 }
 

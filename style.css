@@ -1,5 +1,6 @@
 @import "select/bootstrap-select.min.css";
 @import "css/flat-ui.css";
+@import "bower_components/fontawesome/css/font-awesome.min.css";
 /*Mobile*/
 @media screen and (min-device-width: 639px) and (max-device-width: 641px) {
   * {
@@ -149,4 +150,21 @@ a {
 
 .dpn {
 	display: none;
+}
+
+#dictTable {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dictHead {
+	background-color: #bbb;
+}
+
+.fa-sort {
+	background-color: #bbb;
+}
+
+.fa-cog {
+	background-color: pink;
 }

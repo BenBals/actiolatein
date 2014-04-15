@@ -11,6 +11,7 @@ window.score = 0;
 window.random = 0;
 window.showSolution = 2000;
 window.showRight = 400;
+window.cookieExpire = 1497582762093;
 
 function showLekSelect () {
 	$(".lekSelect").css("display","block");
@@ -34,6 +35,68 @@ function lek15 (){window.n = 24;window.plusN = 366; go();}
 function lek16 (){window.n = 20;window.plusN = 390; go();}
 function lek17 (){window.n = 18;window.plusN = 410; go();}
 
+function getHigh () {
+	window.now = new Date();
+	window.time = window.now.getTime();
+	window.expireTime = window.time + 100000*3600000;
+	window.now.setTime(window.expireTime);
+	window.tempExp = 'Wed, 31 Oct 2012 08:50:17 GMT';
+	var rawCookie = document.cookie;
+	var cookieArr = rawCookie.split(";");
+	var cookieObj = {};
+	for (var i = 0; i < cookieArr.length; i++) {
+		var cookieKV = cookieArr[i];
+		cookieKV = cookieKV.trim();
+		var cookieKVArr = cookieKV.split("=");
+		cookieObj[cookieKVArr[0]] = cookieKVArr[1];
+		console.log(cookieObj);
+	}
+	window.high1 = cookieObj.high1;
+	window.high1 = cookieObj.high1;
+	window.high1 = cookieObj.high1;
+	console.log("High1: "+window.high1);
+	
+	
+}
+
+function checkForHigh () {
+	window.now = new Date();
+	window.time = window.now.getTime();
+	window.expireTime = window.time + 100000*3600000;
+	window.now.setTime(window.expireTime);
+	window.tempExp = 'Wed, 31 Oct 2012 08:50:17 GMT';
+	var rawCookie = document.cookie;
+	var cookieArr = rawCookie.split(";");
+	var cookieObj = {};
+	for (var i = 0; i < cookieArr.length; i++) {
+		var cookieKV = cookieArr[i];
+		cookieKV = cookieKV.trim();
+		var cookieKVArr = cookieKV.split("=");
+		cookieObj[cookieKVArr[0]] = cookieKVArr[1];
+		console.log(cookieObj);
+	}
+	if (cookieObj.hasOwnProperty("high1")) {
+	}
+	else {
+		getHigh ();
+		document.cookie = 'high1=0;expires='+window.now.toGMTString()+';path=/';
+	}
+	if (cookieObj.hasOwnProperty("high2")) {
+	}
+	else {
+		getHigh ();
+		document.cookie = 'high2=0;expires='+window.now.toGMTString()+';path=/';
+	}
+	if (cookieObj.hasOwnProperty("high3")) {
+	}
+	else {
+		getHigh ();
+		document.cookie = 'high3=0;expires='+window.now.toGMTString()+';path=/';
+	}
+	
+	
+}
+
 function go () {
 	document.getElementById('question0').style.display = "none";
 	window.random = Math.floor((Math.random()*window.n)+window.plusN);
@@ -42,6 +105,9 @@ function go () {
 	document.getElementById("question"+random).style.display="block";
 	$ (".rightEx").css("color","#69BB9C");
 	$ (".wrongEx").css("color","#e74c3c");
+	checkForHigh();
+	getHigh ();
+	
 }
 //When Check-Button ist pressed.
 function checkAnswer () {

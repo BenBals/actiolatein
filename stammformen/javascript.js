@@ -92,6 +92,11 @@ function checkIfHigherScore () {
 	}
 }
 
+function showHigh () {
+	getHigh ();
+	alert("Dein Highscore ist "+window.high1+"!");
+}
+
 function go () {
 	document.getElementById('question0').style.display = "none";
 	window.random = Math.floor((Math.random()*window.n)+window.plusN);

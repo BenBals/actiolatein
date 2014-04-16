@@ -124,6 +124,7 @@ function checkAnswer () {
 				$ ("*").css("color","#000000");
 				$ (".btn").css("color","#FFF");
 				$ (".fa-cog").css("color","white");
+				$ (".fa-trophy").css("color","white");
 				$ (".rightEx").css("color","#69BB9C");
 				$ (".wrongEx").css("color","#e74c3c");
 				$ (".rightEx").css("display","none");
@@ -145,6 +146,7 @@ function checkAnswer () {
 			$ ("*").css("color","#000000");
 			$ (".btn").css("color","#FFF");
 			$ (".fa-cog").css("color","white");
+			$ (".fa-trophy").css("color","white");
 			$ (".rightEx").css("color","#69BB9C");
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
@@ -167,6 +169,7 @@ function checkAnswer () {
     		$ ("*").css("color","#000000");
     		$ (".btn").css("color","#FFF");
     		$ (".fa-cog").css("color","white");
+    		$ (".fa-trophy").css("color","white");
     		$ (".rightEx").css("color","#69BB9C");
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");

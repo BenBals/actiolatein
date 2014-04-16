@@ -6,6 +6,7 @@ function aKonjPraAk () {
 	window.akPa = "ak";
 	window.zeit = "pra";
 	$(".aw").css("display","inline");
+	$(".back").css("display","inline");
 	$("#question0").css("display","none");
 	$("#aKonj_pra_ak").css("display","block");
 }
@@ -14,6 +15,7 @@ function eKonjPraAk () {
 	window.akPa = "ak";
 	window.zeit = "pra";
 	$(".aw").css("display","inline");
+	$(".back").css("display","inline");
 	$("#question0").css("display","none");
 	$("#eKonj_pra_ak").css("display","block");
 }
@@ -22,6 +24,7 @@ function iKonjPraAk () {
 	window.akPa = "ak";
 	window.zeit = "pra";
 	$(".aw").css("display","inline");
+	$(".back").css("display","inline");
 	$("#question0").css("display","none");
 	$("#iKonj_pra_ak").css("display","block");
 }
@@ -30,6 +33,7 @@ function gemKonjPraAk () {
 	window.akPa = "ak";
 	window.zeit = "pra";
 	$(".aw").css("display","inline");
+	$(".back").css("display","inline");
 	$("#question0").css("display","none");
 	$("#gemKonj_pra_ak").css("display","block");
 }
@@ -38,6 +42,7 @@ function konsKonjPraAk () {
 	window.akPa = "ak";
 	window.zeit = "pra";
 	$(".aw").css("display","inline");
+	$(".back").css("display","inline");
 	$("#question0").css("display","none");
 	$("#konsKonj_pra_ak").css("display","block");
 }
@@ -47,6 +52,7 @@ function aKonjPraPa () {
 	window.akPa = "pa";
 	window.zeit = "pra";
 	$(".aw").css("display","inline");
+	$(".back").css("display","inline");
 	$("#question0").css("display","none");
 	$("#aKonj_pra_pa").css("display","block");
 }
@@ -55,6 +61,7 @@ function eKonjPraPa () {
 	window.akPa = "pa";
 	window.zeit = "pra";
 	$(".aw").css("display","inline");
+	$(".back").css("display","inline");
 	$("#question0").css("display","none");
 	$("#eKonj_pra_pa").css("display","block");
 }
@@ -63,6 +70,7 @@ function iKonjPraPa () {
 	window.akPa = "pa";
 	window.zeit = "pra";
 	$(".aw").css("display","inline");
+	$(".back").css("display","inline");
 	$("#question0").css("display","none");
 	$("#iKonj_pra_pa").css("display","block");
 }
@@ -71,6 +79,7 @@ function gemKonjPraPa () {
 	window.akPa = "pa";
 	window.zeit = "pra";
 	$(".aw").css("display","inline");
+	$(".back").css("display","inline");
 	$("#question0").css("display","none");
 	$("#gemKonj_pra_pa").css("display","block");
 }
@@ -79,6 +88,7 @@ function konsKonjPraPa () {
 	window.akPa = "pa";
 	window.zeit = "pra";
 	$(".aw").css("display","inline");
+	$(".back").css("display","inline");
 	$("#question0").css("display","none");
 	$("#konsKonj_pra_pa").css("display","block");
 }
@@ -86,6 +96,14 @@ function konsKonjPraPa () {
 
 function homeKonj () {
 	window.location.href = "../index.html";
+}
+
+function backKonjSelect () {
+	$(".back").css("display","none");
+	$(".aw").css("display","none");
+	$("#question0").css("display","block");
+	$("#"+window.konj+"Konj_"+window.zeit+"_"+window.akPa).css("display","none");
+	window.upTo6 = 0;
 }
 
 function auswahl () {

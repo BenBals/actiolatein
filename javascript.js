@@ -19,6 +19,9 @@ $(document).ready(function() {
 	$('#dictTable').dataTable();
 } );
 
+$(function() {
+    FastClick.attach(document.body);
+});
 
 //GOOGLE ANALYTICS
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

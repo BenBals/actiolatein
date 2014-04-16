@@ -15,7 +15,7 @@ window.cookieExpire = 1497582762093;
 window.currentStreak = 0;
 
 function showLekSelect () {
-	$(".lekSelect").css("display","block");
+	$("#dropdown").css("display","block");
 }
 
 function lekAlle () {go();}

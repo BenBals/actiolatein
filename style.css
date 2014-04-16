@@ -180,3 +180,15 @@ a {
 .fa-tachometer {
 	background-color: pink;
 }
+
+.fa-rocket {
+	background-color: pink;
+}
+
+#dropdown {
+	list-style-type: none;
+}
+
+.fa-cloud-download {
+	background-color: #69BB9C;
+}

@@ -102,11 +102,13 @@ function checkIfHigherScore () {
 		document.cookie = "high1="+window.score+";expires="+window.now.toGMTString()+";path=/";
 		getCookies();
 		alert("Neuer Highscore!!! Dein Highscore ist jetzt "+window.high1+"!");
+		showRecords ();
 	}
 	if (window.currentStreak > window.longestStreak) {
 		document.cookie = "longestStreak="+window.currentStreak+";expires="+window.now.toGMTString()+";path=/";
 		getCookies();
 		alert("Neue längste Richtige-Antwort-Sere! Der Rekord ist jetzt "+window.longestStreak+"!");
+		showRecords ();
 	}
 }
 

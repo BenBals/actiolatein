@@ -240,6 +240,7 @@ function checkIt () {
 			$(".notAllRight").css("display","block");
 		}
 	}
+	$(".ex").css("display","none");
 	window.location.hash = "#"+window.konj+"Konj_"+window.zeit+"_"+window.akPa;
 	window.upTo6 = 0;
 }

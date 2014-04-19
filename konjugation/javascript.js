@@ -93,6 +93,51 @@ function konsKonjPraPa () {
 	$("#konsKonj_pra_pa").css("display","block");
 }
 
+function aKonjPerAk () {
+	window.konj = "a";
+	window.akPa = "ak";
+	window.zeit = "per";
+	$(".aw").css("display","inline");
+	$(".back").css("display","inline");
+	$("#question0").css("display","none");
+	$("#aKonj_per_ak").css("display","block");
+}
+function eKonjPerAk () {
+	window.konj = "e";
+	window.akPa = "ak";
+	window.zeit = "per";
+	$(".aw").css("display","inline");
+	$(".back").css("display","inline");
+	$("#question0").css("display","none");
+	$("#eKonj_per_ak").css("display","block");
+}
+function iKonjPerAk () {
+	window.konj = "i";
+	window.akPa = "ak";
+	window.zeit = "per";
+	$(".aw").css("display","inline");
+	$(".back").css("display","inline");
+	$("#question0").css("display","none");
+	$("#iKonj_per_ak").css("display","block");
+}
+function gemKonjPerAk () {
+	window.konj = "gem";
+	window.akPa = "ak";
+	window.zeit = "per";
+	$(".aw").css("display","inline");
+	$(".back").css("display","inline");
+	$("#question0").css("display","none");
+	$("#gemKonj_per_ak").css("display","block");
+}
+function konsKonjPerAk () {
+	window.konj = "kons";
+	window.akPa = "ak";
+	window.zeit = "per";
+	$(".aw").css("display","inline");
+	$(".back").css("display","inline");
+	$("#question0").css("display","none");
+	$("#konsKonj_per_ak").css("display","block");
+}
 
 function homeKonj () {
 	window.location.href = "../index.html";

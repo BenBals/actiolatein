@@ -3,6 +3,7 @@
 	<title>Stammformen - Actiolatein</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../al-logo.png">
 	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
@@ -11,7 +12,7 @@
 			<button class="btn btn-nav" onclick="home();"><i class="fa fa-home"></i></button>
 			<button onclick="newG();" class="btn btn-nav">Neues Spiel</button>
 			<button onclick="points();" class="btn btn-nav"><i class="fa fa-tachometer"></i> Punkte Anzeigen</button>
-			<button onclick="showRecords();" class="btn btn-nav"><i class="fa fa-trophy"></i> Rekorde</button>
+			<button onclick="showStats();" class="btn btn-nav"><i class="fa fa-bar-chart-o"></i> Statistik</button>
 			<button class="btn btn-nav" onclick="showSettings();"><i class="fa fa-cog"></i></button>
 			<br>
 		</div>
@@ -25,10 +26,13 @@
 			<br>
 			<button class="btn btn-nav" onclick="hideSettings();">Fertig</button>
 		</div>	
-		<div id="records" class="dpn">
+		<div id="stats" class="dpn">
 			<p>Dein Highscore ist <span id="highscore"></span>!</p>
 			<p>Deine längste Serie an richtigen Antworten ist <span id="longestStreak"></span>!</p>
-			<button class="btn btn-nav" onclick="hideRecords();">Verstecken</button>
+			<p>Du hast insgesamt <span id="totalGames"></span> Spiele gespielt!</p>
+			<p id="rightPercentageWrapper">Deine Gesamt-Richtig-Falsch-Quote ist <span id="rightPercentage"></span>%!</p>
+			<p id="rightPercentageFail" class="dpn">Beantworte mindestens eine Frage um deine Richtig-Falsch-Quote zu sehen!</p>
+			<button class="btn btn-primary" onclick="hideStats();">Verstecken</button>
 		</div>	
 		<div id="question0">
 			<h2>Willkommen zum Lateinquiz Stammformen!</h2>

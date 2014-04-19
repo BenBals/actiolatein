@@ -54,6 +54,9 @@ function getCookies () {
 	}
 	window.longestStreak = cookieObj.longestStreak;
 	window.high1 = cookieObj.high1;
+	window.totalGames = cookieObj.totalGames;
+	window.totalQuestions = cookieObj.totalQuestions;
+	window.totalRight = cookieObj.totalRight;
 	console.log("Streak: "+window.longestStreak);
 	console.log("High1: "+window.high1);
 }
@@ -91,6 +94,33 @@ function checkForCookies () {
 		getCookies ();
 		window.location.reload();
 	}
+	if (cookieObj.hasOwnProperty("totalGames")) {
+		
+	}
+	else {
+		getCookies ();
+		document.cookie = 'totalGames=0;expires='+window.now.toGMTString()+';path=/';
+		getCookies ();
+		window.location.reload();
+	}
+	if (cookieObj.hasOwnProperty("totalQuestions")) {
+		
+	}
+	else {
+		getCookies ();
+		document.cookie = 'totalQuestions=0;expires='+window.now.toGMTString()+';path=/';
+		getCookies ();
+		window.location.reload();
+	}
+	if (cookieObj.hasOwnProperty("totalRight")) {
+		
+	}
+	else {
+		getCookies ();
+		document.cookie = 'totalRight=0;expires='+window.now.toGMTString()+';path=/';
+		getCookies ();
+		window.location.reload();
+	}
 }
 
 function checkIfHigherScore () {
@@ -110,15 +140,31 @@ function checkIfHigherScore () {
 	}
 }
 
-function showRecords () {
+function showStats () {
 	getCookies ();
+	parseFloat(window.totalQuestions);
+	parseFloat(window.totalRight);
+	console.log(window.totalRight);
+	console.log(window.totalQuestions);
+	window.rightPercentage = window.totalRight/window.totalQuestions;
+	window.rightPercentage = window.rightPercentage*100;
+	window.rightPercentage = Math.round(window.rightPercentage);
+	if (window.totalQuestions === 0) {
+		$("#rightPercentageWrapper").css("display","none");
+		$("#rightPercentageFail").css("display","block");
+	}
+	console.log(window.rightPercentage);
+	$("#rightPercentage").html(window.rightPercentage);
 	$("#highscore").html(window.high1);
 	$("#longestStreak").html(window.longestStreak);
-	$("#records").css("display","block");
+	$("#totalGames").html(window.totalGames);
+	$("#stats").css("display","block");
+	$("#question"+window.random).css("display","none");
 }
 
-function hideRecords () {
-	$("#records").css("display","none");
+function hideStats () {
+	$("#stats").css("display","none");
+	$("#question"+window.random).css("display","block");
 }
 
 function go () {
@@ -131,11 +177,14 @@ function go () {
 	$ (".wrongEx").css("color","#e74c3c");
 	checkForCookies();
 	getCookies ();
-	
+	window.totalGames++;
+	document.cookie = "totalGames="+window.totalGames+";expires="+window.now.toGMTString()+";path=/";
+	getCookies ();
 }
 //When Check-Button ist pressed.
 function checkAnswer () {
 	questionN++;
+	getCookies ();
 	var input = document.getElementById("input"+random).value.toLowerCase();
 	var answer = document.getElementById("answer"+random).innerHTML;
 	if (input == answer) {
@@ -144,12 +193,15 @@ function checkAnswer () {
 			window.score++;
 			window.currentStreak++;
 			checkIfHigherScore ();
+			window.totalRight++;
 			setTimeout (function(){
 				console.log("Richtig!");
 				$ ("*").css("color","#000000");
 				$ (".btn").css("color","#FFF");
 				$ (".fa-cog").css("color","white");
-				$ (".fa-trophy").css("color","white");
+				$ (".fa-tachometer").css("color","#FFF");
+				$ (".fa-home").css("color","#fff");
+				$ (".fa-bar-chart-o").css("color","white");
 				$ (".rightEx").css("color","#69BB9C");
 				$ (".wrongEx").css("color","#e74c3c");
 				$ (".rightEx").css("display","none");
@@ -168,11 +220,14 @@ function checkAnswer () {
 			window.score++;
 			window.currentStreak++;
 			checkIfHigherScore ();
+			window.totalRight++;
 			console.log("Richtig!");
 			$ ("*").css("color","#000000");
 			$ (".btn").css("color","#FFF");
 			$ (".fa-cog").css("color","white");
-			$ (".fa-trophy").css("color","white");
+			$ (".fa-tachometer").css("color","#FFF");
+			$ (".fa-home").css("color","#fff");
+			$ (".fa-bar-chart-o").css("color","white");
 			$ (".rightEx").css("color","#69BB9C");
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
@@ -196,7 +251,9 @@ function checkAnswer () {
     		$ ("*").css("color","#000000");
     		$ (".btn").css("color","#FFF");
     		$ (".fa-cog").css("color","white");
-    		$ (".fa-trophy").css("color","white");
+    		$ (".fa-tachometer").css("color","#FFF");
+			$ (".fa-home").css("color","#fff");
+    		$ (".fa-bar-chart-o").css("color","white");
     		$ (".rightEx").css("color","#69BB9C");
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
@@ -209,8 +266,14 @@ function checkAnswer () {
 			document.getElementById("input"+window.random).focus();
 			$ (".answer").css("display","none");
 			}
-		,window.getCookiesSolution);
+		,window.showSolution);
 	}
+	window.totalQuestions++;
+	console.log("tQ: "+window.totalQuestions);
+	console.log("tR: "+window.totalRight);
+	document.cookie = "totalQuestions="+window.totalQuestions+";expires="+window.now.toGMTString()+";path=/";
+	document.cookie = "totalRight="+window.totalRight+";expires="+window.now.toGMTString()+";path=/";
+	getCookies ();
 }
 
 //getCookies Points

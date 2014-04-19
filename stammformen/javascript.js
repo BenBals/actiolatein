@@ -172,8 +172,8 @@ function go () {
 	document.getElementById('question0').style.display = "none";
 	window.random = Math.floor((Math.random()*window.n)+window.plusN);
 	console.log("Frage: "+window.random);
-	document.getElementById('navben').style.display="block";
-	document.getElementById("question"+window.random).style.display="block";
+	$("#navben").css("display","block");
+	$("#question"+window.random).css("display","block");
 	$ (".rightEx").css("color","#69BB9C");
 	$ (".wrongEx").css("color","#e74c3c");
 	checkForCookies();
@@ -186,8 +186,8 @@ function go () {
 function checkAnswer () {
 	window.questionN++;
 	getCookies ();
-	var input = document.getElementById("input"+window.random).value.toLowerCase();
-	var answer = document.getElementById("answer"+window.random).innerHTML;
+	var input = $("#input"+window.random).val().toLowerCase();
+	var answer = $("#answer"+window.random).html();
 	if (input == answer) {
 		if (showRight == 400) {
 			$('.rightEx', $('#question'+window.random)).css("display","block");
@@ -207,12 +207,12 @@ function checkAnswer () {
 				$ (".wrongEx").css("color","#e74c3c");
 				$ (".rightEx").css("display","none");
 				$ (".wrongEx").css("display","none");
-				document.getElementById('question'+window.random).style.display = "none";
-				document.getElementById("input"+window.random).value = '';
+				$('#question'+window.random).css("display","none");
+				$("input"+window.random).val("");
 				window.random = Math.floor((Math.random()*window.n)+window.plusN);
 				console.log("Frage: "+window.random);
-				document.getElementById("question"+window.random).style.display="block";
-				document.getElementById("input"+window.random).focus();
+				$("#question"+window.random).css("display","block");
+				$("#input"+window.random).focus();
 				$ (".answer").css("display","none");
 				}
 			,window.showRight);
@@ -233,12 +233,12 @@ function checkAnswer () {
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
 			$ (".wrongEx").css("display","none");
-			document.getElementById('question'+window.random).style.display = "none";
-			document.getElementById("input"+window.random).value = '';
+			$('#question'+window.random).css("display","none");
+			$("input"+window.random).val("");
 			window.random = Math.floor((Math.random()*window.n)+window.plusN);
 			console.log("Frage: "+window.random);
-			document.getElementById("question"+window.random).style.display="block";
-			document.getElementById("input"+window.random).focus();
+			$("#question"+window.random).css("display","block");
+			$("#input"+window.random).focus();
 			$ (".answer").css("display","none");
 		}
 	}
@@ -259,12 +259,12 @@ function checkAnswer () {
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
 			$ (".wrongEx").css("display","none");
-			document.getElementById('question'+window.random).style.display = "none";
-			document.getElementById("input"+window.random).value = '';
+			$('#question'+window.random).css("display","none");
+			$("input"+window.random).val("");
 			window.random = Math.floor((Math.random()*window.n)+window.plusN);
 			console.log("Frage: "+window.random);
-			document.getElementById("question"+window.random).style.display="block";
-			document.getElementById("input"+window.random).focus();
+			$("#question"+window.random).css("display","block");
+			$("#input"+window.random).focus();
 			$ (".answer").css("display","none");
 			}
 		,window.showSolution);

@@ -19,7 +19,7 @@ function showLekSelect () {
 }
 
 function lekAlle () {go();}
-function lek1 (){window.n = 63;window.plusN = 1; go(); console.log("rofl");}
+function lek1 (){window.n = 63;window.plusN = 1; go();}
 function lek3 (){window.n = 34;window.plusN = 63; go();}
 function lek4 (){window.n = 18;window.plusN = 97; go();}
 function lek5 (){window.n = 12;window.plusN = 116; go();}
@@ -83,7 +83,6 @@ function checkForCookies () {
 		getCookies ();
 		document.cookie = 'high1=0;expires='+window.now.toGMTString()+';path=/';
 		getCookies ();
-		window.location.reload();
 	}
 	if (cookieObj.hasOwnProperty("longestStreak")) {
 		
@@ -92,7 +91,6 @@ function checkForCookies () {
 		getCookies ();
 		document.cookie = 'longestStreak=0;expires='+window.now.toGMTString()+';path=/';
 		getCookies ();
-		window.location.reload();
 	}
 	if (cookieObj.hasOwnProperty("totalGames")) {
 		
@@ -101,7 +99,6 @@ function checkForCookies () {
 		getCookies ();
 		document.cookie = 'totalGames=0;expires='+window.now.toGMTString()+';path=/';
 		getCookies ();
-		window.location.reload();
 	}
 	if (cookieObj.hasOwnProperty("totalQuestions")) {
 		
@@ -110,7 +107,6 @@ function checkForCookies () {
 		getCookies ();
 		document.cookie = 'totalQuestions=0;expires='+window.now.toGMTString()+';path=/';
 		getCookies ();
-		window.location.reload();
 	}
 	if (cookieObj.hasOwnProperty("totalRight")) {
 		
@@ -119,7 +115,6 @@ function checkForCookies () {
 		getCookies ();
 		document.cookie = 'totalRight=0;expires='+window.now.toGMTString()+';path=/';
 		getCookies ();
-		window.location.reload();
 	}
 }
 

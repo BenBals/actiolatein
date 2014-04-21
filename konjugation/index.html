@@ -39,6 +39,34 @@
 		<button class="btn btn-primary" onclick="iKonjPerPa();">i-Konjugation</button>
 		<button class="btn btn-primary" onclick="gemKonjPerPa();">gemischte Konjugation</button>
 		<button class="btn btn-primary" onclick="konsKonjPerPa();">konsonantische Konjugation</button>
+		
+		<h4>Imperfekt Aktiv:</h4>
+		<button class="btn btn-primary" onclick="aKonjiPerAk();">a-Konjugation</button>
+		<button class="btn btn-primary" onclick="eKonjiPerAk();">e-Konjugation</button>
+		<button class="btn btn-primary" onclick="iKonjiPerAk();">i-Konjugation</button>
+		<button class="btn btn-primary" onclick="gemKonjiPerAk();">gemischte Konjugation</button>
+		<button class="btn btn-primary" onclick="konsKonjiPerAk();">konsonantische Konjugation</button>
+		
+		<h4>Imperfekt Passiv:</h4>
+		<button class="btn btn-primary" onclick="aKonjiPerPa();">a-Konjugation</button>
+		<button class="btn btn-primary" onclick="eKonjiPerPa();">e-Konjugation</button>
+		<button class="btn btn-primary" onclick="iKonjiPerPa();">i-Konjugation</button>
+		<button class="btn btn-primary" onclick="gemKonjiPerPa();">gemischte Konjugation</button>
+		<button class="btn btn-primary" onclick="konsKonjiPerPa();">konsonantische Konjugation</button>
+		
+		<h4>Plusquamperfekt  Aktiv:</h4>
+		<button class="btn btn-primary" onclick="aKonjPlusAk();">a-Konjugation</button>
+		<button class="btn btn-primary" onclick="eKonjPlusAk();">e-Konjugation</button>
+		<button class="btn btn-primary" onclick="iKonjPlusAk();">i-Konjugation</button>
+		<button class="btn btn-primary" onclick="gemKonjPlusAk();">gemischte Konjugation</button>
+		<button class="btn btn-primary" onclick="konsKonjPlusAk();">konsonantische Konjugation</button>
+		
+		<h4>Plusquamperfekt  Passiv:</h4>
+		<button class="btn btn-primary" onclick="aKonjPlusPa();">a-Konjugation</button>
+		<button class="btn btn-primary" onclick="eKonjPlusPa();">e-Konjugation</button>
+		<button class="btn btn-primary" onclick="iKonjPlusPa();">i-Konjugation</button>
+		<button class="btn btn-primary" onclick="gemKonjPlusPa();">gemischte Konjugation</button>
+		<button class="btn btn-primary" onclick="konsKonjPlusPa();">konsonantische Konjugation</button>
 	</div>
 
 	<div id="aKonj_pra_ak" style="display:none;">
@@ -701,6 +729,670 @@
 		<p>3. Person Plural: </p>
 		<p class="answerKonj" id="answer3p_per_pa_kons">actus sunt</p><br class="answerKonj">
 		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_per_pa_kons"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	
+	<div id="aKonj_iper_ak" style="display:none;">
+		<h3>laudare</h3>
+
+		<h4 class="allRight ex" id="1">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_iper_ak_a">laudabam</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_iper_ak_a"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_iper_ak_a">laudabas</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_iper_ak_a"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_iper_ak_a">laudabat</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_iper_ak_a"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_iper_ak_a">laudabamus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_iper_ak_a"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_iper_ak_a">laudabatis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_iper_ak_a"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_iper_ak_a">laudabant</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_iper_ak_a"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="eKonj_iper_ak" style="display:none;">
+		<h3>monere</h3>
+
+		<h4 class="allRight ex" id="1">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_iper_ak_e">monebam</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_iper_ak_e"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_iper_ak_e">monebas</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_iper_ak_e"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_iper_ak_e">monebat</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_iper_ak_e"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_iper_ak_e">monebamus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_iper_ak_e"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_iper_ak_e">monebatis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_iper_ak_e"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_iper_ak_e">monebant</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_iper_ak_e"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="iKonj_iper_ak" style="display:none;">
+		<h3>audire</h3>
+
+		<h4 class="allRight ex">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_iper_ak_i">audiebam</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_iper_ak_i"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_iper_ak_i">audiebas</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_iper_ak_i"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_iper_ak_i">audiebat</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_iper_ak_i"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_iper_ak_i">audiebamus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_iper_ak_i"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_iper_ak_i">audiebatis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_iper_ak_i"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_iper_ak_i">audiebant</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_iper_ak_i"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="gemKonj_iper_ak" style="display:none;">
+		<h3>capere</h3>
+
+		<h4 class="allRight ex">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_iper_ak_gem">capiebam</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_iper_ak_gem"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_iper_ak_gem">capiebas</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_iper_ak_gem"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_iper_ak_gem">capiebat</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_iper_ak_gem"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_iper_ak_gem">capiebamus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_iper_ak_gem"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_iper_ak_gem">capiebatis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_iper_ak_gem"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_iper_ak_gem">capiebant</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_iper_ak_gem"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="konsKonj_iper_ak" style="display:none;">
+		<h3>agere</h3>
+
+		<h4 class="allRight ex">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_iper_ak_kons">agebam</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_iper_ak_kons"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_iper_ak_kons">agebas</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_iper_ak_kons"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_iper_ak_kons">agebat</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_iper_ak_kons"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_iper_ak_kons">agebamus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_iper_ak_kons"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_iper_ak_kons">agebatis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_iper_ak_kons"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_iper_ak_kons">agebant</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_iper_ak_kons"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	
+	<div id="aKonj_iper_pa" style="display:none;">
+		<h3>laudare</h3>
+
+		<h4 class="allRight ex" id="1">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_iper_pa_a">laudabar</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_iper_pa_a"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_iper_pa_a">laudabaris</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_iper_pa_a"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_iper_pa_a">laudabatur</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_iper_pa_a"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_iper_pa_a">laudabamur</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_iper_pa_a"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_iper_pa_a">laudabamini</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_iper_pa_a"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_iper_pa_a">laudabantur</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_iper_pa_a"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="eKonj_iper_pa" style="display:none;">
+		<h3>monere</h3>
+
+		<h4 class="allRight ex" id="1">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_iper_pa_e">monebar</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_iper_pa_e"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_iper_pa_e">monebaris</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_iper_pa_e"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_iper_pa_e">monebatur</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_iper_pa_e"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_iper_pa_e">monebamur</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_iper_pa_e"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_iper_pa_e">monebamini</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_iper_pa_e"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_iper_pa_e">monebantur</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_iper_pa_e"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="iKonj_iper_pa" style="display:none;">
+		<h3>audire</h3>
+
+		<h4 class="allRight ex">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_iper_pa_i">audiebar</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_iper_pa_i"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_iper_pa_i">audiebaris</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_iper_pa_i"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_iper_pa_i">audiebatur</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_iper_pa_i"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_iper_pa_i">audiebamur</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_iper_pa_i"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_iper_pa_i">audiebamini</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_iper_pa_i"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_iper_pa_i">audiebantur</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_iper_pa_i"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="gemKonj_iper_pa" style="display:none;">
+		<h3>capere</h3>
+
+		<h4 class="allRight ex">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_iper_pa_gem">capiebar</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_iper_pa_gem"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_iper_pa_gem">capiebaris</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_iper_pa_gem"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_iper_pa_gem">capiebatur</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_iper_pa_gem"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_iper_pa_gem">capiebamur</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_iper_pa_gem"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_iper_pa_gem">capiebamini</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_iper_pa_gem"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_iper_pa_gem">capiebantur</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_iper_pa_gem"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="konsKonj_iper_pa" style="display:none;">
+		<h3>agere</h3>
+
+		<h4 class="allRight ex">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_iper_pa_kons">agebar</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_iper_pa_kons"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_iper_pa_kons">agebaris</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_iper_pa_kons"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_iper_pa_kons">agebatur</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_iper_pa_kons"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_iper_pa_kons">agebamur</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_iper_pa_kons"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_iper_pa_kons">agebamini</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_iper_pa_kons"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_iper_pa_kons">agebantur</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_iper_pa_kons"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	
+	<div id="aKonj_plus_ak" style="display:none;">
+		<h3>spectare</h3>
+
+		<h4 class="allRight ex" id="1">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_plus_ak_a">spectaveram</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_plus_ak_a"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_plus_ak_a">spectaveras</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_plus_ak_a"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_plus_ak_a">spectaverat</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_plus_ak_a"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_plus_ak_a">spectaveramus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_plus_ak_a"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_plus_ak_a">spectaveratis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_plus_ak_a"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_plus_ak_a">spectaverant</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_plus_ak_a"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="eKonj_plus_ak" style="display:none;">
+		<h3>monere</h3>
+
+		<h4 class="allRight ex" id="1">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_plus_ak_e">monueram</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_plus_ak_e"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_plus_ak_e">monueras</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_plus_ak_e"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_plus_ak_e">monuerat</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_plus_ak_e"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_plus_ak_e">monueramus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_plus_ak_e"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_plus_ak_e">monueratis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_plus_ak_e"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_plus_ak_e">monuerant</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_plus_ak_e"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="iKonj_plus_ak" style="display:none;">
+		<h3>audire</h3>
+
+		<h4 class="allRight ex">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_plus_ak_i">audiveram</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_plus_ak_i"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_plus_ak_i">audiveras</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_plus_ak_i"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_plus_ak_i">audiverat</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_plus_ak_i"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_plus_ak_i">audiveramus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_plus_ak_i"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_plus_ak_i">audiveratis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_plus_ak_i"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_plus_ak_i">audiverant</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_plus_ak_i"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="gemKonj_plus_ak" style="display:none;">
+		<h3>capere</h3>
+
+		<h4 class="allRight ex">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_plus_ak_gem">ceperam</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_plus_ak_gem"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_plus_ak_gem">ceperas</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_plus_ak_gem"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_plus_ak_gem">ceperat</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_plus_ak_gem"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_plus_ak_gem">ceperamus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_plus_ak_gem"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_plus_ak_gem">ceperatis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_plus_ak_gem"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_plus_ak_gem">ceperant</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_plus_ak_gem"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="konsKonj_plus_ak" style="display:none;">
+		<h3>agere</h3>
+
+		<h4 class="allRight ex">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_plus_ak_kons">egeram</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_plus_ak_kons"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_plus_ak_kons">egeras</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_plus_ak_kons"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_plus_ak_kons">egerat</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_plus_ak_kons"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_plus_ak_kons">egeramus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_plus_ak_kons"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_plus_ak_kons">egeratis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_plus_ak_kons"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_plus_ak_kons">egerant</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_plus_ak_kons"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	
+	<div id="aKonj_plus_pa" style="display:none;">
+		<h3>spectare</h3>
+
+		<h4 class="allRight ex" id="1">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_plus_pa_a">spectatus eram</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_plus_pa_a"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_plus_pa_a">spectatus eras</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_plus_pa_a"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_plus_pa_a">spectatus erat</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_plus_pa_a"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_plus_pa_a">spectati eramus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_plus_pa_a"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_plus_pa_a">spectati eratis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_plus_pa_a"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_plus_pa_a">spectati erant</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_plus_pa_a"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="eKonj_plus_pa" style="display:none;">
+		<h3>monere</h3>
+
+		<h4 class="allRight ex" id="1">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_plus_pa_e">monitus eram</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_plus_pa_e"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_plus_pa_e">monitus eras</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_plus_pa_e"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_plus_pa_e">monitus erat</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_plus_pa_e"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_plus_pa_e">moniti eramus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_plus_pa_e"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_plus_pa_e">moniti eratis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_plus_pa_e"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_plus_pa_e">moniti erant</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_plus_pa_e"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="iKonj_plus_pa" style="display:none;">
+		<h3>audire</h3>
+
+		<h4 class="allRight ex">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_plus_pa_i">auditus eram</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_plus_pa_i"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_plus_pa_i">auditus eras</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_plus_pa_i"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_plus_pa_i">auditus erat</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_plus_pa_i"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_plus_pa_i">auditi eramus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_plus_pa_i"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_plus_pa_i">auditi eratis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_plus_pa_i"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_plus_pa_i">auditi erant</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_plus_pa_i"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="gemKonj_plus_pa" style="display:none;">
+		<h3>capere</h3>
+
+		<h4 class="allRight ex">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_plus_pa_gem">captus eram</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_plus_pa_gem"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_plus_pa_gem">captus eras</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_plus_pa_gem"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_plus_pa_gem">captus erat</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_plus_pa_gem"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_plus_pa_gem">captus eramus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_plus_pa_gem"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_plus_pa_gem">captus eratis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_plus_pa_gem"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_plus_pa_gem">captus erant</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_plus_pa_gem"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkIt();">Check</button>
+	</div>
+	<div id="konsKonj_plus_pa" style="display:none;">
+		<h3>agere</h3>
+
+		<h4 class="allRight ex">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+
+		<p>1. Person Singular: </p>
+		<p class="answerKonj" id="answer1s_plus_pa_kons">actus eram</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1s_plus_pa_kons"type="text"></form><br>
+
+		<p>2. Person Singular: </p>
+		<p class="answerKonj" id="answer2s_plus_pa_kons">actus eras</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2s_plus_pa_kons"type="text"></form><br>
+
+		<p>3. Person Singular:</p>
+		<p class="answerKonj" id="answer3s_plus_pa_kons">actus erat</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input3s_plus_pa_kons"type="text"></form><br>
+		
+		<p>1. Person Plural: </p>
+		<p class="answerKonj" id="answer1p_plus_pa_kons">actus eramus</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input1p_plus_pa_kons"type="text"></form><br>
+
+		<p>2. Person Plural: </p>
+		<p class="answerKonj" id="answer2p_plus_pa_kons">actus eratis</p><br class="answerKonj">
+		<form action="javascript:CheckIt();"><input class="form-control input-sm" id="input2p_plus_pa_kons"type="text"></form><br>
+
+		<p>3. Person Plural: </p>
+		<p class="answerKonj" id="answer3p_plus_pa_kons">actus erant</p><br class="answerKonj">
+		<form action="javascript:checkIt();"><input class="form-control input-sm" id="input3p_plus_pa_kons"type="text"></form><br>
 		
 		<button class="btn btn-primary" onclick="checkIt();">Check</button>
 	</div>

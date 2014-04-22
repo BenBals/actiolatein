@@ -2,6 +2,8 @@
 @import "css/flat-ui.css";
 @import "bower_components/fontawesome/css/font-awesome.min.css";
 /*Mobile*/
+
+$datGreen: #69BB9C;
 @media screen and (min-device-width: 639px) and (max-device-width: 641px) {
   * {
     width: 640px;
@@ -87,7 +89,7 @@ a {
 
 .answer {
 	display: none;
-	color: #61D134;
+	color: $datGreen;
 }
 
 .false {
@@ -115,11 +117,11 @@ a {
 	color: #e74c3c;
 }
 .rightEx {
-	color: #69BB9C;
+	color: $datGreen;
 }
 
 .allRight {
-  color: #69BB9C;
+  color: $datGreen;
 }
 
 .notAllRight {
@@ -132,7 +134,7 @@ a {
 
 .answerKonj {
   display: none;
-  color: #69BB9C;
+  color: $datGreen;
 }
 
 .ex {
@@ -190,7 +192,7 @@ a {
 }
 
 .fa-cloud-download {
-	background-color: #69BB9C;
+	background-color: $datGreen;
 }
 
 .fa-arrow-circle-o-left {

@@ -1,5 +1,5 @@
 //How many questions are there? or Number of questions in that unit (ony changed by funtion go NOT manually)
-window.n = 35;
+window.n = 37;
 //Lowest questionnumber of given unit
 window.plusN = 1;
 //Number of Questions already answerd
@@ -12,6 +12,7 @@ window.score = 0;
  
 function go () {
 	$("#question0").css("display","none");
+	$(".back").css("display","inline");
 	window.random = Math.floor((Math.random()*window.n)+window.plusN);
 	$("#question"+window.random).css("display","block");
 	$(".block").css("display","inline");
@@ -25,14 +26,7 @@ function home() {
 
 //Back
 function backVokSelect () {
-	$(".back").css("display","none");
-	$(".answer").css("display","none");
-	$("#question0").css("display","block");
-	$("#question"+window.random).css("display","none");
-	window.questionN = 0;
-	window.random = 0;
-	window.score = 0;
-	window.upTo2 = 0;
+	window.location.href = "../index.html";
 }
 
 //check 1 answer

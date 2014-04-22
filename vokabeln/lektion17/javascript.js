@@ -11,10 +11,11 @@ window.random = 0;
 window.score = 0;
  
 function go () {
-	document.getElementById("question"+0).style.display="none";
-	window.random = Math.floor((Math.random()*n)+plusN);
-	$ ("#question"+window.random).css("display","block");
-	$ (".answer").css("display","none");
+	$("#question0").css("display","none");
+	window.random = Math.floor((Math.random()*window.n)+window.plusN);
+	$("#question"+window.random).css("display","block");
+	$(".block").css("display","inline");
+	$(".answer").css("display","none");
 }
 
 //home
@@ -22,12 +23,22 @@ function home() {
 	window.location.href = "../../index.html";
 }
 
+//Back
+function backVokSelect () {
+	$(".back").css("display","none");
+	$(".answer").css("display","none");
+	$("#question0").css("display","block");
+	$("#question"+window.random).css("display","none");
+	window.questionN = 0;
+	window.random = 0;
+	window.score = 0;
+	window.upTo2 = 0;
+}
+
 //check 1 answer
 function check1 () {
-	var input1 = document.getElementById("input1_"+window.random).value.toLowerCase();
-	console.log(input1);
-	var answer1 = document.getElementById("answer1_"+window.random).innerHTML;
-	console.log(answer1);
+	var input1 = $("#input1_"+window.random).val().toLowerCase();
+	var answer1 = $("#answer1_"+window.random).html();
 
 	window.questionN++;
 
@@ -43,17 +54,15 @@ function check1 () {
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
 			$ (".wrongEx").css("display","none");
-   			document.getElementById('question'+random).style.display = "none";
-   			document.getElementById("input1_"+random).value = '';
-			window.random = Math.floor((Math.random()*n)+plusN);
-			console.log(random);
-			document.getElementById("question"+random).style.display="block";
-			document.getElementById("input1_"+random).focus();
+			$("#question"+window.random).css("display","none");
+			$("#input1_"+window.random).val("");
+			window.random = Math.floor((Math.random()*window.n)+window.plusN);
+			$("#question"+window.random).css("display","block");
+			$("#input1_"+window.random).focus();
 			$ (".answer").css("display","none");
-		},400)
+		},400);
 	}
 	else {
-		console.log("XD");
 		$ (".wrongEx").css("display","block");
 		$ (".answer").css("display","block");
 		window.setTimeout(function(){
@@ -63,29 +72,23 @@ function check1 () {
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
 			$ (".wrongEx").css("display","none");
-   			document.getElementById('question'+random).style.display = "none";
-   			document.getElementById("input1_"+random).value = '';
-	   		document.getElementById("input2_"+random).value = '';
-			window.random = Math.floor((Math.random()*n)+plusN);
-			console.log(random);
-			document.getElementById("question"+random).style.display="block";
-			document.getElementById("input1_"+random).focus();
+			$("#question"+window.random).css("display","none");
+			$("#input1_"+window.random).val("");
+			window.random = Math.floor((Math.random()*window.n)+window.plusN);
+			$("#question"+window.random).css("display","block");
+			$("#input1_"+window.random).focus();
 			$ (".answer").css("display","none");
-		},3500)
+		},3500);
 	}
 }
 
 //check 2 answers
 function check2 () {
 	window.upTo2 = 0;
-	var input1 = document.getElementById("input1_"+window.random).value.toLowerCase();
-	console.log(input1);
-	var input2 = document.getElementById("input2_"+window.random).value.toLowerCase();
-	console.log(input2);
-	var answer1 = document.getElementById("answer1_"+window.random).innerHTML;
-	console.log(answer1);
-	var answer2 = document.getElementById("answer2_"+window.random).innerHTML;
-	console.log(answer2);
+	var input1 = $("#input1_"+window.random).val().toLowerCase();
+	var input2 = $("#input2_"+window.random).val().toLowerCase();
+	var answer1 = $("#answer1_"+window.random).html();
+	var answer2 = $("#answer2_"+window.random).html();
 
 	window.upTo2 = 0;
 	window.questionN++; window.questionN++;
@@ -100,7 +103,7 @@ function check2 () {
 		window.upTo2++;
 	}
 
-	if (upTo2 == 2) {
+	if (window.upTo2 == 2) {
 		$ (".rightEx").css("display","block");
 		window.setTimeout(function(){
 			$ ("*").css("color","#000000");
@@ -109,20 +112,18 @@ function check2 () {
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
 			$ (".wrongEx").css("display","none");
-   			document.getElementById('question'+random).style.display = "none";
-   			document.getElementById("input1_"+random).value = '';
-	   		document.getElementById("input2_"+random).value = '';
-			window.random = Math.floor((Math.random()*n)+plusN);
-			console.log(random);
-			document.getElementById("question"+random).style.display="block";
-			document.getElementById("input1_"+random).focus();
+			$("#question"+window.random).css("display","none");
+			$("#input1_"+window.random).val("");
+			$("#input2_"+window.random).val("");
+			window.random = Math.floor((Math.random()*window.n)+window.plusN);
+			$("#question"+window.random).css("display","block");
+			$("#input1_"+window.random).focus();
 			$ (".answer").css("display","none");
-		},400)
+		},400);
 		
 	}
 	else {
 		window.upTo2 = 0;
-		console.log("XD");
 		$ (".wrongEx").css("display","block");
 		$ (".answer").css("display","block");
 		window.setTimeout(function(){
@@ -132,32 +133,25 @@ function check2 () {
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
 			$ (".wrongEx").css("display","none");
-   			document.getElementById('question'+random).style.display = "none";
-   			document.getElementById("input1_"+random).value = '';
-	   		document.getElementById("input2_"+random).value = '';
-			window.random = Math.floor((Math.random()*n)+plusN);
-			console.log(random);
-			document.getElementById("question"+random).style.display="block";
+			$("#question"+window.random).css("display","none");
+			$("#input1_"+window.random).val("");
+			$("#input2_"+window.random).val("");
+			window.random = Math.floor((Math.random()*window.n)+window.plusN);
+			$("#question"+window.random).css("display","block");
 			$("#input1_"+window.random).focus();
 			$ (".answer").css("display","none");
-		},2500)
+		},2500);
 	}
 }
 
 //Check 3 answers
 function check3 () {
-	var input1 = $ ("#input1_"+window.random).val().toLowerCase();
-	console.log(input1);
-	var input2 = document.getElementById("input2_"+window.random).value.toLowerCase();
-	console.log(input2);
-	var input3 = document.getElementById("input3_"+window.random).value.toLowerCase();
-	console.log(input3);
-	var answer1 = document.getElementById("answer1_"+window.random).innerHTML;
-	console.log(answer1);
-	var answer2 = document.getElementById("answer2_"+window.random).innerHTML;
-	console.log(answer2);
-	var answer3 = document.getElementById("answer3_"+window.random).innerHTML;
-	console.log(answer3);
+	var input1 = $("#input1_"+window.random).val().toLowerCase();
+	var input2 = $("#input2_"+window.random).val().toLowerCase();
+	var input3 = $("#input3_"+window.random).val().toLowerCase();
+	var answer1 = $("#answer1_"+window.random).html();
+	var answer2 = $("#answer2_"+window.random).html();
+	var answer3 = $("#answer3_"+window.random).html();
 
 	window.questionN++;window.questionN++;window.questionN++;
 
@@ -184,21 +178,18 @@ function check3 () {
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
 			$ (".wrongEx").css("display","none");
-   			document.getElementById('question'+random).style.display = "none";
-   			document.getElementById("input1_"+random).value = '';
-	   		document.getElementById("input2_"+random).value = '';
-   			document.getElementById("input3_"+random).value = '';
-			window.random = Math.floor((Math.random()*n)+plusN);
-			console.log(random);
-			document.getElementById("question"+random).style.display="block";
-			document.getElementById("input1_"+random).focus();
+			$("#question"+window.random).css("display","none");
+			$("#input1_"+window.random).val("");
+			$("#input2_"+window.random).val("");
+			$("#input3_"+window.random).val("");
+			window.random = Math.floor((Math.random()*window.n)+window.plusN);
+			$("#question"+window.random).css("display","block");
+			$("#input1_"+window.random).focus();
 			$ (".answer").css("display","none");
-		},400)
-		
+		},400);
 	}
 	else {
 		window.upTo3 = 0;
-		console.log("XD");
 		$ (".wrongEx").css("display","block");
 		$ (".answer").css("display","block");
 		window.setTimeout(function(){
@@ -208,15 +199,14 @@ function check3 () {
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
 			$ (".wrongEx").css("display","none");
-   			document.getElementById('question'+random).style.display = "none";
-   			document.getElementById("input1_"+random).value = '';
-	   		document.getElementById("input2_"+random).value = '';
-   			document.getElementById("input3_"+random).value = '';
-			window.random = Math.floor((Math.random()*n)+plusN);
-			console.log(random);
-			document.getElementById("question"+random).style.display="block";
-			document.getElementById("input1_"+random).focus();
+			$("#question"+window.random).css("display","none");
+			$("#input1_"+window.random).val("");
+			$("#input2_"+window.random).val("");
+			$("#input3_"+window.random).val("");
+			window.random = Math.floor((Math.random()*window.n)+window.plusN);
+			$("#question"+window.random).css("display","block");
+			$("#input1_"+window.random).focus();
 			$ (".answer").css("display","none");
-		},3500)
+		},3500);
 	}
 }

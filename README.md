@@ -10,6 +10,6 @@ Stammformen der Lektionen 1-17
 Vokabeln der Lektionen:
 17
 
-Konjugationen Präsens Aktiv und Passiv
+Konjugationen Präsens: Aktiv und Passiv, Perfekt: Aktiv
 
 Dies ist ein kleines Hobbyprojekt, um das lernen mit dem/für das Actio Lateinbuch einfacher zu machen!

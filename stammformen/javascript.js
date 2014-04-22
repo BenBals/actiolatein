@@ -19,7 +19,7 @@ function showLekSelect () {
 }
 
 function lekAlle () {go();}
-function lek1 (){window.n = 63;window.plusN = 1; go(); console.log("rofl");}
+function lek1 (){window.n = 63;window.plusN = 1; go();}
 function lek3 (){window.n = 34;window.plusN = 63; go();}
 function lek4 (){window.n = 18;window.plusN = 97; go();}
 function lek5 (){window.n = 12;window.plusN = 116; go();}
@@ -83,7 +83,6 @@ function checkForCookies () {
 		getCookies ();
 		document.cookie = 'high1=0;expires='+window.now.toGMTString()+';path=/';
 		getCookies ();
-		window.location.reload();
 	}
 	if (cookieObj.hasOwnProperty("longestStreak")) {
 		
@@ -92,7 +91,6 @@ function checkForCookies () {
 		getCookies ();
 		document.cookie = 'longestStreak=0;expires='+window.now.toGMTString()+';path=/';
 		getCookies ();
-		window.location.reload();
 	}
 	if (cookieObj.hasOwnProperty("totalGames")) {
 		
@@ -101,7 +99,6 @@ function checkForCookies () {
 		getCookies ();
 		document.cookie = 'totalGames=0;expires='+window.now.toGMTString()+';path=/';
 		getCookies ();
-		window.location.reload();
 	}
 	if (cookieObj.hasOwnProperty("totalQuestions")) {
 		
@@ -110,7 +107,6 @@ function checkForCookies () {
 		getCookies ();
 		document.cookie = 'totalQuestions=0;expires='+window.now.toGMTString()+';path=/';
 		getCookies ();
-		window.location.reload();
 	}
 	if (cookieObj.hasOwnProperty("totalRight")) {
 		
@@ -119,7 +115,6 @@ function checkForCookies () {
 		getCookies ();
 		document.cookie = 'totalRight=0;expires='+window.now.toGMTString()+';path=/';
 		getCookies ();
-		window.location.reload();
 	}
 }
 
@@ -158,6 +153,7 @@ function showStats () {
 	$("#highscore").html(window.high1);
 	$("#longestStreak").html(window.longestStreak);
 	$("#totalGames").html(window.totalGames);
+	$("#totalQuestions").html(window.totalQuestions);
 	$("#stats").css("display","block");
 	$("#question"+window.random).css("display","none");
 }
@@ -171,8 +167,8 @@ function go () {
 	document.getElementById('question0').style.display = "none";
 	window.random = Math.floor((Math.random()*window.n)+window.plusN);
 	console.log("Frage: "+window.random);
-	document.getElementById('navben').style.display="block";
-	document.getElementById("question"+random).style.display="block";
+	$("#navben").css("display","block");
+	$("#question"+window.random).css("display","block");
 	$ (".rightEx").css("color","#69BB9C");
 	$ (".wrongEx").css("color","#e74c3c");
 	checkForCookies();
@@ -183,13 +179,13 @@ function go () {
 }
 //When Check-Button ist pressed.
 function checkAnswer () {
-	questionN++;
+	window.questionN++;
 	getCookies ();
-	var input = document.getElementById("input"+random).value.toLowerCase();
-	var answer = document.getElementById("answer"+random).innerHTML;
+	var input = $("#input"+window.random).val().toLowerCase();
+	var answer = $("#answer"+window.random).html();
 	if (input == answer) {
 		if (showRight == 400) {
-			$('.rightEx', $('#question'+random)).css("display","block");
+			$('.rightEx', $('#question'+window.random)).css("display","block");
 			window.score++;
 			window.currentStreak++;
 			checkIfHigherScore ();
@@ -206,12 +202,12 @@ function checkAnswer () {
 				$ (".wrongEx").css("color","#e74c3c");
 				$ (".rightEx").css("display","none");
 				$ (".wrongEx").css("display","none");
-   				document.getElementById('question'+random).style.display = "none";
-   				document.getElementById("input"+random).value = '';
-				window.random = Math.floor((Math.random()*n)+plusN);
+				$('#question'+window.random).css("display","none");
+				$("input"+window.random).val("");
+				window.random = Math.floor((Math.random()*window.n)+window.plusN);
 				console.log("Frage: "+window.random);
-				document.getElementById("question"+random).style.display="block";
-				document.getElementById("input"+random).focus();
+				$("#question"+window.random).css("display","block");
+				$("#input"+window.random).focus();
 				$ (".answer").css("display","none");
 				}
 			,window.showRight);
@@ -232,12 +228,12 @@ function checkAnswer () {
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
 			$ (".wrongEx").css("display","none");
-   			document.getElementById('question'+random).style.display = "none";
-   			document.getElementById("input"+random).value = '';
-			window.random = Math.floor((Math.random()*n)+plusN);
+			$('#question'+window.random).css("display","none");
+			$("input"+window.random).val("");
+			window.random = Math.floor((Math.random()*window.n)+window.plusN);
 			console.log("Frage: "+window.random);
-			document.getElementById("question"+random).style.display="block";
-			document.getElementById("input"+random).focus();
+			$("#question"+window.random).css("display","block");
+			$("#input"+window.random).focus();
 			$ (".answer").css("display","none");
 		}
 	}
@@ -248,22 +244,22 @@ function checkAnswer () {
 		$('.wrongEx', $('#question'+window.random)).css("display","block");
 		document.getElementById('answer'+window.random).style.color = "#69BB9C";
 		setTimeout(function(){
-    		$ ("*").css("color","#000000");
-    		$ (".btn").css("color","#FFF");
-    		$ (".fa-cog").css("color","white");
-    		$ (".fa-tachometer").css("color","#FFF");
+			$ ("*").css("color","#000000");
+			$ (".btn").css("color","#FFF");
+			$ (".fa-cog").css("color","white");
+			$ (".fa-tachometer").css("color","#FFF");
 			$ (".fa-home").css("color","#fff");
-    		$ (".fa-bar-chart-o").css("color","white");
-    		$ (".rightEx").css("color","#69BB9C");
+			$ (".fa-bar-chart-o").css("color","white");
+			$ (".rightEx").css("color","#69BB9C");
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
 			$ (".wrongEx").css("display","none");
-   			document.getElementById('question'+window.random).style.display = "none";
-   			document.getElementById("input"+window.random).value = '';
+			$('#question'+window.random).css("display","none");
+			$("input"+window.random).val("");
 			window.random = Math.floor((Math.random()*window.n)+window.plusN);
 			console.log("Frage: "+window.random);
-			document.getElementById("question"+window.random).style.display="block";
-			document.getElementById("input"+window.random).focus();
+			$("#question"+window.random).css("display","block");
+			$("#input"+window.random).focus();
 			$ (".answer").css("display","none");
 			}
 		,window.showSolution);
@@ -287,6 +283,7 @@ function newG () {
 	window.questionN = 0;
 	window.score = 0;
 	window.random = 0;
+	$("#stats").css("display","none");
 	go();
 }
 

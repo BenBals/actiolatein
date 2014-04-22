@@ -164,7 +164,7 @@ function hideStats () {
 }
 
 function go () {
-	document.getElementById('question0').style.display = "none";
+	$("#question0").css("display","none");
 	window.random = Math.floor((Math.random()*window.n)+window.plusN);
 	console.log("Frage: "+window.random);
 	$("#navben").css("display","block");

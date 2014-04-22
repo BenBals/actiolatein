@@ -203,7 +203,7 @@ function checkAnswer () {
 				$ (".rightEx").css("display","none");
 				$ (".wrongEx").css("display","none");
 				$('#question'+window.random).css("display","none");
-				$("input"+window.random).val("");
+				$("#input"+window.random).val("");
 				window.random = Math.floor((Math.random()*window.n)+window.plusN);
 				console.log("Frage: "+window.random);
 				$("#question"+window.random).css("display","block");
@@ -229,7 +229,7 @@ function checkAnswer () {
 			$ (".rightEx").css("display","none");
 			$ (".wrongEx").css("display","none");
 			$('#question'+window.random).css("display","none");
-			$("input"+window.random).val("");
+			$("#input"+window.random).val("");
 			window.random = Math.floor((Math.random()*window.n)+window.plusN);
 			console.log("Frage: "+window.random);
 			$("#question"+window.random).css("display","block");
@@ -240,9 +240,9 @@ function checkAnswer () {
 	else {
 		window.currentStreak = 0;
 		checkIfHigherScore ();
-		document.getElementById("answer"+window.random).style.display = "block";
+		$("#answer"+window.random).css("display","none");
 		$('.wrongEx', $('#question'+window.random)).css("display","block");
-		document.getElementById('answer'+window.random).style.color = "#69BB9C";
+		$("#answer"+window.random).css("coloe","#69BB9C");
 		setTimeout(function(){
 			$ ("*").css("color","#000000");
 			$ (".btn").css("color","#FFF");
@@ -279,7 +279,7 @@ function points () {
 
 //New Game
 function newG () {
-	document.getElementById('question'+window.random).style.display="none";
+	$("#question"+window.random).css("display","none");
 	window.questionN = 0;
 	window.score = 0;
 	window.random = 0;
@@ -303,7 +303,7 @@ function showSettings () {
 function hideSettings () {
 	$("#settings").css("display","none");
 	$(".fa-cog").removeClass("fa-spin");
-	document.getElementById("question"+window.random).style.display="block";
+	$("#question"+window.random).css("display","none");
 }
 
 //Lösung lange anzeigen

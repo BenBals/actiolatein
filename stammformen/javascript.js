@@ -283,6 +283,7 @@ function newG () {
 	window.questionN = 0;
 	window.score = 0;
 	window.random = 0;
+	$("#stats").css("display","none");
 	go();
 }
 

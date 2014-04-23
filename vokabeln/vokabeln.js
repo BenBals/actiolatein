@@ -73,7 +73,7 @@ function check () {
 	else {
 	
 	if (window.i1 == window.a1 || window.i1 == window.a2 || window.i1 == window.a3) {
-		if (window.i1Avaible == "yes") {window.score++;}
+		//if (window.i1Avaible == "yes") {window.score++;}
 		window.upTo3++;
 		$("#input1").css("border-color","#69BB9C");
 	}
@@ -81,7 +81,7 @@ function check () {
 		$("#input3").css("border-color","#CB4C39");
 	}
 	if (window.i2 == window.a1 || window.i2 == window.a2 || window.i2 == window.a3) {
-		if (window.i2Avaible == "yes") {window.score++;}
+		//if (window.i2Avaible == "yes") {window.score++;}
 		window.upTo3++;
 		$("#input2").css("border-color","#69BB9C");
 	}
@@ -89,7 +89,7 @@ function check () {
 		$("#input3").css("border-color","#CB4C39");
 	}
 	if (window.i3 == window.a1 || window.i3 == window.a2 || window.i3 == window.a3) {
-		if (window.i3Avaible == "yes") {window.score++;}
+		//if (window.i3Avaible == "yes") {window.score++;}
 		window.upTo3++;
 		$("#input3").css("border-color","#69BB9C");
 	}
@@ -97,11 +97,10 @@ function check () {
 		$("#input3").css("border-color","#CB4C39");
 	}
 	
-	if (window.i1Avaible == "yes") {window.questionN++;}
-	if (window.i2Avaible == "yes") {window.questionN++;}
-	if (window.i3Avaible == "yes") {window.questionN++;}
+	window.questionN++;
 	
 	if (window.upTo3 == 3) {
+		window.score++;
 		$(".rightEx").css("display","block");
 		window.setTimeout(function(){
 			newQ();
@@ -125,5 +124,5 @@ function check () {
 
 //ShowPoints
 function points () {
-	alert("Du hast " + window.score + " Punkte von " + window.questionN + " möglichen.");
+	alert("Du hast " + window.score + " Fragen von " + window.questionN + " komplett richtig beantwortet.");
 }

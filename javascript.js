@@ -13,6 +13,9 @@ function dlapp () {
 function home () {
 	window.location.href = "index.html";
 }
+function help () {
+	window.location.href = "help.html";
+}
 
 //DictTable
 $(document).ready(function() {

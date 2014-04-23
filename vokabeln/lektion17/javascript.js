@@ -204,3 +204,8 @@ function check3 () {
 		},3500);
 	}
 }
+
+//ShowPoints
+function points () {
+	alert("Du hast bis jetzt " + window.score + " von " + window.questionN + " Fragen richtig beantwortet.");
+}

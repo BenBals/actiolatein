@@ -7,6 +7,9 @@ function vokabelnGoTo () {
 function konjugationGoTo () {
 	window.location.href = "konjugation/index.html";
 }
+function betaGoTo () {
+	window.location.href = "http://benbals.github.io/actiolatein";
+}
 function dlapp () {
 	window.open('https://s3-eu-west-1.amazonaws.com/stammformenapp/Actiolatein.apk', '_blank');
 }
@@ -15,6 +18,16 @@ function home () {
 }
 function help () {
 	window.location.href = "help.html";
+}
+
+window.ckURL = document.URL;
+window.splitCkURL = window.ckURL.split("?");
+window.woCkURL = window.splitCkURL[0];
+
+
+if (document.URL === "http://benbals.github.io/actiolatein/index.html" || window.woCkURL === "http://mbp.local:5757/") {
+	$(".beta").css("display","none");
+	$(".ansage").css("display","none");
 }
 
 //DictTable

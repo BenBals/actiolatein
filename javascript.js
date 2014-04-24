@@ -25,7 +25,7 @@ window.splitCkURL = window.ckURL.split("?");
 window.woCkURL = window.splitCkURL[0];
 
 
-if (document.URL === "http://benbals.github.io/actiolatein/index.html" || window.woCkURL === "http://mbp.local:5757/") {
+if (document.URL === "http://benbals.github.io/actiolatein/index.html" || document.URL === "http://benbals.github.io/actiolatein/" || window.woCkURL === "http://mbp.local:5757/") {
 	$(".beta").css("display","none");
 	$(".ansage").css("display","none");
 }

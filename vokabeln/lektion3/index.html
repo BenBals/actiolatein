@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<head>
+	<title>Vokabeln Lektion 1 - Actiolatein</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="../../al-logo.png">
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+</head>
+<body>
+	<div id="navben">
+			<button class="btn btn-nav" onclick="home();"><i class="fa fa-home"></i></button>
+			<button onclick="points();" class="btn btn-nav dpn showPoints"><i class="fa fa-tachometer"></i> Punkte Anzeigen</button>
+			<button class="btn btn-nav back" onclick="backVokSelect();"><i class="fa fa-arrow-circle-o-left"></i></button>
+			
+			<br>
+		</div>
+		<div id="go">
+			<h2>Willkommen zum Quiz zu den Vokabeln der Lektion 1!</h2>
+			<button class="btn btn-go btn-mghg" onclick="go(35);">Let´s GO!</button>
+			<p>Du bekommst für jede komplett richtige Antwort einen Punkt. Da die Fragen zufällig ausgesucht werden kann es sein, dass eine Frage mehrmals hintereinander gestellt wird oder das einige Fragen öfter gestellt werden (dies gleicht sich mit der Zeit aus). Das hier ist ein Schülerprojekt es können Fehler auftreten! <a href="mailto:benjustusbals@gmail.com">Fehler melden</a>. Ich übernehme für nichts Gewähr!</p>
+		</div>
+		<div id="questionScreen" class="dpn">
+			<h4 id="questionHere"></h4>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input1"type="text"></form>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input2"type="text"></form>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input3"type="text"></form>
+			<button class="btn btn-primary" onclick="check()">Check</button>
+			<p class="rightEx" style="display:none">Richtig!</p>
+			<p class="wrongEx" style="display:none">Falsch!</p>
+			<p class="dpn answer" id="a1_screen"></p>
+			<p class="dpn answer" id="a2_screen"></p>
+			<p class="dpn answer" id="a3_screen"></p>
+		</div>
+		
+		<div id="data" class="dpn">
+			<p id="q1">soror</p>
+			<p id="a1_1">Schwester</p>
+			<p id="a2_1"></p>
+			<p id="a3_1"></p>
+
+
+			<p id="q2">iam</p>
+			<p id="a1_2">schon</p>
+			<p id="a2_2">bald</p>
+			<p id="a3_2"></p>
+
+			<p id="q3">ad</p>
+			<p id="a1_3">nach</p>
+			<p id="a2_3">zu</p>
+			<p id="a3_3">bei</p>
+
+			<p id="q4">properare</p>
+			<p id="a1_4">eilen</p>
+			<p id="a2_4">sich beeilen</p>
+			<p id="a3_4"></p>
+
+			<p id="q5">tandem</p>
+			<p id="a1_5">endlich</p>
+			<p id="a2_5">schließlich</p>
+			<p id="a3_5"></p>
+
+			<p id="q6">monere</p>
+			<p id="a1_6">erinnern</p>
+			<p id="a2_6">ermahnen</p>
+			<p id="a3_6">warnen</p>
+
+			<p id="q7">adesse</p>
+			<p id="a1_7">da sein</p>
+			<p id="a2_7">helfen</p>
+			<p id="a3_7"></p>
+
+			<p id="q8">in</p>
+			<p id="a1_8">in</p>
+			<p id="a2_8"></p>
+			<p id="a3_8"></p>
+
+			<p id="q9">dicere</p>
+			<p id="a1_9">sagen</p>
+			<p id="a2_9">sprechen</p>
+			<p id="a3_9"></p>
+
+			<p id="q10">salve</p>
+			<p id="a1_10">Sei gegrüßt</p>
+			<p id="a2_10">Guten Tag</p>
+			<p id="a3_10"></p>
+
+			<p id="q11">salvete</p>
+			<p id="a1_11">Seid gegrüßt</p>
+			<p id="a2_11">Guten Tag</p>
+			<p id="a3_11"></p>
+
+			<p id="q12">tabula</p>
+			<p id="a1_12">Tafel</p>
+			<p id="a2_12">Schreibtafel</p>
+			<p id="a3_12">Gemälde</p>
+
+			<p id="q13">puer</p>
+			<p id="a1_13">Junge</p>
+			<p id="a2_13"></p>
+			<p id="a3_13"></p>
+
+			<p id="q14">monstrare</p>
+			<p id="a1_14">zeigen</p>
+			<p id="a2_14"></p>
+			<p id="a3_14"></p>
+
+			<p id="q15">autem</p>
+			<p id="a1_15">aber</p>
+			<p id="a2_15">jedoch</p>
+			<p id="a3_15"></p>
+
+			<p id="q16">semper</p>
+			<p id="a1_16">immer</p>
+			<p id="a2_16"></p>
+			<p id="a3_16"></p>
+
+			<p id="q17">incipere</p>
+			<p id="a1_17">anfangen</p>
+			<p id="a2_17"></p>
+			<p id="a3_17"></p>
+
+			<p id="q18">discipilus</p>
+			<p id="a1_18">Schüler</p>
+			<p id="a2_18"></p>
+			<p id="a3_18"></p>
+
+			<p id="q19">salutare</p>
+			<p id="a1_19">grüßen</p>
+			<p id="a2_19">begrüßen</p>
+			<p id="a3_19"></p>
+
+			<p id="q20">magister</p>
+			<p id="a1_20">Lehrer</p>
+			<p id="a2_20"></p>
+			<p id="a3_20"></p>
+
+			<p id="q21">considere</p>
+			<p id="a1_21">sich hinsetzen</p>
+			<p id="a2_21"></p>
+			<p id="a3_21"></p>
+
+			<p id="q22">irridere</p>
+			<p id="a1_22">auslachen</p>
+			<p id="a2_22">verspotten</p>
+			<p id="a3_22"></p>
+
+			<p id="q23">legere</p>
+			<p id="a1_23">lesen</p>
+			<p id="a2_23"></p>
+			<p id="a3_23"></p>
+
+			<p id="q24">liber</p>
+			<p id="a1_24">Buch</p>
+			<p id="a2_24"></p>
+			<p id="a3_24"></p>
+
+			<p id="q25">dormire</p>
+			<p id="a1_25">schlafen</p>
+			<p id="a2_25"></p>
+			<p id="a3_25"></p>
+
+			<p id="q26">ceteri</p>
+			<p id="a1_26">die übrigen</p>
+			<p id="a2_26"></p>
+			<p id="a3_26"></p>
+
+			<p id="q27">laudare</p>
+			<p id="a1_27">loben</p>
+			<p id="a2_27"></p>
+			<p id="a3_27"></p>
+
+			<p id="q28">bene</p>
+			<p id="a1_28">gut</p>
+			<p id="a2_28"></p>
+			<p id="a3_28"></p>
+
+			<p id="q29">postea</p>
+			<p id="a1_29">danach</p>
+			<p id="a2_29">später</p>
+			<p id="a3_29"></p>
+
+			<p id="q30">capere</p>
+			<p id="a1_30">fassen</p>
+			<p id="a2_30">nehmen</p>
+			<p id="a3_30">fangen</p>
+
+			<p id="q31">scribere</p>
+			<p id="a1_31">schreiben</p>
+			<p id="a2_31"></p>
+			<p id="a3_31"></p>
+
+			<p id="q32">labor</p>
+			<p id="a1_32">Arbeit</p>
+			<p id="a2_32">Strapaze</p>
+			<p id="a3_32"></p>
+
+			<p id="q33">nam</p>
+			<p id="a1_33">denn</p>
+			<p id="a2_33">nämlich</p>
+			<p id="a3_33"></p>
+
+			<p id="q34">timere</p>
+			<p id="a1_34">fürchten</p>
+			<p id="a2_34">Angst haben vor</p>
+			<p id="a3_34"></p>
+
+			<p id="q35">etiam</p>
+			<p id="a1_35">auch</p>
+			<p id="a2_35">sogar</p>
+			<p id="a3_35"></p>
+		</div>
+		
+		<script src="../../main.js"></script>
+		<script src="../min/vokabeln-ck.js"></script>
+	</div>
+</body>

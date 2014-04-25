@@ -4,6 +4,9 @@ function goTo1 () {
 function goTo2 () {
 	window.location.href = "lektion2/index.html";
 }
+function goTo3 () {
+	window.location.href = "lektion3/index.html";
+}
 function goTo17 () {
 	window.location.href = "lektion17/index.html";
 }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+	<title>Deklinationsübungen - Actiolatein.tk</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="../al-logo.png">
+	<link rel="stylesheet" type="text/css" href="../style.css"></head>
+</head>
+<body>
+	<div id="question0">
+		<h2>Übungen zur Deklination</h2>
+		<p>Hier kannst du die Deklination trainieren! Wie immer: ich überneheme für nichts Gewähr! Für Fehler: <a href="mailto:benjustusbals@gmail.com">Email senden</a>.</p>
+		<button class="btn btn-primary" onclick="showQs(1);";>o-Deklination</button>
+	</div>
+	
+	<div id="questionScreen" class="dpn">
+		<h3 id="questionHere"></h3>
+		
+		<h4 class="allRight ex" id="1">Alles Richtig!</h4>
+		<h4 class="notAllRight ex">Leider nicht alles richtig</h4>
+		<h4 class="nothingRight ex">Nichts richtig!</h4>
+		
+		<p>Nominativ Singular:</p>
+		<p class="answerDek" id="answerNomSg"></p>
+		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputNomSg"type="text"></form><br>
+		
+		<p>Genitiv Singular:</p>
+		<p class="answerDek" id="answerGenSg"></p>
+		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputGenSg"type="text"></form><br>
+		
+		<p>Dativ Singular:</p>
+		<p class="answerDek" id="answerDatSg"></p>
+		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputDatSg"type="text"></form><br>
+		
+		<p>Akkusativ Singular:</p>
+		<p class="answerDek" id="answerAkkSg"></p>
+		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputAkkSg"type="text"></form><br>
+		
+		<p>Ablativ Singular</p>
+		<p class="answerDek" id="answerAblSg"></p>
+		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputAblSg"type="text"></form><br>
+		
+		<p>Vokativ Singular</p>
+		<p class="answerDek" id="answerVokSg"></p>
+		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputVokSg"type="text"></form><br>
+		
+		<p>Nominativ Plural</p>
+		<p class="answerDek" id="answerNomPl"></p>
+		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputNomPl"type="text"></form><br>
+		
+		<p>Genitiv Plural:</p>
+		<p class="answerDek" id="answerGenPl"></p>
+		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputGenPl"type="text"></form><br>
+		
+		<p>Dativ Plural:</p>
+		<p class="answerDek" id="answerDatPl"></p>
+		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputDatPl"type="text"></form><br>
+		
+		<p>Akkusativ Plural:</p>
+		<p class="answerDek" id="answerAkkPl"></p>
+		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputAkkPl"type="text"></form><br>
+		
+		<p>Ablativ Plural:</p>
+		<p class="answerDek" id="answerAblPl"></p>
+		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputAblPl"type="text"></form><br>
+		
+		<p>Vokativ Plural:</p>
+		<p class="answerDek" id="answerVokPl"></p>
+		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputVokPl"type="text"></form><br>
+		
+		<button class="btn btn-primary" onclick="checkDek">Check</button>
+		
+	</div>
+
+	<div id="data" class="dpn">
+		<p id="q_o">servus</p>
+		<p id="nom_sg_o">servus</p>
+		<p id="gen_sg_o">servi</p>
+		<p id="dat_sg_o">servo</p>
+		<p id="akk_sg_o">servum</p>
+		<p id="abl_sg_o">servo</p>
+		<p id="vok_sg_o">serve</p>
+		<p id="nom_pl_o">servi</p>
+		<p id="gen_pl_o">servorum</p>
+		<p id="dat_pl_o">servis</p>
+		<p id="akk_pl_o">servos</p>
+		<p id="abl_pl_o">servis</p>
+		<p id="vok_pl_o">servi</p>
+
+	</div>
+	
+	<script src="../main.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+</body>

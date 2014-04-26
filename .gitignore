@@ -2,3 +2,5 @@ config.codekit
 index.yaml
 app.yaml
 main.py
+actiolatein.sublime-project
+actiolatein.sublime-workspace

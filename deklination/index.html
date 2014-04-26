@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="../style.css"></head>
 </head>
 <body>
+	<button class="btn btn-nav" onclick="homeKonj();"><i class="fa fa-home"></i></button>
+	<button class="btn btn-nav back dpn" onclick="back();"><i class="fa fa-arrow-circle-o-left"></i></button>
 	<div id="question0">
 		<h2>Übungen zur Deklination</h2>
 		<p>Hier kannst du die Deklination trainieren! Wie immer: ich überneheme für nichts Gewähr! Für Fehler: <a href="mailto:benjustusbals@gmail.com">Email senden</a>.</p>
@@ -68,7 +70,7 @@
 		<p class="answerDek" id="answerVokPl"></p>
 		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputVokPl"type="text"></form><br>
 		
-		<button class="btn btn-primary" onclick="checkDek">Check</button>
+		<button class="btn btn-primary" onclick="checkDek();">Check</button>
 		
 	</div>
 
@@ -87,8 +89,22 @@
 		<p id="abl_pl_o">servis</p>
 		<p id="vok_pl_o">servi</p>
 
+		<p id="q_a">serva</p>
+		<p id="nom_sg_a">serva</p>
+		<p id="gen_sg_a">servae</p>
+		<p id="dat_sg_a">servae</p>
+		<p id="akk_sg_a">servam</p>
+		<p id="abl_sg_a">serva</p>
+		<p id="vok_sg_a">serva</p>
+		<p id="nom_pl_a">servae</p>
+		<p id="gen_pl_a">servarum</p>
+		<p id="dat_pl_a">servis</p>
+		<p id="akk_pl_a">servas</p>
+		<p id="abl_pl_a">servis</p>
+		<p id="vok_pl_a">servae</p>
+
 	</div>
 	
 	<script src="../main.js"></script>
-	<script type="text/javascript" src="javascript.js"></script>
+	<script type="text/javascript" src="min/javascript-ck.js"></script>
 </body>

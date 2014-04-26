@@ -6,6 +6,7 @@ window.upTo12 = 0;
 function showQs (klasseZahl) {
 
 	if (klasseZahl === 1) {window.klasse = "o";}
+	if (klasseZahl === 2) {window.klasse = "a";}
 
 	$("#question0").css("display","none");
 	$("#questionScreen").css("display","block");
@@ -63,5 +64,14 @@ function checkDek () {
 			$("#answer"+window.allClassesUp[i]+"Pl").css("display","inline");
 		}
 	}
-
+	$(".ex").css("display","none");
+	if (window.upTo12 == 12) {
+		$(".allRight").css("display","block");
+	}
+	else {
+		if (window.upTo12>0) {$(".notAllRight").css("display","block");}
+		else {$(".nothingRight").css("display","block");}
+	}
+	window.location.hash = "#top";
+	window.upTo12 = 0;
 }

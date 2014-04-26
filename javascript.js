@@ -19,6 +19,9 @@ function home () {
 function help () {
 	window.location.href = "help.html";
 }
+function deklinationGoTo () {
+	window.location.href = "deklination/index.html";
+}
 
 window.ckURL = document.URL;
 window.splitCkURL = window.ckURL.split("?");

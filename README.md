@@ -8,8 +8,14 @@ Mit der Website kannst du folgendes lernen:
 Stammformen der Lektionen 1-17
 
 Vokabeln der Lektionen:
-17
+1,
+2,
+3,
+17,
+18
 
-Konjugationen Präsens: Aktiv und Passiv, Perfekt: Aktiv
+Deklinationen der Klassen a und o
+
+Konjugation aller Zeitformen außer Futur I und II
 
 Dies ist ein kleines Hobbyprojekt, um das lernen mit dem/für das Actio Lateinbuch einfacher zu machen!

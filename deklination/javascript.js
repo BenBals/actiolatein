@@ -34,7 +34,10 @@ function showQs (klasseZahl) {
 function back () {
 	$("#question0").css("display","block");
 	$("#questionScreen").css("display","none");
+	$(".back").css("display","none");
 }
+
+function home () {window.location.href  = "../";}
 
 function checkDek () {
 	//Declareing the input vars from fields

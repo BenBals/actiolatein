@@ -370,7 +370,7 @@ function konsKonjiPerPa () {
 }
 
 function homeKonj () {
-	window.location.href = "../index.html";
+	window.location.href = "../";
 }
 
 function backKonjSelect () {

@@ -289,7 +289,7 @@ function newG () {
 
 //home
 function home () {
-	window.location.href = "../index.html";
+	window.location.href = "../";
 }
 
 //getCookiesSettings

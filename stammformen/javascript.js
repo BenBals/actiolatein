@@ -18,6 +18,16 @@ function showLekSelect () {
 	$("#dropdown").css("display","block");
 }
 
+function back () {
+	$("#question"+window.random).css("display","none");
+	window.questionN = 0;
+	window.score = 0;
+	window.random = 0;
+	$("#stats").css("display","none");
+	$("#navben").css("display","none");
+	$("#question0").css("display","block");
+}
+
 function lekAlle () {go();}
 function lek1 (){window.n = 63;window.plusN = 1; go();}
 function lek3 (){window.n = 34;window.plusN = 63; go();}

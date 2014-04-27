@@ -34,6 +34,15 @@ function showQs (klasseZahl) {
 	for (var i = 0; i<6; i++) {
 		$("#answer"+window.allClassesUp[i]+"Pl").html(window[window.allClasses[i]+"PlA"]);
 	}
+
+	if (window.vokSgA === "") {
+		$("#answerVokSg").css("display","none");
+		$("#inputVokSg").css("display","none");
+		$("#vokSgQ").css("display","none");
+		$("#answerVokPl").css("display","none");
+		$("#inputVokPl").css("display","none");
+		$("#vokSgQPl").css("display","none");
+	}
 }
 
 function back () {
@@ -45,6 +54,7 @@ function back () {
 function home () {window.location.href  = "../";}
 
 function checkDek () {
+	if (window.vokSgA === "") {window.upTo12 = 2;}
 	//Declareing the input vars from fields
 	for (var i = 0; i<6; i++) {
 		window[window.allClasses[i]+"SgI"] = $("#input"+window.allClassesUp[i]+"Sg").val().toLowerCase();

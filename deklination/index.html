@@ -13,13 +13,14 @@
 	<div id="question0">
 		<h2>Übungen zur Deklination</h2>
 		<p>Hier kannst du die Deklination trainieren! Wie immer: ich überneheme für nichts Gewähr! Für Fehler: <a href="mailto:benjustusbals@gmail.com">Email senden</a>.</p>
-		<button class="btn btn-primary" onclick="showQs(1);";>o-Deklination</button> <br>
-		<button class="btn btn-primary" onclick="showQs(2);";>a-Deklination</button> <br>
-		<button class="btn btn-primary" onclick="showQs(3);">konsonatische Deklination</button> <br>
-		<button class="btn btn-primary" onclick="showQs(4);">gemischte Deklination</button> <br>
-		<button class="btn btn-primary" onclick="showQs(5);";>u-Deklination</button> <br>
-		<button class="btn btn-primary" onclick="showQs(6);";>e-Deklination</button> <br>
-		<button class="btn btn-primary" onclick="showQs(7);";>e-Deklination</button>
+		<h4>Substantive</h4>
+		<button class="btn btn-primary" onclick="showQs(1);";>o-Deklination</button>
+		<button class="btn btn-primary" onclick="showQs(2);";>a-Deklination</button>
+		<button class="btn btn-primary" onclick="showQs(3);">konsonatische Deklination</button>
+		<button class="btn btn-primary" onclick="showQs(4);">gemischte Deklination</button>
+		<button class="btn btn-primary" onclick="showQs(5);";>u-Deklination</button>
+		<button class="btn btn-primary" onclick="showQs(6);";>e-Deklination</button>
+		<button class="btn btn-primary" onclick="showQs(7);";>i-Deklination</button>
 	</div>
 	
 	<div id="questionScreen" class="dpn">
@@ -49,7 +50,7 @@
 		<p class="answerDek" id="answerAblSg"></p>
 		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputAblSg"type="text"></form><br>
 		
-		<p>Vokativ Singular</p>
+		<p id="vokSgQ">Vokativ Singular</p>
 		<p class="answerDek" id="answerVokSg"></p>
 		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputVokSg"type="text"></form><br>
 		
@@ -73,7 +74,7 @@
 		<p class="answerDek" id="answerAblPl"></p>
 		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputAblPl"type="text"></form><br>
 		
-		<p>Vokativ Plural:</p>
+		<p id="vokPlQ">Vokativ Plural:</p>
 		<p class="answerDek" id="answerVokPl"></p>
 		<form action="javascript:CheckDek();"><input class="form-control input-sm" id="inputVokPl"type="text"></form><br>
 		
@@ -82,6 +83,7 @@
 	</div>
 
 	<div id="data" class="dpn">
+		<!--Substanitive: no prefix-->	
 		<p id="q_o">servus</p>
 		<p id="nom_sg_o">servus</p>
 		<p id="gen_sg_o">servi</p>
@@ -158,13 +160,13 @@
 		<p id="dat_sg_e">rei</p>
 		<p id="akk_sg_e">rem</p>
 		<p id="abl_sg_e">re</p>
-		<p id="vok_sg_e">n/a</p>
+		<p id="vok_sg_e"></p>
 		<p id="nom_pl_e">res</p>
 		<p id="gen_pl_e">rerum</p>
 		<p id="dat_pl_e">rebus</p>
 		<p id="akk_pl_e">res</p>
 		<p id="abl_pl_e">rebus</p>
-		<p id="vok_pl_e">n/a</p>
+		<p id="vok_pl_e"></p>
 
 		<p id="q_i">turris</p>
 		<p id="nom_sg_i">turris</p>
@@ -172,13 +174,13 @@
 		<p id="dat_sg_i">turri</p>
 		<p id="akk_sg_i">turrim</p>
 		<p id="abl_sg_i">turri</p>
-		<p id="vok_sg_i">n/a</p>
+		<p id="vok_sg_i"></p>
 		<p id="nom_pl_i">turres</p>
 		<p id="gen_pl_i">turrium</p>
 		<p id="dat_pl_i">turribus</p>
 		<p id="akk_pl_i">turris</p>
 		<p id="abl_pl_i">turribus</p>
-		<p id="vok_pl_i">n/a</p>
+		<p id="vok_pl_i"></p>
 
 	</div>
 	

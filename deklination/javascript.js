@@ -7,6 +7,11 @@ function showQs (klasseZahl) {
 
 	if (klasseZahl === 1) {window.klasse = "o";}
 	if (klasseZahl === 2) {window.klasse = "a";}
+	if (klasseZahl === 3) {window.klasse = "k";}
+	if (klasseZahl === 4) {window.klasse = "g";}
+	if (klasseZahl === 5) {window.klasse = "u";}
+	if (klasseZahl === 6) {window.klasse = "e";}
+	if (klasseZahl === 7) {window.klasse = "i";}
 
 	$("#question0").css("display","none");
 	$("#questionScreen").css("display","block");

@@ -5,6 +5,8 @@ window.upTo12 = 0;
 
 function showQs (klasseZahl) {
 
+	console.log(klasseZahl);
+
 	if (klasseZahl === 1) {window.klasse = "o";}
 	if (klasseZahl === 2) {window.klasse = "a";}
 	if (klasseZahl === 3) {window.klasse = "k";}
@@ -12,6 +14,14 @@ function showQs (klasseZahl) {
 	if (klasseZahl === 5) {window.klasse = "u";}
 	if (klasseZahl === 6) {window.klasse = "e";}
 	if (klasseZahl === 7) {window.klasse = "i";}
+	if (klasseZahl === 8) {window.klasse = "p_p_1";}
+	if (klasseZahl === 9) {window.klasse = "p_p_2";}
+	if (klasseZahl === 10) {window.klasse = "p_p_3_r";}
+	if (klasseZahl === 11) {window.klasse = "p_p_3_nr_m";}
+	if (klasseZahl === 12) {window.klasse = "p_p_3_nr_f";}
+	if (klasseZahl === 13) {window.klasse = "p_p_3_nr_n";}
+
+	console.log(window.klasse);
 
 	$("#question0").css("display","none");
 	$("#questionScreen").css("display","block");
@@ -41,7 +51,7 @@ function showQs (klasseZahl) {
 		$("#vokSgQ").css("display","none");
 		$("#answerVokPl").css("display","none");
 		$("#inputVokPl").css("display","none");
-		$("#vokSgQPl").css("display","none");
+		$("#vokPlQ").css("display","none");
 	}
 }
 

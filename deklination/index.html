@@ -12,8 +12,8 @@
 	<button class="btn btn-nav back dpn" onclick="back();"><i class="fa fa-arrow-circle-o-left"></i></button>
 	<div id="question0">
 		<h2>Übungen zur Deklination</h2>
-		<p>Hier kannst du die Deklination trainieren! Wie immer: ich überneheme für nichts Gewähr! Für Fehler: <a href="mailto:benjustusbals@gmail.com">Email senden</a>.</p>
-		<h4>Substantive</h4>
+		<p>Hier kannst du die Deklination trainieren! Wenn es eine Form nicht gibt einfach einen "-" eingeben. Wenn es mehrere Antworten gibt, dann müssen die duch einen Schrägstrich getrennt eingegeben werden. Bsp: a me/mecum. Die Reinfolge entspricht der im Buch. Wie immer: ich überneheme für nichts Gewähr! Für Fehler: <a href="mailto:benjustusbals@gmail.com">Email senden</a>.</p>
+		<h4 class="h4">Substantive</h3>
 		<button class="btn btn-primary" onclick="showQs(1);";>o-Deklination</button>
 		<button class="btn btn-primary" onclick="showQs(2);";>a-Deklination</button>
 		<button class="btn btn-primary" onclick="showQs(3);">konsonatische Deklination</button>
@@ -21,6 +21,15 @@
 		<button class="btn btn-primary" onclick="showQs(5);";>u-Deklination</button>
 		<button class="btn btn-primary" onclick="showQs(6);";>e-Deklination</button>
 		<button class="btn btn-primary" onclick="showQs(7);";>i-Deklination</button>
+		<h4 class="h4">Pronomina</h4>
+		<h5 class="h5">Personalpronomina</h5>
+		<button class="btn btn-primary" onclick="showQs(8);";>1. Person</button>
+		<button class="btn btn-primary" onclick="showQs(9);";>2. Person</button>
+		<button class="btn btn-primary" onclick="showQs(10);";>3. Person (reflexiv)</button>
+		<button class="btn btn-primary" onclick="showQs(11);";>3. Person (nicht-reflexiv/maskulin)</button>
+		<button class="btn btn-primary" onclick="showQs(12);";>3. Person (nicht-reflexiv/feminin)</button>
+		<button class="btn btn-primary" onclick="showQs(13);";>3. Person (nicht-reflexiv/neutrum)</button>
+
 	</div>
 	
 	<div id="questionScreen" class="dpn">
@@ -182,6 +191,99 @@
 		<p id="abl_pl_i">turribus</p>
 		<p id="vok_pl_i"></p>
 
+		<!--Pronomina prefix: p-->
+
+		<!--Personalpronomina prefix: p-->
+
+		<!--1. Person identifier: 1-->
+		<p id="q_p_p_1">Personalpronomina 1. Person</p>
+		<p id="nom_sg_p_p_1">ego</p>
+		<p id="gen_sg_p_p_1">mei</p>
+		<p id="dat_sg_p_p_1">mihi</p>
+		<p id="akk_sg_p_p_1">me</p>
+		<p id="abl_sg_p_p_1">a me/mecum</p>
+		<p id="vok_sg_p_p_1"></p>
+		<p id="nom_pl_p_p_1">nostrum</p>
+		<p id="gen_pl_p_p_1">nostri/nostrum</p>
+		<p id="dat_pl_p_p_1">nobis</p>
+		<p id="akk_pl_p_p_1">nos</p>
+		<p id="abl_pl_p_p_1">a nobis/nobiscum</p>
+		<p id="vok_pl_p_p_1"></p>
+		<!--2. Person identifier: 2-->
+		<p id="q_p_p_2">Personalpronomina 2. Person</p>
+		<p id="nom_sg_p_p_2">tu</p>
+		<p id="gen_sg_p_p_2">tui</p>
+		<p id="dat_sg_p_p_2">tibi</p>
+		<p id="akk_sg_p_p_2">te</p>
+		<p id="abl_sg_p_p_2">a te/tecum</p>
+		<p id="vok_sg_p_p_2"></p>
+		<p id="nom_pl_p_p_2">vos</p>
+		<p id="gen_pl_p_p_2">vestri/vestrum</p>
+		<p id="dat_pl_p_p_2">vobis</p>
+		<p id="akk_pl_p_p_2">vos</p>
+		<p id="abl_pl_p_p_2">a vobis/vobiscum</p>
+		<p id="vok_pl_p_p_2"></p>
+		<!--3.Person indentifier: 3-->
+		<!--reflexiv indentifier: r-->
+		<p id="q_p_p_3_r">3. Person reflexiv</p>
+		<p id="nom_sg_p_p_3_r">-</p>
+		<p id="gen_sg_p_p_3_r">sui</p>
+		<p id="dat_sg_p_p_3_r">sibi</p>
+		<p id="akk_sg_p_p_3_r">se</p>
+		<p id="abl_sg_p_p_3_r">a se/secum</p>
+		<p id="vok_sg_p_p_3_r"></p>
+		<p id="nom_pl_p_p_3_r">-</p>
+		<p id="gen_pl_p_p_3_r">sui</p>
+		<p id="dat_pl_p_p_3_r">sibi</p>
+		<p id="akk_pl_p_p_3_r">se</p>
+		<p id="abl_pl_p_p_3_r">a se/secum</p>
+		<p id="vok_pl_p_p_3_r"></p>
+		<!--nichtreflexiv indentifier: nr-->
+		<!--maskulin indentifier: m-->
+		<p id="q_p_p_3_nr_m">3. Person reflexiv männlich</p>
+		<p id="nom_sg_p_p_3_nr_m">-</p>
+		<p id="gen_sg_p_p_3_nr_m">eius</p>
+		<p id="dat_sg_p_p_3_nr_m">ei</p>
+		<p id="akk_sg_p_p_3_nr_m">eum</p>
+		<p id="abl_sg_p_p_3_nr_m">eo</p>
+		<p id="vok_sg_p_p_3_nr_m"></p>
+		<p id="nom_pl_p_p_3_nr_m">-</p>
+		<p id="gen_pl_p_p_3_nr_m">eorum</p>
+		<p id="dat_pl_p_p_3_nr_m">iis/eis</p>
+		<p id="akk_pl_p_p_3_nr_m">eos</p>
+		<p id="abl_pl_p_p_3_nr_m">iis/eis</p>
+		<p id="vok_pl_p_p_3_nr_m"></p>
+		<!--feminin indentifier: f-->
+		<p id="q_p_p_3_nr_f">3. Person reflexiv weiblich</p>
+		<p id="nom_sg_p_p_3_nr_f">-</p>
+		<p id="gen_sg_p_p_3_nr_f">eius</p>
+		<p id="dat_sg_p_p_3_nr_f">ei</p>
+		<p id="akk_sg_p_p_3_nr_f">eam</p>
+		<p id="abl_sg_p_p_3_nr_f">ea</p>
+		<p id="vok_sg_p_p_3_nr_f"></p>
+		<p id="nom_pl_p_p_3_nr_f">-</p>
+		<p id="gen_pl_p_p_3_nr_f">earum</p>
+		<p id="dat_pl_p_p_3_nr_f">iis/eis</p>
+		<p id="akk_pl_p_p_3_nr_f">eas</p>
+		<p id="abl_pl_p_p_3_nr_f">iis/eis</p>
+		<p id="vok_pl_p_p_3_nr_f"></p>
+		<!--neutrum indentifier: n-->
+		<p id="q_p_p_3_nr_n">3. Person reflexiv neutrum</p>
+		<p id="nom_sg_p_p_3_nr_n">-</p>
+		<p id="gen_sg_p_p_3_nr_n">eius</p>
+		<p id="dat_sg_p_p_3_nr_n">ei</p>
+		<p id="akk_sg_p_p_3_nr_n">id</p>
+		<p id="abl_sg_p_p_3_nr_n">eo</p>
+		<p id="vok_sg_p_p_3_nr_n"></p>
+		<p id="nom_pl_p_p_3_nr_n">-</p>
+		<p id="gen_pl_p_p_3_nr_n">eorum</p>
+		<p id="dat_pl_p_p_3_nr_n">iis/eis</p>
+		<p id="akk_pl_p_p_3_nr_n">ea</p>
+		<p id="abl_pl_p_p_3_nr_n">iis/eis</p>
+		<p id="vok_pl_p_p_3_nr_n"></p>
+
+
+	
 	</div>
 	
 	<script src="../main.js"></script>

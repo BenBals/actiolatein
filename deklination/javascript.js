@@ -100,6 +100,6 @@ function checkDek () {
 		if (window.upTo12>0) {$(".notAllRight").css("display","block");}
 		else {$(".nothingRight").css("display","block");}
 	}
-	window.location.hash = "#top";
+	window.location.hash = "#home";
 	window.upTo12 = 0;
 }

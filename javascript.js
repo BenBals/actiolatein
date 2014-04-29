@@ -35,6 +35,10 @@ if (document.URL === "http://benbals.github.io/actiolatein/index.html" || docume
 	$(".ansage").css("display","none");
 }
 
+$(document).ready(function() {
+        $('#dictTable').dataTable();
+      } );
+
 $(function() {
     FastClick.attach(document.body);
 });

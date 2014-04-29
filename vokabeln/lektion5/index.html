@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<head>
+	<title>Vokabeln Lektion 1 - Actiolatein</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="../../al-logo.png">
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+</head>
+<body>
+	<div id="navben">
+			<button class="btn btn-nav" onclick="home();"><i class="fa fa-home"></i></button>
+			<button onclick="points();" class="btn btn-nav dpn showPoints"><i class="fa fa-tachometer"></i> Punkte Anzeigen</button>
+			<button class="btn btn-nav back" onclick="backVokSelect();"><i class="fa fa-arrow-circle-o-left"></i></button>
+			
+			<br>
+		</div>
+		<div id="go">
+			<h2>Willkommen zum Quiz zu den Vokabeln der Lektion 5!</h2>
+			<button class="btn btn-go btn-mghg" onclick="go(39);">Let´s GO!</button>
+			<p>Du bekommst für jede komplett richtige Antwort einen Punkt. Da die Fragen zufällig ausgesucht werden kann es sein, dass eine Frage mehrmals hintereinander gestellt wird oder das einige Fragen öfter gestellt werden (dies gleicht sich mit der Zeit aus). Das hier ist ein Schülerprojekt es können Fehler auftreten! <a href="mailto:benjustusbals@gmail.com">Fehler melden</a>. Ich übernehme für nichts Gewähr!</p>
+		</div>
+		<div id="questionScreen" class="dpn">
+			<h4 id="questionHere"></h4>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input1"type="text"></form>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input2"type="text"></form>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input3"type="text"></form>
+			<button class="btn btn-primary" onclick="check()">Check</button>
+			<p class="rightEx" style="display:none">Richtig!</p>
+			<p class="wrongEx" style="display:none">Falsch!</p>
+			<p class="dpn answer" id="a1_screen"></p>
+			<p class="dpn answer" id="a2_screen"></p>
+			<p class="dpn answer" id="a3_screen"></p>
+		</div>
+		
+		<div id="data" class="dpn">
+			<p id="q1">dies</p>
+<p id="a1_1">Tag</p>
+<p id="a2_1"></p>
+<p id="a3_1"></p>
+
+<p id="q2">bonus,-a,-um</p>
+<p id="a1_2">gut</p>
+<p id="a2_1"></p>
+<p id="a3_2"></p>
+
+<p id="q3">res</p>
+<p id="a1_3">Sache</p>
+<p id="a2_2">Ding</p>
+<p id="a3_3">Besitz</p>
+
+<p id="q4">equus</p>
+<p id="a1_4">Pferd</p>
+<p id="a2_3"></p>
+<p id="a3_4"></p>
+
+<p id="q5">diu</p>
+<p id="a1_5">lange</p>
+<p id="a2_4"></p>
+<p id="a3_5"></p>
+
+<p id="q6">homo</p>
+<p id="a1_6">Mensch</p>
+<p id="a2_5"></p>
+<p id="a3_6"></p>
+
+<p id="q7">dominus</p>
+<p id="a1_7">Herr</p>
+<p id="a2_6"></p>
+<p id="a3_7"></p>
+
+<p id="q8">aqua</p>
+<p id="a1_8">Wasser</p>
+<p id="a2_7"></p>
+<p id="a3_8"></p>
+
+<p id="q9">quamquam</p>
+<p id="a1_9">obwohl</p>
+<p id="a2_8"></p>
+<p id="a3_9"></p>
+
+<p id="q10">malus,-a,-um</p>
+<p id="a1_10">schlecht</p>
+<p id="a2_9"></p>
+<p id="a3_10"></p>
+
+<p id="q11">quod</p>
+<p id="a1_11">weil</p>
+<p id="a2_10"></p>
+<p id="a3_11"></p>
+
+<p id="q12">quinque</p>
+<p id="a1_12">fünf</p>
+<p id="a2_11"></p>
+<p id="a3_12"></p>
+
+<p id="q13">aegrotus,-a,-um</p>
+<p id="a1_13">krank</p>
+<p id="a2_12"></p>
+<p id="a3_13"></p>
+
+<p id="q14">frumentum</p>
+<p id="a1_14">Getreide</p>
+<p id="a2_13"></p>
+<p id="a3_14"></p>
+
+<p id="q15">condere</p>
+<p id="a1_15">bergen</p>
+<p id="a2_14">verwahren</p>
+<p id="a3_15">gründen</p>
+
+<p id="q16">corpus</p>
+<p id="a1_16">Körper</p>
+<p id="a2_15"></p>
+<p id="a3_16"></p>
+
+<p id="q17">malum</p>
+<p id="a1_17">Übel</p>
+<p id="a2_16">Leid</p>
+<p id="a3_17"></p>
+
+<p id="q18">dum</p>
+<p id="a1_18">während</p>
+<p id="a2_17">solange</p>
+<p id="a3_18"></p>
+
+<p id="q19">-que</p>
+<p id="a1_19">und</p>
+<p id="a2_18"></p>
+<p id="a3_19"></p>
+
+<p id="q20">trans</p>
+<p id="a1_20">über</p>
+<p id="a2_19">jenseits</p>
+<p id="a3_20"></p>
+
+<p id="q21">flumen</p>
+<p id="a1_21">Fluss</p>
+<p id="a2_20"></p>
+<p id="a3_21"></p>
+
+<p id="q22">silva</p>
+<p id="a1_22">Wald</p>
+<p id="a2_21"></p>
+<p id="a3_22"></p>
+
+<p id="q23">altus,-a,-um</p>
+<p id="a1_23">hoch</p>
+<p id="a2_22">tief</p>
+<p id="a3_23"></p>
+
+<p id="q24">vestigium</p>
+<p id="a1_24">Spur</p>
+<p id="a2_23"></p>
+<p id="a3_24"></p>
+
+<p id="q25">facere</p>
+<p id="a1_25">machen</p>
+<p id="a2_24">tun</p>
+<p id="a3_25"></p>
+
+<p id="q26">arbor</p>
+<p id="a1_26">Baum</p>
+<p id="a2_25"></p>
+<p id="a3_26"></p>
+
+<p id="q27">caedere</p>
+<p id="a1_27">fällen</p>
+<p id="a2_26">töten</p>
+<p id="a3_27"></p>
+
+<p id="q28">cum(subito)</p>
+<p id="a1_28">als(plötzlich)</p>
+<p id="a2_27"></p>
+<p id="a3_28"></p>
+
+<p id="q29">ecce</p>
+<p id="a1_29">sieh/seht mal</p>
+<p id="a2_28">da!</p>
+<p id="a3_29"></p>
+
+<p id="q30">instrumentum</p>
+<p id="a1_30">Instrument</p>
+<p id="a2_29">Werkzeug</p>
+<p id="a3_30"></p>
+
+<p id="q31">avis</p>
+<p id="a1_31">Vogel</p>
+<p id="a2_30"></p>
+<p id="a3_31"></p>
+
+<p id="q32">parvus</p>
+<p id="a1_32">klein</p>
+<p id="a2_31"></p>
+<p id="a3_32"></p>
+
+<p id="q33">si</p>
+<p id="a1_33">wenn</p>
+<p id="a2_32">falls</p>
+<p id="a3_33"></p>
+
+<p id="q34">terra</p>
+<p id="a1_34">Erde</p>
+<p id="a2_33"></p>
+<p id="a3_34"></p>
+
+<p id="q35">cadere</p>
+<p id="a1_35">fallen</p>
+<p id="a2_34"></p>
+<p id="a3_35"></p>
+
+<p id="q36">nisi</p>
+<p id="a1_36">wenn nicht</p>
+<p id="a2_35">außer</p>
+<p id="a3_36"></p>
+
+<p id="q37">servare</p>
+<p id="a1_37">retten</p>
+<p id="a2_36">bewahren</p>
+<p id="a3_37"></p>
+
+<p id="q38">caelum</p>
+<p id="a1_38">Himmel</p>
+<p id="a2_37"></p>
+<p id="a3_38"></p>
+
+<p id="q39">volare</p>
+<p id="a1_39">fliegen</p>
+<p id="a2_38"></p>
+<p id="a3_39"></p>
+		</div>
+		
+		<script src="../../main.js"></script>
+		<script src="../min/vokabeln-ck.js"></script>
+	</div>
+</body>

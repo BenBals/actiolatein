@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<head>
+	<title>Vokabeln Lektion 10 - Actiolatein</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="../../al-logo.png">
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+</head>
+<body>
+	<div id="navben">
+			<button class="btn btn-nav" onclick="home();"><i class="fa fa-home"></i></button>
+			<button onclick="points();" class="btn btn-nav dpn showPoints"><i class="fa fa-tachometer"></i> Punkte Anzeigen</button>
+			<button class="btn btn-nav back" onclick="backVokSelect();"><i class="fa fa-arrow-circle-o-left"></i></button>
+			
+			<br>
+		</div>
+		<div id="go">
+			<h2>Willkommen zum Quiz zu den Vokabeln der Lektion 10!</h2>
+			<button class="btn btn-go btn-mghg" onclick="go(39);">Let´s GO!</button>
+			<p>Du bekommst für jede komplett richtige Antwort einen Punkt. Da die Fragen zufällig ausgesucht werden kann es sein, dass eine Frage mehrmals hintereinander gestellt wird oder das einige Fragen öfter gestellt werden (dies gleicht sich mit der Zeit aus). Das hier ist ein Schülerprojekt es können Fehler auftreten! <a href="mailto:benjustusbals@gmail.com">Fehler melden</a>. Ich übernehme für nichts Gewähr!</p>
+		</div>
+		<div id="questionScreen" class="dpn">
+			<h4 id="questionHere"></h4>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input1"type="text"></form>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input2"type="text"></form>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input3"type="text"></form>
+			<button class="btn btn-primary" onclick="check()">Check</button>
+			<p class="rightEx" style="display:none">Richtig!</p>
+			<p class="wrongEx" style="display:none">Falsch!</p>
+			<p class="dpn answer" id="a1_screen"></p>
+			<p class="dpn answer" id="a2_screen"></p>
+			<p class="dpn answer" id="a3_screen"></p>
+		</div>
+		
+		<div id="data" class="dpn">
+			<p id="q1">ante</p>
+<p id="a1_1">vor</p>
+<p id="a2_1"></p>
+<p id="a3_1"></p>
+
+<p id="q2">hora</p>
+<p id="a1_2">Stunde</p>
+<p id="a2_1">Zeit</p>
+<p id="a3_2"></p>
+
+<p id="q3">…enim</p>
+<p id="a1_3">denn</p>
+<p id="a2_2">nämlich</p>
+<p id="a3_3"></p>
+
+<p id="q4">…et…et</p>
+<p id="a1_4">sowohl…als auch…</p>
+<p id="a2_3"></p>
+<p id="a3_4"></p>
+
+<p id="q5">novus,-a,-um</p>
+<p id="a1_5">neu</p>
+<p id="a2_4"></p>
+<p id="a3_5"></p>
+
+<p id="q6">merx</p>
+<p id="a1_6">Ware</p>
+<p id="a2_5"></p>
+<p id="a3_6"></p>
+
+<p id="q7">tempus</p>
+<p id="a1_7">Zeit</p>
+<p id="a2_6"></p>
+<p id="a3_7"></p>
+
+<p id="q8">e, ex</p>
+<p id="a1_8">aus</p>
+<p id="a2_7">seit</p>
+<p id="a3_8"></p>
+
+<p id="q9">importare</p>
+<p id="a1_9">importieren</p>
+<p id="a2_8"></p>
+<p id="a3_9"></p>
+
+<p id="q10">quattuor</p>
+<p id="a1_10">vier</p>
+<p id="a2_9"></p>
+<p id="a3_10"></p>
+
+<p id="q11">manere</p>
+<p id="a1_11">bleiben</p>
+<p id="a2_10">warten</p>
+<p id="a3_11">erwarten</p>
+
+<p id="q12">opus</p>
+<p id="a1_12">Arbeit</p>
+<p id="a2_11">Werk</p>
+<p id="a3_12"></p>
+
+<p id="q13">reliquus, -a, -um</p>
+<p id="a1_13">übrig</p>
+<p id="a2_12"></p>
+<p id="a3_13"></p>
+
+<p id="q14">custodire</p>
+<p id="a1_14">bewachen</p>
+<p id="a2_13"></p>
+<p id="a3_14"></p>
+
+<p id="q15">via</p>
+<p id="a1_15">Straße</p>
+<p id="a2_14">Weg</p>
+<p id="a3_15"></p>
+
+<p id="q16">removere</p>
+<p id="a1_16">entfernen</p>
+<p id="a2_15">wegschaffen</p>
+<p id="a3_16"></p>
+
+<p id="q17">trahere</p>
+<p id="a1_17">ziehen</p>
+<p id="a2_16">schleppen</p>
+<p id="a3_17"></p>
+
+<p id="q18">mora</p>
+<p id="a1_18">Verzögerung</p>
+<p id="a2_17">Aufenthalt</p>
+<p id="a3_18"></p>
+
+<p id="q19">a, ab</p>
+<p id="a1_19">von</p>
+<p id="a2_18">von…her</p>
+<p id="a3_19"></p>
+
+<p id="q20">dilligentia</p>
+<p id="a1_20">Sorgfalt</p>
+<p id="a2_19"></p>
+<p id="a3_20"></p>
+
+<p id="q21">probare</p>
+<p id="a1_21">prüfen</p>
+<p id="a2_20">für gut befinden</p>
+<p id="a3_21">beweisen</p>
+
+<p id="q22">saepe</p>
+<p id="a1_22">oft</p>
+<p id="a2_21"></p>
+<p id="a3_22"></p>
+
+<p id="q23">frangere</p>
+<p id="a1_23">zerbrechen</p>
+<p id="a2_22"></p>
+<p id="a3_23"></p>
+
+<p id="q24">minuere</p>
+<p id="a1_24">vermindern</p>
+<p id="a2_23">verringern</p>
+<p id="a3_24"></p>
+
+<p id="q25">punire</p>
+<p id="a1_25">bestrafen</p>
+<p id="a2_24"></p>
+<p id="a3_25"></p>
+
+<p id="q26">apparere</p>
+<p id="a1_26">erscheinen</p>
+<p id="a2_25">sich zeigen</p>
+<p id="a3_26"></p>
+
+<p id="q27">nauta</p>
+<p id="a1_27">Seemann</p>
+<p id="a2_26"></p>
+<p id="a3_27"></p>
+
+<p id="q28">navis</p>
+<p id="a1_28">Schiff</p>
+<p id="a2_27"></p>
+<p id="a3_28"></p>
+
+<p id="q29">credere</p>
+<p id="a1_29">glauben</p>
+<p id="a2_28">anvertrauen</p>
+<p id="a3_29"></p>
+
+<p id="q30">decipere</p>
+<p id="a1_30">betrügen</p>
+<p id="a2_29"></p>
+<p id="a3_30"></p>
+
+<p id="q31">relinquere</p>
+<p id="a1_31">zurücklassen</p>
+<p id="a2_30">verlassen</p>
+<p id="a3_31"></p>
+
+<p id="q32">consistere</p>
+<p id="a1_32">stehen bleiben</p>
+<p id="a2_31">anhalten</p>
+<p id="a3_32">sich aufstellen</p>
+
+<p id="q33">stare</p>
+<p id="a1_33">stehen</p>
+<p id="a2_32"></p>
+<p id="a3_33"></p>
+
+<p id="q34">parere</p>
+<p id="a1_34">gehorchen</p>
+<p id="a2_33"></p>
+<p id="a3_34"></p>
+
+<p id="q35">recte</p>
+<p id="a1_35">richtig</p>
+<p id="a2_34">geradeaus</p>
+<p id="a3_35">zu Recht</p>
+
+<p id="q36">nominare</p>
+<p id="a1_36">nennen</p>
+<p id="a2_35"></p>
+<p id="a3_36"></p>
+
+<p id="q37">hinc</p>
+<p id="a1_37">von hier</p>
+<p id="a2_36"></p>
+<p id="a3_37"></p>
+
+<p id="q38">cessare</p>
+<p id="a1_38">zögern</p>
+<p id="a2_37">untätig sein</p>
+<p id="a3_38"></p>
+
+<p id="q39">celeritas</p>
+<p id="a1_39">Schnelligkeit</p>
+<p id="a2_38"></p>
+<p id="a3_39"></p>
+		</div>
+		
+		<script src="../../main.js"></script>
+		<script src="../min/vokabeln-ck.js"></script>
+	</div>
+</body>

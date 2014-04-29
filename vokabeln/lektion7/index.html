@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<head>
+	<title>Vokabeln Lektion 7 - Actiolatein</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="../../al-logo.png">
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+</head>
+<body>
+	<div id="navben">
+			<button class="btn btn-nav" onclick="home();"><i class="fa fa-home"></i></button>
+			<button onclick="points();" class="btn btn-nav dpn showPoints"><i class="fa fa-tachometer"></i> Punkte Anzeigen</button>
+			<button class="btn btn-nav back" onclick="backVokSelect();"><i class="fa fa-arrow-circle-o-left"></i></button>
+			
+			<br>
+		</div>
+		<div id="go">
+			<h2>Willkommen zum Quiz zu den Vokabeln der Lektion 7!</h2>
+			<button class="btn btn-go btn-mghg" onclick="go(40);">Let´s GO!</button>
+			<p>Du bekommst für jede komplett richtige Antwort einen Punkt. Da die Fragen zufällig ausgesucht werden kann es sein, dass eine Frage mehrmals hintereinander gestellt wird oder das einige Fragen öfter gestellt werden (dies gleicht sich mit der Zeit aus). Das hier ist ein Schülerprojekt es können Fehler auftreten! <a href="mailto:benjustusbals@gmail.com">Fehler melden</a>. Ich übernehme für nichts Gewähr!</p>
+		</div>
+		<div id="questionScreen" class="dpn">
+			<h4 id="questionHere"></h4>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input1"type="text"></form>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input2"type="text"></form>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input3"type="text"></form>
+			<button class="btn btn-primary" onclick="check()">Check</button>
+			<p class="rightEx" style="display:none">Richtig!</p>
+			<p class="wrongEx" style="display:none">Falsch!</p>
+			<p class="dpn answer" id="a1_screen"></p>
+			<p class="dpn answer" id="a2_screen"></p>
+			<p class="dpn answer" id="a3_screen"></p>
+		</div>
+		
+		<div id="data" class="dpn">
+			<p id="q1">canere</p>
+<p id="a1_1">singen</p>
+<p id="a2_1">ertönen(lassen)</p>
+<p id="a3_1"></p>
+
+<p id="q2">gladiator</p>
+<p id="a1_2">Gladiator</p>
+<p id="a2_1"></p>
+<p id="a3_2"></p>
+
+<p id="q3">pugna</p>
+<p id="a1_3">Kampf</p>
+<p id="a2_2"></p>
+<p id="a3_3"></p>
+
+<p id="q4">paratus</p>
+<p id="a1_4">bereit</p>
+<p id="a2_3"></p>
+<p id="a3_4"></p>
+
+<p id="q5">arena</p>
+<p id="a1_5">Sand</p>
+<p id="a2_4">Kampfplatz</p>
+<p id="a3_5"></p>
+
+<p id="q6">nondum</p>
+<p id="a1_6">noch nicht</p>
+<p id="a2_5"></p>
+<p id="a3_6"></p>
+
+<p id="q7">duo</p>
+<p id="a1_7">zwei</p>
+<p id="a2_6"></p>
+<p id="a3_7"></p>
+
+<p id="q8">per</p>
+<p id="a1_8">durch</p>
+<p id="a2_7"></p>
+<p id="a3_8"></p>
+
+<p id="q9">hic</p>
+<p id="a1_9">dieser</p>
+<p id="a2_8">der hier</p>
+<p id="a3_9"></p>
+
+<p id="q10">haec</p>
+<p id="a1_10">diese</p>
+<p id="a2_9">die hier</p>
+<p id="a3_10"></p>
+
+<p id="q11">hoc</p>
+<p id="a1_11">dieses</p>
+<p id="a2_10">dieses hier</p>
+<p id="a3_11"></p>
+
+<p id="q12">porta</p>
+<p id="a1_12">Tor</p>
+<p id="a2_11">Tür</p>
+<p id="a3_12"></p>
+
+<p id="q13">ille</p>
+<p id="a1_13">jener</p>
+<p id="a2_12">jener dort</p>
+<p id="a3_13"></p>
+
+<p id="q14">illa</p>
+<p id="a1_14">jene</p>
+<p id="a2_13">jene dort</p>
+<p id="a3_14"></p>
+
+<p id="q15">illud</p>
+<p id="a1_15">jenes</p>
+<p id="a2_14">jenes dort</p>
+<p id="a3_15"></p>
+
+<p id="q16">petere(verlangen nicht angegeben)</p>
+<p id="a1_16">suchen</p>
+<p id="a2_15">angreifen</p>
+<p id="a3_16">bitten</p>
+
+<p id="q17">contendere</p>
+<p id="a1_17">sich anstrengen</p>
+<p id="a2_16">eilen</p>
+<p id="a3_17">behaupten</p>
+
+<p id="q18">scire</p>
+<p id="a1_18">wissen</p>
+<p id="a2_17"></p>
+<p id="a3_18"></p>
+
+<p id="q19">pugnare</p>
+<p id="a1_19">kämpfen</p>
+<p id="a2_18"></p>
+<p id="a3_19"></p>
+
+<p id="q20">incitare</p>
+<p id="a1_20">antreiben</p>
+<p id="a2_19">anfeuern</p>
+<p id="a3_20">erregen</p>
+
+<p id="q21">praeclarus</p>
+<p id="a1_21">sehr hell</p>
+<p id="a2_20">herrlich</p>
+<p id="a3_21">berühmt</p>
+
+<p id="q22">clarus</p>
+<p id="a1_22">hell</p>
+<p id="a2_21">herrlich</p>
+<p id="a3_22"></p>
+
+<p id="q23">spectator</p>
+<p id="a1_23">Zuschauer</p>
+<p id="a2_22"></p>
+<p id="a3_23"></p>
+
+<p id="q24">putare</p>
+<p id="a1_24">glauben</p>
+<p id="a2_23">meinen</p>
+<p id="a3_24">halten für</p>
+
+<p id="q25">vincere</p>
+<p id="a1_25">siegen</p>
+<p id="a2_24">besiegen</p>
+<p id="a3_25"></p>
+
+<p id="q26">imperator</p>
+<p id="a1_26">Herrscher</p>
+<p id="a2_25">Feldherr</p>
+<p id="a3_26">Kaiser</p>
+
+<p id="q27">optimus</p>
+<p id="a1_27">der beste</p>
+<p id="a2_26">sehr gut</p>
+<p id="a3_27"></p>
+
+<p id="q28">surgere</p>
+<p id="a1_28">aufstehen</p>
+<p id="a2_27">sich erheben</p>
+<p id="a3_28"></p>
+
+<p id="q29">superare</p>
+<p id="a1_29">überragen</p>
+<p id="a2_28">besiegen</p>
+<p id="a3_29">übertreffen</p>
+
+<p id="q30">iacere</p>
+<p id="a1_30">liegen</p>
+<p id="a2_29"></p>
+<p id="a3_30"></p>
+
+<p id="q31">turba</p>
+<p id="a1_31">Lärm</p>
+<p id="a2_30">Gewimmel</p>
+<p id="a3_31">Menschenmenge</p>
+
+<p id="q32">crescere</p>
+<p id="a1_32">wachsen</p>
+<p id="a2_31"></p>
+<p id="a3_32"></p>
+
+<p id="q33">iudicare</p>
+<p id="a1_33">urteilen</p>
+<p id="a2_32">entscheiden</p>
+<p id="a3_33">beurteilen</p>
+
+<p id="q34">mittere</p>
+<p id="a1_34">schicken</p>
+<p id="a2_33">loslassen</p>
+<p id="a3_34">werfen</p>
+
+<p id="q35">vivere</p>
+<p id="a1_35">leben</p>
+<p id="a2_34"></p>
+<p id="a3_35"></p>
+
+<p id="q36"></p>
+<p id="a1_36"></p>
+<p id="a2_35"></p>
+<p id="a3_36"></p>
+
+<p id="q37">sinere</p>
+<p id="a1_37">lassen</p>
+<p id="a2_36">zulassen</p>
+<p id="a3_37"></p>
+
+<p id="q38">victor</p>
+<p id="a1_38">Sieger</p>
+<p id="a2_37"></p>
+<p id="a3_38"></p>
+
+<p id="q39">consilium</p>
+<p id="a1_39">Beratung</p>
+<p id="a2_38">Plan</p>
+<p id="a3_39">Entschluss</p>
+
+<p id="q40">amittere</p>
+<p id="a1_40">verlieren</p>
+<p id="a2_39">aufgeben</p>
+<p id="a3_40"></p>
+		</div>
+		
+		<script src="../../main.js"></script>
+		<script src="../min/vokabeln-ck.js"></script>
+	</div>
+</body>

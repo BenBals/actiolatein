@@ -1,3 +1,5 @@
+console.log("Up and runnging");
+
 function stammformenGoTo () {
 	window.location.href = "stammformen/index.html";
 }
@@ -32,11 +34,6 @@ if (document.URL === "http://benbals.github.io/actiolatein/index.html" || docume
 	$(".beta").css("display","none");
 	$(".ansage").css("display","none");
 }
-
-//DictTable
-$(document).ready(function() {
-	$('#dictTable').dataTable();
-} );
 
 $(function() {
     FastClick.attach(document.body);

@@ -1,0 +1,1 @@
+function homeGen(){console.log("homeGen up and running"),window.location.href="../"}console.log("js up and running");

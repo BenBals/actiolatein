@@ -7,14 +7,9 @@ Mit der Website kannst du folgendes lernen:
 
 Stammformen der Lektionen 1-17
 
-Vokabeln der Lektionen:
-1,
-2,
-3,
-17,
-18
+Vokabeln der Lektionen: 1-20
 
-Deklinationen der Klassen a und o
+Deklinationen der Substantive und Personalpronomen
 
 Konjugation aller Zeitformen außer Futur I und II
 

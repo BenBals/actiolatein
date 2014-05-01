@@ -10,7 +10,26 @@
 	<div class="nav">
 		<button class="btn btn-nav" onclick="homeGen();"><i class="fa fa-home"></i></button>
 	</div>
+	<div class="question0">
+			<h2>Willkommen zum Lateinquiz Genitive!</h2>
+			<button id="go" class="btn btn-mghg btn-go" onclick="go();"><i class="fa fa-rocket"> Let's Rock!</i></button>
+			<br>
+			<br>
+			<p>Es kann auftreten, dass eine Frage mehrmals gestellt wird und das passiert auf Grund der niedrigen Anzahl von Fragen pro Lektion leider sehr häufig, wenn ihr nur eine Lektion übt. Bitte kontrolliert, wenn ihr könnt, die Lösungen noch einmal. Für Fehler: <a href="mailto:benjustusbals@gmail.com">Email senden</a>. Ich übernehme für nichts Gewähr!</p>
+			<p>by Ben Bals</p>
+	</div>
+	<div class="questionScreen dpn">
+		<h4 id="quesionHere"></h4>
+		<form action="javascript:check();"><input class="form-control input-sm" id="input1"type="text"></form>
+		<p>AnswerHere</p>
+	</div>
+	<div class="data dpn">
+		<div id="data1">
+			<p>Question</p>
+			<p>Answer</p>
+		</div>
+	</div>
 	
-	<script type="text/javascript" src="min/javascript-ck.js"></script>
 	<script type="text/javascript" src="../main.js"></script>
+	<script type="text/javascript" src="min/javascript-ck.js"></script>
 </body>

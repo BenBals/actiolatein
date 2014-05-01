@@ -1,5 +1,3 @@
-console.log("Up and runnging");
-
 function stammformenGoTo () {
 	window.location.href = "stammformen/index.html";
 }
@@ -16,7 +14,7 @@ function dlapp () {
 	window.open('https://s3-eu-west-1.amazonaws.com/stammformenapp/Actiolatein.apk', '_blank');
 }
 function home () {
-	window.location.href = "index.html";
+	window.location.href = "/";
 }
 function help () {
 	window.location.href = "help.html";
@@ -30,7 +28,7 @@ window.splitCkURL = window.ckURL.split("?");
 window.woCkURL = window.splitCkURL[0];
 
 
-if (document.URL === "http://benbals.github.io/actiolatein/index.html" || document.URL === "http://benbals.github.io/actiolatein/" || window.woCkURL === "http://mbp.local:5757/") {
+if (document.URL === "http://benbals.github.io/actiolatein/index.html" || document.URL === "http://benbals.github.io/actiolatein/" || window.woCkURL === "http://mbp.local:5757/" || window.woCkURL === "http://mbp.local:5757/index.html") {
 	$(".beta").css("display","none");
 	$(".ansage").css("display","none");
 }

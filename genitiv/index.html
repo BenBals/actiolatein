@@ -9,6 +9,8 @@
 <body>
 	<div class="nav">
 		<button class="btn btn-nav" onclick="homeGen();"><i class="fa fa-home"></i></button>
+		<button class="btn btn-nav back dpn" onclick="back();"><i class="fa fa-arrow-circle-o-left"></i></button>
+		<button onclick="points();" class="btn btn-nav back dpn"><i class="fa fa-tachometer"></i> Punkte Anzeigen</button>
 	</div>
 	<div class="question0">
 			<h2>Willkommen zum Lateinquiz Genitive!</h2>
@@ -20,11 +22,14 @@
 	</div>
 	<div class="questionScreen dpn">
 		<h4 id="quesionHere"></h4>
-		<form action="javascript:check();"><input class="form-control input-sm" id="input1"type="text"></form>
-		<p>AnswerHere</p>
+		<form action="javascript:check();"><input class="form-control input-sm" id="input"type="text"></form><br>
+		<p class="allRight right">Richtig!</p>
+		<p class="nothingRight false">Falsch!</p>
+		<p id="answerHere" class="answerGen">AnswerHere</p>
+		<button class="btn btn-primary" onclick="check();">Check</button>
 	</div>
 	<div class="data dpn">
-		<div id="data1">
+		<div>
 			<p>Question</p>
 			<p>Answer</p>
 		</div>

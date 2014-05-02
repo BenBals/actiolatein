@@ -20,6 +20,18 @@ function showQs (klasseZahl) {
 	if (klasseZahl === 11) {window.klasse = "p_p_3_nr_m";}
 	if (klasseZahl === 12) {window.klasse = "p_p_3_nr_f";}
 	if (klasseZahl === 13) {window.klasse = "p_p_3_nr_n";}
+	if (klasseZahl === 14) {window.klasse = "p_d_is";}
+	if (klasseZahl === 15) {window.klasse = "p_d_ea";}
+	if (klasseZahl === 16) {window.klasse = "p_d_id";}
+	if (klasseZahl === 17) {window.klasse = "p_d_hic";}
+	if (klasseZahl === 18) {window.klasse = "p_d_haec";}
+	if (klasseZahl === 19) {window.klasse = "p_d_hoc";}
+	if (klasseZahl === 20) {window.klasse = "p_d_ille";}
+	if (klasseZahl === 21) {window.klasse = "p_d_illa";}
+	if (klasseZahl === 22) {window.klasse = "p_d_illud";}
+	if (klasseZahl === 23) {window.klasse = "p_d_ipse";}
+	if (klasseZahl === 24) {window.klasse = "p_d_ipsa";}
+	if (klasseZahl === 25) {window.klasse = "p_d_ipsum";}
 
 	console.log(window.klasse);
 
@@ -93,6 +105,7 @@ function checkDek () {
 		}
 	}
 	$(".ex").css("display","none");
+	if (window.upTo12 !== 0) {if (window.vokSgA === "") {window.upTo12 = window.upTo12 + 2;}}
 	if (window.upTo12 == 12) {
 		$(".allRight").css("display","block");
 	}

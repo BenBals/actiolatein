@@ -7429,14 +7429,6 @@
 			"type": 0
 			}
 		],
-	"\/dict\/javascript.js": [
-		{
-			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/DataTables\/media\/js\/jquery.dataTables.js",
-			"position": 0,
-			"type": 0
-			}
-		],
 	"\/javascript.js": [
 		{
 			"followForSyntaxChecking": 0,

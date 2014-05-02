@@ -5,12 +5,10 @@ $("div.data").children().addClass('dataDiv');
 window.n = 1;
 
 window.score = 0;
+window.plusN = 1;
 
 //Number of Questions already answerd
 window.questionN = 0;
-
-//Lowest questionnumber of given unit
-window.plusN = 1;
 
 function homeGen () {
 	console.log("homeGen up and running");

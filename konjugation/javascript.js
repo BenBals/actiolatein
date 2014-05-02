@@ -192,7 +192,7 @@ function aKonjPlusAk () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#aKonj_per_ak").css("display","block");
+	$("#aKonj_plus_ak").css("display","block");
 }
 function eKonjPlusAk () {
 	window.konj = "e";
@@ -201,7 +201,7 @@ function eKonjPlusAk () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#eKonj_per_ak").css("display","block");
+	$("#eKonj_plus_ak").css("display","block");
 }
 function iKonjPlusAk () {
 	window.konj = "i";
@@ -210,7 +210,7 @@ function iKonjPlusAk () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#iKonj_per_ak").css("display","block");
+	$("#iKonj_plus_ak").css("display","block");
 }
 function gemKonjPlusAk () {
 	window.konj = "gem";
@@ -219,7 +219,7 @@ function gemKonjPlusAk () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#gemKonj_per_ak").css("display","block");
+	$("#gemKonj_plus_ak").css("display","block");
 }
 function konsKonjPlusAk () {
 	window.konj = "kons";
@@ -228,7 +228,7 @@ function konsKonjPlusAk () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#konsKonj_per_ak").css("display","block");
+	$("#konsKonj_plus_ak").css("display","block");
 }
 
 function aKonjPlusPa () {
@@ -238,7 +238,7 @@ function aKonjPlusPa () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#aKonj_per_ak").css("display","block");
+	$("#aKonj_plus_ak").css("display","block");
 }
 function eKonjPlusPa () {
 	window.konj = "e";
@@ -247,7 +247,7 @@ function eKonjPlusPa () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#eKonj_per_ak").css("display","block");
+	$("#eKonj_plus_ak").css("display","block");
 }
 function iKonjPlusPa () {
 	window.konj = "i";
@@ -256,7 +256,7 @@ function iKonjPlusPa () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#iKonj_per_ak").css("display","block");
+	$("#iKonj_plus_ak").css("display","block");
 }
 function gemKonjPlusPa () {
 	window.konj = "gem";
@@ -265,7 +265,7 @@ function gemKonjPlusPa () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#gemKonj_per_ak").css("display","block");
+	$("#gemKonj_plus_ak").css("display","block");
 }
 function konsKonjPlusPa () {
 	window.konj = "kons";
@@ -274,7 +274,7 @@ function konsKonjPlusPa () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#konsKonj_per_ak").css("display","block");
+	$("#konsKonj_plus_ak").css("display","block");
 }
 
 function aKonjiPerAk () {
@@ -293,7 +293,7 @@ function eKonjiPerAk () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#eKonj_per_ak").css("display","block");
+	$("#eKonj_iper_ak").css("display","block");
 }
 function iKonjiPerAk () {
 	window.konj = "i";
@@ -302,7 +302,7 @@ function iKonjiPerAk () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#iKonj_per_ak").css("display","block");
+	$("#iKonj_iper_ak").css("display","block");
 }
 function gemKonjiPerAk () {
 	window.konj = "gem";
@@ -311,7 +311,7 @@ function gemKonjiPerAk () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#gemKonj_per_ak").css("display","block");
+	$("#gemKonj_iper_ak").css("display","block");
 }
 function konsKonjiPerAk () {
 	window.konj = "kons";
@@ -320,7 +320,7 @@ function konsKonjiPerAk () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#konsKonj_per_ak").css("display","block");
+	$("#konsKonj_iper_ak").css("display","block");
 }
 
 function aKonjiPerPa () {
@@ -330,7 +330,7 @@ function aKonjiPerPa () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#aKonj_per_pa").css("display","block");
+	$("#aKonj_iper_pa").css("display","block");
 }
 function eKonjiPerPa () {
 	window.konj = "e";
@@ -339,7 +339,7 @@ function eKonjiPerPa () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#eKonj_per_pa").css("display","block");
+	$("#eKonj_iper_pa").css("display","block");
 }
 function iKonjiPerPa () {
 	window.konj = "i";
@@ -348,7 +348,7 @@ function iKonjiPerPa () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#iKonj_per_pa").css("display","block");
+	$("#iKonj_iper_pa").css("display","block");
 }
 function gemKonjiPerPa () {
 	window.konj = "gem";
@@ -357,7 +357,7 @@ function gemKonjiPerPa () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#gemKonj_per_pa").css("display","block");
+	$("#gemKonj_iper_pa").css("display","block");
 }
 function konsKonjiPerPa () {
 	window.konj = "kons";
@@ -366,7 +366,7 @@ function konsKonjiPerPa () {
 	$(".aw").css("display","inline");
 	$(".back").css("display","inline");
 	$("#question0").css("display","none");
-	$("#konsKonj_per_pa").css("display","block");
+	$("#konsKonj_iper_pa").css("display","block");
 }
 
 function homeKonj () {

@@ -32,6 +32,8 @@ function showQs (klasseZahl) {
 	if (klasseZahl === 23) {window.klasse = "p_d_ipse";}
 	if (klasseZahl === 24) {window.klasse = "p_d_ipsa";}
 	if (klasseZahl === 25) {window.klasse = "p_d_ipsum";}
+	if (klasseZahl === 26) {window.klasse = "p_inter_mf";}
+	if (klasseZahl === 27) {window.klasse = "p_inter_n";}
 
 	console.log(window.klasse);
 

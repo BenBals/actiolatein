@@ -230,6 +230,7 @@ function checkAnswer () {
 			console.log("Richtig!");
 			$ ("*").css("color","#000000");
 			$ (".btn").css("color","#FFF");
+			$ (".fa-arrow-circle-o-left").css('color', 'white');
 			$ (".fa-cog").css("color","white");
 			$ (".fa-tachometer").css("color","#FFF");
 			$ (".fa-home").css("color","#fff");

@@ -141,7 +141,7 @@ function checkIfHigherScore () {
 	if (window.currentStreak > window.longestStreak) {
 		document.cookie = "longestStreak="+window.currentStreak+";expires="+window.now.toGMTString()+";path=/";
 		getCookies();
-		alert("Neue längste Richtige-Antwort-Sere! Der Rekord ist jetzt "+window.longestStreak+"!");
+		alert("Neue längste Richtige-Antwort-Serie! Der Rekord ist jetzt "+window.longestStreak+"!");
 	}
 }
 

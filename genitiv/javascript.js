@@ -2,7 +2,7 @@
 $("div.data").children().addClass('dataDiv');
 
 //How many questions are there? or Number of questions in that unit (ony changed by funtion go NOT manually)
-window.n = 104;
+window.n = 92;
 
 window.score = 0;
 window.plusN = 1;
@@ -42,7 +42,7 @@ function go () {
 function check () {
 	window.questionN++;
 	window.input = $("#input").val().toLowerCase();
-	if (window.input == window.answer) {
+	if (window.input === window.answer) {
 		window.score++;
 		$(".right").css('display', 'block');
 		setTimeout (function(){
@@ -53,6 +53,7 @@ function check () {
 	else {
 	$("#answerHere").css('display', 'block');
 	$(".false").css('display', 'block');
+	console.log("Hi");
 		setTimeout (function(){
 				newQ();
 				}

@@ -22,6 +22,9 @@ function help () {
 function deklinationGoTo () {
 	window.location.href = "deklination/index.html";
 }
+function genitiveGoTo () {
+	window.location.href = 'genitiv/index.html';
+}
 
 window.ckURL = document.URL;
 window.splitCkURL = window.ckURL.split("?");

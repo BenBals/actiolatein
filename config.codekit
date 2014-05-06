@@ -6715,7 +6715,7 @@
 		},
 	"\/style.css": {
 		"fileType": 16,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/style.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -6730,9 +6730,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/style.scss",
-		"outputAbbreviatedPath": "\/css\/style.css",
+		"outputAbbreviatedPath": "\/style.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
@@ -7598,7 +7598,7 @@
 	"javascriptOutputStyle": 1,
 	"javascriptOutputSuffix": "-ck",
 	"javascriptSyntaxCheckerStyle": 1,
-	"jsCheckerReservedNamesString": "",
+	"jsCheckerReservedNamesString": "console, alert",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
@@ -7713,7 +7713,7 @@
 			"flagValue": -1
 			},
 		"laxcomma": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"loopfunc": {
@@ -7861,7 +7861,7 @@
 			"flagValue": -1
 			},
 		"unused": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"white": {

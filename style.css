@@ -1,5 +1,4 @@
 @import url(select/bootstrap-select.min.css);
-@import url(css/flat-ui.css);
 @import url(bower_components/fontawesome/css/font-awesome.min.css);
 /*Mobile*/
 @media screen and (min-device-width: 639px) and (max-device-width: 641px) {
@@ -728,6 +727,15 @@ textarea.input-hg,
 select[multiple].input-hg {
   height: auto; }
 
+.btn-nav {
+  background-color: #780a00;
+  color: #fff; }
+
+.btn-nav:hover {
+  cursor: pointer;
+  background-color: #570700 !important;
+  color: #fff; }
+
 #body {
   margin: 0, auto; }
 
@@ -824,7 +832,8 @@ a {
   background-color: #780a00; }
 
 .fa-rocket {
-  background-color: #780a00; }
+  background-color: #780a00;
+  padding: 5px; }
 
 #dropdown {
   list-style-type: none; }

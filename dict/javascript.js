@@ -1,7 +1,7 @@
-$(document).ready(function() {
-    $('#dictTable').dataTable( {
-        "scrollY":        "200px",
-        "scrollCollapse": true,
-        "paging":         false
-    } );
-} );
+$(document).ready(function(){
+    $('#dictTable').dataTable();
+});
+
+function home () {
+	window.location.href = '../index.html';
+}

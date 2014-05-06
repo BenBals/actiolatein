@@ -6,7 +6,7 @@ $primary-1: $red;
 $primary-2: $green;
 
 @import "select/bootstrap-select.min.css";
-@import "css/flat-ui.css";
+//@import "css/flat-ui.css";
 @import "bower_components/fontawesome/css/font-awesome.min.css";
 /*Mobile*/
 
@@ -755,7 +755,15 @@ textarea.input-hg,
 select[multiple].input-hg {
   height: auto;
 }
-
+.btn-nav {
+  background-color: #780a00;
+  color: #fff;
+}
+.btn-nav:hover {
+  cursor: pointer;
+  background-color: #570700 !important;
+  color: #fff;
+}
 
 //flat-ui end
 
@@ -881,6 +889,7 @@ a {
 
 .fa-rocket {
 	background-color: $primary-1;
+	padding: 5px;
 }
 
 #dropdown {

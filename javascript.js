@@ -25,6 +25,9 @@ function deklinationGoTo () {
 function genitiveGoTo () {
 	window.location.href = 'genitiv/index.html';
 }
+function dictGoTo () {
+	window.location.href = 'dict/index.html';
+}
 
 window.ckURL = document.URL;
 window.splitCkURL = window.ckURL.split("?");

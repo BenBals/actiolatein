@@ -1613,7 +1613,7 @@
 		},
 	"\/bower_components\/DataTables\/media\/js\/jquery.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/DataTables\/media\/js\/jquery.js",
 		"outputAbbreviatedPath": "\/bower_components\/DataTables\/media\/js\/min\/jquery-ck.js",
@@ -6272,7 +6272,7 @@
 		},
 	"\/css\/flat-ui.css": {
 		"fileType": 16,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/flat-ui.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -7433,6 +7433,20 @@
 			"followForSyntaxChecking": 0,
 			"linkedFileAbbreviatedPath": "\/bower_components\/fastclick\/lib\/fastclick.js",
 			"position": 2,
+			"type": 0
+			}
+		],
+	"\/dict\/javascript.js": [
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/DataTables\/media\/js\/jquery.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/DataTables\/media\/js\/jquery.dataTables.js",
+			"position": 1,
 			"type": 0
 			}
 		],

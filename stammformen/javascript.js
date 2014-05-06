@@ -251,9 +251,9 @@ function checkAnswer () {
 	else {
 		window.currentStreak = 0;
 		checkIfHigherScore ();
-		$("#answer"+window.random).css("display","none");
+		$("#answer"+window.random).css("display","block");
 		$('.wrongEx', $('#question'+window.random)).css("display","block");
-		$("#answer"+window.random).css("coloe","#69BB9C");
+		$("#answer"+window.random).css("color","#69BB9C");
 		setTimeout(function(){
 			$ ("*").css("color","#000000");
 			$ (".btn").css("color","#FFF");

@@ -2,7 +2,7 @@
 $("div.data").children().addClass('dataDiv');
 
 //How many questions are there? or Number of questions in that unit (ony changed by funtion go NOT manually)
-window.n = 1;
+window.n = 104;
 
 window.score = 0;
 window.plusN = 1;

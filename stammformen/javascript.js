@@ -252,6 +252,7 @@ function checkAnswer () {
 		window.currentStreak = 0;
 		checkIfHigherScore ();
 		$("#answer"+window.random).css("display","block");
+		console.log("Ausgeführt!!!!");
 		$('.wrongEx', $('#question'+window.random)).css("display","block");
 		$("#answer"+window.random).css("color","#69BB9C");
 		setTimeout(function(){

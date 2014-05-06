@@ -6254,6 +6254,31 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/css\/flat-ui Backup.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/flat-ui Backup.scss",
+		"outputAbbreviatedPath": "\/css\/flat-ui Backup.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/css\/flat-ui.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/flat-ui.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/deklination\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -6316,11 +6341,51 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/genitiv\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/genitiv\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/genitiv\/javascript.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/genitiv\/javascript.js",
+		"outputAbbreviatedPath": "\/genitiv\/min\/javascript-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/genitiv\/min\/javascript-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/genitiv\/min\/javascript-ck.js",
+		"outputAbbreviatedPath": "\/genitiv\/min\/min\/javascript-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/help.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/help.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -6625,6 +6690,53 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/stammformen\/javascript.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/stammformen\/javascript.js",
+		"outputAbbreviatedPath": "\/stammformen\/min\/javascript-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/stammformen\/min\/javascript-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/stammformen\/min\/javascript-ck.js",
+		"outputAbbreviatedPath": "\/stammformen\/min\/min\/javascript-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/style.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/style.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/style.scss",
+		"outputAbbreviatedPath": "\/css\/style.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/vokabeln\/index.html": {
 		"fileType": 8192,
@@ -6987,6 +7099,15 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/vokabeln\/lektion2\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vokabeln\/lektion2\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/vokabeln\/lektion2\/javascript.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -7194,6 +7315,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/vokabeln\/lektion8\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vokabeln\/lektion8\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/vokabeln\/lektion8\/javascript.js": {
 		"fileType": 64,
@@ -7413,7 +7543,7 @@
 			"flagValue": -1
 			},
 		"no_tabs": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"no_throwing_strings": {
@@ -7468,14 +7598,14 @@
 	"javascriptOutputStyle": 1,
 	"javascriptOutputSuffix": "-ck",
 	"javascriptSyntaxCheckerStyle": 1,
-	"jsCheckerReservedNamesString": "alert, console, dataTable",
+	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
 			"flagValue": -1
 			},
 		"bitwise": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"boss": {
@@ -7487,7 +7617,7 @@
 			"flagValue": -1
 			},
 		"camelcase": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"couch": {
@@ -7511,7 +7641,7 @@
 			"flagValue": -1
 			},
 		"eqeqeq": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"eqnull": {
@@ -7575,7 +7705,7 @@
 			"flagValue": -1
 			},
 		"latedef": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"laxbreak": {
@@ -7583,7 +7713,7 @@
 			"flagValue": -1
 			},
 		"laxcomma": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"loopfunc": {
@@ -7695,7 +7825,7 @@
 			"flagValue": -1
 			},
 		"shadow": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"shelljs": {
@@ -7703,7 +7833,7 @@
 			"flagValue": -1
 			},
 		"smarttabs": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"strict": {
@@ -7731,7 +7861,7 @@
 			"flagValue": -1
 			},
 		"unused": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"white": {
@@ -7890,13 +8020,13 @@
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 2,
-	"sassCreateSourceMap": 1,
+	"sassCreateSourceMap": 0,
 	"sassDebugStyle": 0,
 	"sassDecimalPrecision": 5,
-	"sassOutputStyle": 3,
+	"sassOutputStyle": 0,
 	"sassUseLibsass": 0,
 	"shouldRunAutoprefixer": 0,
-	"shouldRunBless": 1,
+	"shouldRunBless": 0,
 	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs",
 	"slimAutoOutputPathRelativePath": "",
 	"slimAutoOutputPathReplace1": "",

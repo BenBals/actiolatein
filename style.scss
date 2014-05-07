@@ -1,9 +1,14 @@
 $red: #780a00;
 $green: #8ada53;
 $light-blue: #98a7e5;
-$dark-blie: #122678;
-$primary-1: $red;
-$primary-2: $green;
+$dark-blue: #122678;
+$light-blue-hover: #7C88BB;
+$dark-blue-hover: #0F2066;
+
+$primary-1: $light-blue;
+$primary-2: $dark-blue;
+$primary-1-hover: $light-blue-hover;
+$primary-2-hover: $dark-blue-hover;
 
 @import "select/bootstrap-select.min.css";
 //@import "css/flat-ui.css";
@@ -756,12 +761,12 @@ select[multiple].input-hg {
   height: auto;
 }
 .btn-nav {
-  background-color: #780a00;
+  background-color: $primary-1;
   color: #fff;
 }
 .btn-nav:hover {
   cursor: pointer;
-  background-color: #570700 !important;
+  background-color: $primary-1-hover !important;
   color: #fff;
 }
 

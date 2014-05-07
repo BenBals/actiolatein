@@ -187,14 +187,15 @@ function go () {
 	document.cookie = "totalGames="+window.totalGames+";expires="+window.now.toGMTString()+";path=/";
 	getCookies ();
 }
+
 //When Check-Button ist pressed.
 function checkAnswer () {
 	window.questionN++;
 	getCookies ();
 	var input = $("#input"+window.random).val().toLowerCase();
 	var answer = $("#answer"+window.random).html();
-	if (input == answer) {
-		if (showRight == 400) {
+	if (input === answer) {
+		if (showRight === 400) {
 			$('.rightEx', $('#question'+window.random)).css("display","block");
 			window.score++;
 			window.currentStreak++;
@@ -315,7 +316,7 @@ function showSettings () {
 function hideSettings () {
 	$("#settings").css("display","none");
 	$(".fa-cog").removeClass("fa-spin");
-	$("#question"+window.random).css("display","none");
+	$("#question"+window.random).css("display","block");
 }
 
 //Lösung lange anzeigen

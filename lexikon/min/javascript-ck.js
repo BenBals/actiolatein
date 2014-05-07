@@ -1,0 +1,1 @@
+function home(){window.location.href="../index.html"}function showHide(i){"none"===$("div."+i+" div").css("display")?$("div."+i+" div").fadeIn(200):$("div."+i+" div").fadeOut("200")}$("div.content div div").css("display","none");

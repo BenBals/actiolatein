@@ -29,6 +29,92 @@ function dictGoTo () {
 	window.location.href = 'dict/index.html';
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function getCookiesMain () {
+	window.now = new Date();
+	window.time = window.now.getTime();
+	window.expireTime = window.time + 100000*3600000;
+	window.now.setTime(window.expireTime);
+	window.tempExp = 'Wed, 31 Oct 2012 08:50:17 GMT';
+	var rawCookie = document.cookie;
+	var cookieArr = rawCookie.split(";");
+	var cookieObj = {};
+	for (var i = 0; i < cookieArr.length; i++) {
+		var cookieKV = cookieArr[i];
+		cookieKV = cookieKV.trim();
+		var cookieKVArr = cookieKV.split("=");
+		cookieObj[cookieKVArr[0]] = cookieKVArr[1];
+		//console.log(cookieObj);
+	}
+	window.colorThink = cookieObj.color;
+	window.color = window.colorThink.substring(1, window.colorThink.length-1);
+}
+
+function checkForCookiesMain () {
+	window.now = new Date();
+	window.time = window.now.getTime();
+	window.expireTime = window.time + 100000*3600000;
+	window.now.setTime(window.expireTime);
+	window.tempExp = 'Wed, 31 Oct 2012 08:50:17 GMT';
+	var rawCookie = document.cookie;
+	var cookieArr = rawCookie.split(";");
+	var cookieObj = {};
+	for (var i = 0; i < cookieArr.length; i++) {
+		var cookieKV = cookieArr[i];
+		cookieKV = cookieKV.trim();
+		var cookieKVArr = cookieKV.split("=");
+		cookieObj[cookieKVArr[0]] = cookieKVArr[1];
+		//console.log(cookieObj);
+	}
+	if (cookieObj.hasOwnProperty("color")) {
+	}
+	else {
+		getCookiesMain ();
+		document.cookie = 'color="schluepfer";expires='+window.now.toGMTString()+';path=/';
+		getCookiesMain ();
+	}
+}
+
+function changeColor () {
+	getCookiesMain();
+	window.whatToChangeShort = ".btn-primary, fa-users, .fa-cloud-download";
+	window.whatToChangeLong = ".btn-go, .btn-nav, .fa-cog, .fa-bar-chart-o, .fa-home, .fa-tachometer, .fa-rocket, .fa-arrow-circle-o-left";
+	console.log("Sheme: "+window.color);
+	if (window.color === "redGreen") {
+		$(window.whatToChangeLong).css('background-color', '#780a00');
+		$(window.whatToChangeShort).css('background-color', '#8ada53');
+	}
+	if (window.color === "schluepfer") {
+		$(window.whatToChangeLong).css('background-color', 'pink');
+		$(window.whatToChangeShort).css('background-color', '#48c9b0');
+	}
+}
+
+function setColor (newColor) {
+	document.cookie = 'color='+newColor+';expires='+window.now.toGMTString()+';path=/';
+	getCookiesMain();
+	changeColor();
+}
+
+function showColorSetter () {
+	$(".buttons").fadeOut('200');
+	$(".colorSetter").fadeIn(200);
+}
+
+function hideColorSetter () {
+	$(".buttons").fadeIn('200');
+	$(".colorSetter").fadeOut(200);
+}
+
+$( ".redGreenTitle" ).click(function() {
+	setColor("rredGreenn");
+});
+
+$( ".schluepferTitle" ).click(function() {
+	setColor("sschluepferr");
+});
+
 window.ckURL = document.URL;
 window.splitCkURL = window.ckURL.split("?");
 window.woCkURL = window.splitCkURL[0];
@@ -52,3 +138,10 @@ $(function() {
   ga('create', 'UA-49782176-1', 'benbals.github.io');
   ga('require', 'displayfeatures');
   ga('send', 'pageview');
+
+
+$( document ).ready(function() {
+    getCookiesMain();
+    checkForCookiesMain();
+    changeColor();
+});

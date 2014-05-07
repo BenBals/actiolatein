@@ -1,14 +1,20 @@
 $red: #780a00;
 $green: #8ada53;
+
 $light-blue: #98a7e5;
 $dark-blue: #122678;
 $light-blue-hover: #7C88BB;
 $dark-blue-hover: #0F2066;
 
-$primary-1: $light-blue;
-$primary-2: $dark-blue;
-$primary-1-hover: $light-blue-hover;
-$primary-2-hover: $dark-blue-hover;
+$old-pink: pink;
+$old-green: #48c9b0;
+$old-pink-hover: #F0BDC8;
+$old-green-hover: #1abc9c;
+
+$primary-1: $old-pink;
+$primary-2: $old-green;
+$primary-1-hover: $old-pink-hover;
+$primary-2-hover: $old-green-hover;
 
 @import "select/bootstrap-select.min.css";
 //@import "css/flat-ui.css";
@@ -285,14 +291,14 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #48c9b0;
-  border-color: #48c9b0;
+  background-color: $primary-2-hover;
+  border-color: $primary-2-hover;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  background: #16a085;
-  border-color: #16a085;
+  background: $primary-2-hover;
+  border-color: $primary-2-hover;
 }
 .btn-primary.disabled,
 .btn-primary[disabled],
@@ -944,3 +950,31 @@ a {
 .bold {
 	font-weight: bold;
 }
+
+.colorTest {
+  font-size: 0;
+  padding: 5%;
+  margin: 1;
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.redGreenTitle:hover {
+  color: $red;
+  text-decoration: underline;
+}
+
+.schluepferTitle:hover {
+  color: $old-green;
+  text-decoration: underline;
+}
+
+.greenRedGreen {background-color: $green;}
+
+.redRedGreen {background-color: $red;}
+
+.greenSchluepfer {background-color: $old-green;}
+
+.pinkSchluepfer {background-color: $old-pink;}

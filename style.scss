@@ -686,7 +686,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .form-group.focus .form-control,
 .form-control:focus {
-  border-color: #1bbd9d;
+  border-color: $primary-2;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;

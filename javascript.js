@@ -78,7 +78,7 @@ function checkForCookiesMain () {
 
 function changeColor () {
 	getCookiesMain();
-	window.whatToChangeShort = ".btn-primary, fa-users, .fa-cloud-download";
+	window.whatToChangeShort = ".btn-primary, .fa-users, .fa-cloud-download";
 	window.whatToChangeLong = ".btn-go, .btn-nav, .fa-cog, .fa-bar-chart-o, .fa-home, .fa-tachometer, .fa-rocket, .fa-arrow-circle-o-left";
 	console.log("Sheme: "+window.color);
 	if (window.color === "redGreen") {
@@ -88,6 +88,15 @@ function changeColor () {
 	if (window.color === "schluepfer") {
 		$(window.whatToChangeLong).css('background-color', 'pink');
 		$(window.whatToChangeShort).css('background-color', '#48c9b0');
+	}
+	if (window.color === "alalotti") {
+		$(window.whatToChangeLong).css('background-color', '#23A2AC');
+		$(window.whatToChangeShort).css('background-color', '#842151');
+		$(".fa-cloud-download, .fa-users").css('background-color', '#842151');
+	}
+	if (window.color === "cristalBlue") {
+		$(window.whatToChangeLong).css('background-color', '#98a7e5');
+		$(window.whatToChangeShort).css('background-color', '#122678');
 	}
 }
 
@@ -113,6 +122,14 @@ $( ".redGreenTitle" ).click(function() {
 
 $( ".schluepferTitle" ).click(function() {
 	setColor("sschluepferr");
+});
+
+$( ".alalottiTitle" ).click(function() {
+	setColor("aalalottii");
+});
+
+$( ".cristalBlueTitle" ).click(function() {
+	setColor("ccristalBluee");
 });
 
 window.ckURL = document.URL;

@@ -11,6 +11,9 @@ $old-green: #48c9b0;
 $old-pink-hover: #F0BDC8;
 $old-green-hover: #1abc9c;
 
+$alalotti-lila: #842151;
+$alalotti-tuerkis: #23A2AC;
+
 $primary-1: $old-pink;
 $primary-2: $old-green;
 $primary-1-hover: $old-pink-hover;
@@ -291,7 +294,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: $primary-2-hover;
+  background-color: $primary-2-hover !important;
   border-color: $primary-2-hover;
 }
 .btn-primary:active,
@@ -776,6 +779,9 @@ select[multiple].input-hg {
   color: #fff;
 }
 
+.btn-mghg:hover {
+  background-color: $datDarkPink !important;
+}
 //flat-ui end
 
 
@@ -964,11 +970,25 @@ a {
 .redGreenTitle:hover {
   color: $red;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .schluepferTitle:hover {
   color: $old-green;
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.alalottiTitle:hover {
+  text-decoration: underline;
+  color: $alalotti-lila;
+  cursor: pointer;
+}
+
+.cristalBlueTitle:hover {
+  text-decoration: underline;
+  color: $dark-blue;
+  cursor: pointer;
 }
 
 .greenRedGreen {background-color: $green;}
@@ -978,3 +998,11 @@ a {
 .greenSchluepfer {background-color: $old-green;}
 
 .pinkSchluepfer {background-color: $old-pink;}
+
+.alalottiTuerkis {background-color: $alalotti-tuerkis;}
+
+.alalottiLila {background-color: $alalotti-lila;}
+
+.cristalBlueDark {background-color: $dark-blue;}
+
+.cristalBlueLight {background-color: $light-blue;}

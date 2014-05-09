@@ -11,17 +11,21 @@ Genitive:
 	<!--Lektion 1: 38-->
 
 
-Jannis: 1,13,20
+Jannis: 1,13,20,21
 Emel + lissi: 2
-Johann: 3,,15
-Hubert: 4,14
+Johann: 3,,15,22
+Hubert: 4,14, 23
 Liam + Erik: 5, 10,19
-Ole: 6
-Antonio: 7
+Ole: 6,26 
+Antonio: 7,29
 Dym: 8,11      
-Caro: 12,18
+Caro: 12,18, 27
 Borwin: 16
 Max: 9,17
+Max + albert 24
+Leon 25
+Emil # Borwin 28
+Stephanie 30
 
 Wer fertig ist kann betatesten:
 benbals.github.io/actiolatein

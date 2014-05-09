@@ -78,7 +78,6 @@ function back () {
 function home () {window.location.href  = "../";}
 
 function checkDek () {
-	if (window.vokSgA === "") {window.upTo12 = 2;}
 	//Declareing the input vars from fields
 	for (var i = 0; i<6; i++) {
 		window[window.allClasses[i]+"SgI"] = $("#input"+window.allClassesUp[i]+"Sg").val().toLowerCase();

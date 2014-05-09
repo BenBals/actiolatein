@@ -6,6 +6,10 @@ $dark-blue: #122678;
 $light-blue-hover: #7C88BB;
 $dark-blue-hover: #0F2066;
 
+$funkie-lime-light: #C1FF2A;
+$funkie-lime-dark: #1E8015;
+
+
 $old-pink: pink;
 $old-green: #48c9b0;
 $old-pink-hover: #F0BDC8;
@@ -914,7 +918,7 @@ a {
 }
 
 .fa-cloud-download, .fa-users {
-	background-color: $primary-2 !important;
+	background-color: $primary-2;
 }
 
 .fa-arrow-circle-o-left {
@@ -987,7 +991,13 @@ a {
 
 .cristalBlueTitle:hover {
   text-decoration: underline;
-  color: $dark-blue;
+  color: $light-blue;
+  cursor: pointer;
+}
+
+.funkieLimeTitle:hover {
+  text-decoration: underline;
+  color: $funkie-lime-light;
   cursor: pointer;
 }
 
@@ -1006,3 +1016,19 @@ a {
 .cristalBlueDark {background-color: $dark-blue;}
 
 .cristalBlueLight {background-color: $light-blue;}
+
+.funkieLimeLight {background-color: $funkie-lime-light;}
+
+.funkieLimeDark {background-color: $funkie-lime-dark;}
+
+
+.activated {
+  position: fixed;
+  color: #fff;
+  padding: 3px;
+  background-color: $green;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 1;
+}

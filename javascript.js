@@ -78,6 +78,7 @@ function checkForCookiesMain () {
 
 function changeColor () {
 	getCookiesMain();
+	window.darkInLime = ".btn-nav, btn-go";
 	window.whatToChangeShort = ".btn-primary, .fa-users, .fa-cloud-download";
 	window.whatToChangeLong = ".btn-go, .btn-nav, .fa-cog, .fa-bar-chart-o, .fa-home, .fa-tachometer, .fa-rocket, .fa-arrow-circle-o-left";
 	console.log("Sheme: "+window.color);
@@ -98,12 +99,23 @@ function changeColor () {
 		$(window.whatToChangeLong).css('background-color', '#98a7e5');
 		$(window.whatToChangeShort).css('background-color', '#122678');
 	}
+	$(window.darkInLime).css('color', '#fff');
+	if (window.color === "funkieLime") {
+		$(window.whatToChangeLong).css('background-color', '#C1FF2A');
+		$(window.whatToChangeShort).css('background-color', '#1E8015');
+		$(window.darkInLime).css('color', '#CED3C7');
+	}
 }
 
 function setColor (newColor) {
 	document.cookie = 'color='+newColor+';expires='+window.now.toGMTString()+';path=/';
 	getCookiesMain();
 	changeColor();
+	$(".activated").fadeOut('200');
+	$(".activated").fadeIn(200);
+	setTimeout(function(){
+		$(".activated").fadeOut('200');
+	}, 1500);
 }
 
 function showColorSetter () {
@@ -114,6 +126,7 @@ function showColorSetter () {
 function hideColorSetter () {
 	$(".buttons").fadeIn('200');
 	$(".colorSetter").fadeOut(200);
+	$(".activated").fadeOut('200');
 }
 
 $( ".redGreenTitle" ).click(function() {
@@ -130,6 +143,9 @@ $( ".alalottiTitle" ).click(function() {
 
 $( ".cristalBlueTitle" ).click(function() {
 	setColor("ccristalBluee");
+});
+$( ".funkieLimeTitle" ).click(function() {
+	setColor("ffunkieLimee");
 });
 
 window.ckURL = document.URL;

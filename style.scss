@@ -18,6 +18,9 @@ $old-green-hover: #1abc9c;
 $alalotti-lila: #842151;
 $alalotti-tuerkis: #23A2AC;
 
+$eirik-blue: #397F80;
+$eirik-red: #E1473E;
+
 $primary-1: $old-pink;
 $primary-2: $old-green;
 $primary-1-hover: $old-pink-hover;
@@ -1001,6 +1004,12 @@ a {
   cursor: pointer;
 }
 
+.eirikTitle:hover {
+  text-decoration: underline;
+  color: $eirik-red;
+  cursor: pointer;
+}
+
 .greenRedGreen {background-color: $green;}
 
 .redRedGreen {background-color: $red;}
@@ -1021,6 +1030,9 @@ a {
 
 .funkieLimeDark {background-color: $funkie-lime-dark;}
 
+.eirikRed {background-color: $eirik-red;}
+
+.eirikBlue {background-color: $eirik-blue;}
 
 .activated {
   position: fixed;
@@ -1031,4 +1043,16 @@ a {
   -moz-border-radius: 5px;
   border-radius: 5px;
   margin: 1;
+}
+
+.fa {
+  background-color: transparent !important;
+}
+
+#streakHere, #highHere {
+  background-color: transparent;
+}
+
+#newBestStreak, #newHighscore {
+  color: #fff;
 }

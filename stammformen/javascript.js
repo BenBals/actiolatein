@@ -23,6 +23,7 @@ function back () {
 	window.questionN = 0;
 	window.score = 0;
 	window.random = 0;
+	$("#go").css('color', '#fff');
 	$("#stats").css("display","none");
 	$("#navben").css("display","none");
 	$("#question0").css("display","block");
@@ -60,7 +61,6 @@ function getCookies () {
 		cookieKV = cookieKV.trim();
 		var cookieKVArr = cookieKV.split("=");
 		cookieObj[cookieKVArr[0]] = cookieKVArr[1];
-		console.log(cookieObj);
 	}
 	window.longestStreak = cookieObj.longestStreak;
 	window.high1 = cookieObj.high1;
@@ -85,7 +85,6 @@ function checkForCookies () {
 		cookieKV = cookieKV.trim();
 		var cookieKVArr = cookieKV.split("=");
 		cookieObj[cookieKVArr[0]] = cookieKVArr[1];
-		console.log(cookieObj);
 	}
 	if (cookieObj.hasOwnProperty("high1")) {
 	}
@@ -129,19 +128,29 @@ function checkForCookies () {
 }
 
 function checkIfHigherScore () {
-	console.log("hey");
+	$(".activated").css('color', '#fff');
 	console.log("score: "+window.score);
 	console.log("streak: "+window.currentStreak);
 	getCookies();
 	if (window.score > window.high1) {
 		document.cookie = "high1="+window.score+";expires="+window.now.toGMTString()+";path=/";
 		getCookies();
-		alert("Neuer Highscore!!! Dein Highscore ist jetzt "+window.high1+"!");
+		$("#highHere").html(window.high1);
+		$(".newHighscore").fadeOut('200');
+		$(".newHighscore").fadeIn(200);
+		setTimeout(function(){
+			$(".newHighscore").fadeOut('200');
+		}, 1500);
 	}
 	if (window.currentStreak > window.longestStreak) {
 		document.cookie = "longestStreak="+window.currentStreak+";expires="+window.now.toGMTString()+";path=/";
 		getCookies();
-		alert("Neue längste Richtige-Antwort-Serie! Der Rekord ist jetzt "+window.longestStreak+"!");
+		$("#streakHere").html(window.longestStreak);
+		$(".newBestStreak").fadeOut('200');
+		$(".newBestStreak").fadeIn(200);
+		setTimeout(function(){
+			$(".newBestStreak").fadeOut('200');
+		}, 1500);
 	}
 }
 
@@ -149,8 +158,8 @@ function showStats () {
 	getCookies ();
 	parseFloat(window.totalQuestions);
 	parseFloat(window.totalRight);
-	console.log(window.totalRight);
-	console.log(window.totalQuestions);
+	console.log("Total Right: "+window.totalRight);
+	console.log("Total Questions: "+window.totalQuestions);
 	window.rightPercentage = window.totalRight/window.totalQuestions;
 	window.rightPercentage = window.rightPercentage*100;
 	window.rightPercentage = Math.round(window.rightPercentage);
@@ -158,7 +167,7 @@ function showStats () {
 		$("#rightPercentageWrapper").css("display","none");
 		$("#rightPercentageFail").css("display","block");
 	}
-	console.log(window.rightPercentage);
+	console.log("Rightpercentage: "+window.rightPercentage);
 	$("#rightPercentage").html(window.rightPercentage);
 	$("#highscore").html(window.high1);
 	$("#longestStreak").html(window.longestStreak);
@@ -208,7 +217,7 @@ function checkAnswer () {
 				$ (".fa-cog").css("color","white");
 				$ (".fa-tachometer").css("color","#FFF");
 				$ (".fa-home").css("color","#fff");
-				$ (".fa-bar-chart-o").css("color","white");
+				$ (".fa-bar-chart-o, .fa-arrow-circle-o-left").css("color","white");
 				$ (".rightEx").css("color","#69BB9C");
 				$ (".wrongEx").css("color","#e74c3c");
 				$ (".rightEx").css("display","none");
@@ -235,7 +244,7 @@ function checkAnswer () {
 			$ (".fa-cog").css("color","white");
 			$ (".fa-tachometer").css("color","#FFF");
 			$ (".fa-home").css("color","#fff");
-			$ (".fa-bar-chart-o").css("color","white");
+			$ (".fa-bar-chart-o, .fa-arrow-circle-o-left").css("color","white");
 			$ (".rightEx").css("color","#69BB9C");
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
@@ -262,7 +271,7 @@ function checkAnswer () {
 			$ (".fa-cog").css("color","white");
 			$ (".fa-tachometer").css("color","#FFF");
 			$ (".fa-home").css("color","#fff");
-			$ (".fa-bar-chart-o").css("color","white");
+			$ (".fa-bar-chart-o, .fa-arrow-circle-o-left").css("color","white");
 			$ (".rightEx").css("color","#69BB9C");
 			$ (".wrongEx").css("color","#e74c3c");
 			$ (".rightEx").css("display","none");
@@ -304,19 +313,28 @@ function newG () {
 function home () {
 	window.location.href = "../";
 }
-
+window.settings = "hidden";
 //getCookiesSettings
 function showSettings () {
-	$("#settings").css("display","block");
-	$(".fa-cog").addClass("fa-spin");
-	$("#question"+window.random).css("display","none");
+	if (window.settings === "hidden") {
+		window.settings = "shown";
+		$("#settings").fadeIn(400);
+		$(".fa-cog").addClass("fa-spin");
+		$(".showSettings").addClass('hideSettings');
+		$("#question"+window.random).css("display","none");
+	}
+	else {
+		hideSettings();
+	}
 }
 
 //hideSettings
 function hideSettings () {
+	window.settings = "hidden";
 	$("#settings").css("display","none");
+	$(".hideSettings").removeClass('hideSettings');
 	$(".fa-cog").removeClass("fa-spin");
-	$("#question"+window.random).css("display","block");
+	$("#question"+window.random).fadeIn(400);
 }
 
 //Lösung lange anzeigen

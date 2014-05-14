@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<head>
+	<title>Vokabeln Lektion 20 - Actiolatein</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="../../al-logo.png">
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+</head>
+<body>
+	<div id="navben">
+			<button class="btn btn-nav" onclick="home();"><i class="fa fa-home"></i></button>
+			<button onclick="points();" class="btn btn-nav dpn showPoints"><i class="fa fa-tachometer"></i> Punkte Anzeigen</button>
+			<button class="btn btn-nav back" onclick="backVokSelect();"><i class="fa fa-arrow-circle-o-left"></i></button>
+			
+			<br>
+		</div>
+		<div id="go">
+			<h2>Willkommen zum Quiz zu den Vokabeln der Lektion 20!</h2>
+			<button class="btn btn-go btn-mghg" onclick="go(36);">Let´s GO!</button>
+			<p>Du bekommst für jede komplett richtige Antwort einen Punkt. Da die Fragen zufällig ausgesucht werden, kann es sein, dass eine Frage mehrmals hintereinander gestellt wird oder das einige Fragen öfter gestellt werden (dies gleicht sich mit der Zeit aus). Das hier ist ein Schülerprojekt, es können Fehler auftreten! <a href="mailto:benjustusbals@gmail.com">Fehler melden</a>. Ich übernehme für nichts Gewähr!</p>
+		</div>
+		<div id="questionScreen" class="dpn">
+			<h4 id="questionHere"></h4>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input1"type="text"></form>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input2"type="text"></form>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input3"type="text"></form>
+			<button class="btn btn-primary" onclick="check()">Check</button>
+			<p class="rightEx" style="display:none">Richtig!</p>
+			<p class="wrongEx" style="display:none">Falsch!</p>
+			<p class="dpn answer" id="a1_screen"></p>
+			<p class="dpn answer" id="a2_screen"></p>
+			<p class="dpn answer" id="a3_screen"></p>
+		</div>
+		
+		<div id="data" class="dpn">
+			<p id="q1">morari</p>
+<p id="a1_1">sich aufhalten</p>
+<p id="a2_1">zögern</p>
+<p id="a3_1"></p>
+
+<p id="q2">exire</p>
+<p id="a1_2">herausgehen</p>
+<p id="a2_2">weggehen</p>
+<p id="a3_2"></p>
+
+<p id="q3">exsilium</p>
+<p id="a1_3">Verbannung</p>
+<p id="a2_3"></p>
+<p id="a3_3"></p>
+
+<p id="q4">cogere</p>
+<p id="a1_4">versammeln</p>
+<p id="a2_4">zwingen</p>
+<p id="a3_4"></p>
+
+<p id="q5">barbarous (Barbarin nicht angegeben)</p>
+<p id="a1_5">ausländisch</p>
+<p id="a2_5">wild</p>
+<p id="a3_5">Barbar</p>
+
+<p id="q6">ullus</p>
+<p id="a1_6">irgendein</p>
+<p id="a2_6">ein</p>
+<p id="a3_6">irgendwer</p>
+
+<p id="q7">clementina</p>
+<p id="a1_7">Milde</p>
+<p id="a2_7">Sanftmut</p>
+<p id="a3_7"></p>
+
+<p id="q8">diligere</p>
+<p id="a1_8">schätzen</p>
+<p id="a2_8">lieben</p>
+<p id="a3_8"></p>
+
+<p id="q9">favere</p>
+<p id="a1_9">unterstützen</p>
+<p id="a2_9">begünstigen</p>
+<p id="a3_9"></p>
+
+<p id="q10">vehemens</p>
+<p id="a1_10">heftig</p>
+<p id="a2_10">energisch</p>
+<p id="a3_10"></p>
+
+<p id="q11">dolor</p>
+<p id="a1_11">Schmerz</p>
+<p id="a2_11"></p>
+<p id="a3_11"></p>
+
+<p id="q12">potius</p>
+<p id="a1_12">eher</p>
+<p id="a2_12">lieber</p>
+<p id="a3_12"></p>
+
+<p id="q13">sapiens</p>
+<p id="a1_13">weise</p>
+<p id="a2_13">klug</p>
+<p id="a3_13">vernünftig</p>
+
+<p id="q14">insidiae</p>
+<p id="a1_14">Hinterhalt</p>
+<p id="a2_14">Falle</p>
+<p id="a3_14">Anschlag</p>
+
+<p id="q15">cum</p>
+<p id="a1_15">als</p>
+<p id="a2_15">weil</p>
+<p id="a3_15">obwohl</p>
+
+<p id="q16">damnum</p>
+<p id="a1_16">Schaden</p>
+<p id="a2_16"></p>
+<p id="a3_16"></p>
+
+<p id="q17">herba</p>
+<p id="a1_17">Gras</p>
+<p id="a2_17">Pflanze</p>
+<p id="a3_17"></p>
+
+<p id="q18">abhibere</p>
+<p id="a1_18">hinwenden</p>
+<p id="a2_18">anwenden</p>
+<p id="a3_18">hinzuziehen</p>
+
+<p id="q19">maritus</p>
+<p id="a1_19">Ehemann</p>
+<p id="a2_19"></p>
+<p id="a3_19"></p>
+
+<p id="q20">odium</p>
+<p id="a1_20">Hass</p>
+<p id="a2_20"></p>
+<p id="a3_20"></p>
+
+<p id="q21">praestare</p>
+<p id="a1_21">übertreffen</p>
+<p id="a2_21">leisten</p>
+<p id="a3_21">zeigen</p>
+
+<p id="q22">pati</p>
+<p id="a1_22">leiden</p>
+<p id="a2_22">ertragen</p>
+<p id="a3_22">zulassen</p>
+
+<p id="q23">nocere</p>
+<p id="a1_23">Unheil anrichten</p>
+<p id="a2_23">schaden</p>
+<p id="a3_23"></p>
+
+<p id="q24">sapientia</p>
+<p id="a1_24">Weisheit</p>
+<p id="a2_24">Klugheit</p>
+<p id="a3_24">Verstand</p>
+
+<p id="q25">onus</p>
+<p id="a1_25">Last</p>
+<p id="a2_25"></p>
+<p id="a3_25"></p>
+
+<p id="q26">plerique</p>
+<p id="a1_26">die meisten</p>
+<p id="a2_26"></p>
+<p id="a3_26"></p>
+
+<p id="q27">iungere</p>
+<p id="a1_27">verbinden</p>
+<p id="a2_27">anschließen</p>
+<p id="a3_27"></p>
+
+<p id="q28">invidia</p>
+<p id="a1_28">Neid</p>
+<p id="a2_28"></p>
+<p id="a3_28"></p>
+
+<p id="q29">placidus</p>
+<p id="a1_29">ruhig</p>
+<p id="a2_29">friedlich</p>
+<p id="a3_29"></p>
+
+<p id="q30">subicere</p>
+<p id="a1_30">darunter legen</p>
+<p id="a2_30">unterwerfen</p>
+<p id="a3_30"></p>
+
+<p id="q31">ac</p>
+<p id="a1_31">und</p>
+<p id="a2_31"></p>
+<p id="a3_31"></p>
+
+<p id="q32">quam</p>
+<p id="a1_32">wie</p>
+<p id="a2_32">als</p>
+<p id="a3_32">möglichst</p>
+
+<p id="q33">celer</p>
+<p id="a1_33">schnell</p>
+<p id="a2_33"></p>
+<p id="a3_33"></p>
+
+<p id="q34">parcere</p>
+<p id="a1_34">sparen</p>
+<p id="a2_34">verschonen</p>
+<p id="a3_34"></p>
+
+<p id="q35">efficere</p>
+<p id="a1_35">bewirken</p>
+<p id="a2_35">herstellen</p>
+<p id="a3_35">durchführen</p>
+
+<p id="q36">poscere</p>
+<p id="a1_36">fordern</p>
+<p id="a2_36">verlangen</p>
+<p id="a3_36"></p>
+
+<p id="q37">diutius</p>
+<p id="a1_37">länger</p>
+<p id="a2_37"></p>
+<p id="a3_37"></p>
+
+<p id="q38">aliter</p>
+<p id="a1_38">anders</p>
+<p id="a2_38">sonst</p>
+<p id="a3_38"></p>
+
+<p id="q39">certus</p>
+<p id="a1_39">sicher</p>
+<p id="a2_39">festgesetzt</p>
+<p id="a3_39"></p>
+		</div>
+		
+		<script src="../../main.js"></script>
+		<script src="../min/vokabeln-ck.js"></script>
+	</div>
+</body>

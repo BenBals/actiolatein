@@ -58,6 +58,30 @@ function goTo19 () {
 function goTo20 () {
 	window.location.href = "lektion20/index.html";
 }
+function goTo21 () {
+	window.location.href = "lektion21/index.html";
+}
+function goTo22 () {
+	window.location.href = "lektion22/index.html";
+}
+function goTo23 () {
+	window.location.href = "lektion23/index.html";
+}
+function goTo24 () {
+	window.location.href = "lektion24/index.html";
+}
+function goTo25 () {
+	window.location.href = "lektion25/index.html";
+}
+function goTo27 () {
+	window.location.href = "lektion27/index.html";
+}
+function goTo28 () {
+	window.location.href = "lektion28/index.html";
+}
+function goTo30 () {
+	window.location.href = "lektion30/index.html";
+}
 //home
 function home () {
 	window.location.href = "../";

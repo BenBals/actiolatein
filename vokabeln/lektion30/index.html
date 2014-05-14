@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<head>
+	<title>Vokabeln Lektion 20 - Actiolatein</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="../../al-logo.png">
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+</head>
+<body>
+	<div id="navben">
+			<button class="btn btn-nav" onclick="home();"><i class="fa fa-home"></i></button>
+			<button onclick="points();" class="btn btn-nav dpn showPoints"><i class="fa fa-tachometer"></i> Punkte Anzeigen</button>
+			<button class="btn btn-nav back" onclick="backVokSelect();"><i class="fa fa-arrow-circle-o-left"></i></button>
+			
+			<br>
+		</div>
+		<div id="go">
+			<h2>Willkommen zum Quiz zu den Vokabeln der Lektion 20!</h2>
+			<button class="btn btn-go btn-mghg" onclick="go(36);">Let´s GO!</button>
+			<p>Du bekommst für jede komplett richtige Antwort einen Punkt. Da die Fragen zufällig ausgesucht werden, kann es sein, dass eine Frage mehrmals hintereinander gestellt wird oder das einige Fragen öfter gestellt werden (dies gleicht sich mit der Zeit aus). Das hier ist ein Schülerprojekt, es können Fehler auftreten! <a href="mailto:benjustusbals@gmail.com">Fehler melden</a>. Ich übernehme für nichts Gewähr!</p>
+		</div>
+		<div id="questionScreen" class="dpn">
+			<h4 id="questionHere"></h4>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input1"type="text"></form>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input2"type="text"></form>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input3"type="text"></form>
+			<button class="btn btn-primary" onclick="check()">Check</button>
+			<p class="rightEx" style="display:none">Richtig!</p>
+			<p class="wrongEx" style="display:none">Falsch!</p>
+			<p class="dpn answer" id="a1_screen"></p>
+			<p class="dpn answer" id="a2_screen"></p>
+			<p class="dpn answer" id="a3_screen"></p>
+		</div>
+		
+		<div id="data" class="dpn">
+			<p id="q1">conscribere</p>
+<p id="a1_1">aufschreiben</p>
+<p id="a2_1">verfassen</p>
+<p id="a3_1"></p>
+
+<p id="q2">sero</p>
+<p id="a1_2">spät</p>
+<p id="a2_2">zu spät</p>
+<p id="a3_2"></p>
+
+<p id="q3">turpis</p>
+<p id="a1_3">hässlich</p>
+<p id="a2_3">schändlich</p>
+<p id="a3_3"></p>
+
+<p id="q4">fortunae</p>
+<p id="a1_4">Besitz</p>
+<p id="a2_4">Vermögen</p>
+<p id="a3_4"></p>
+
+<p id="q5">praeter</p>
+<p id="a1_5">außer</p>
+<p id="a2_5"></p>
+<p id="a3_5"></p>
+
+<p id="q6">libido</p>
+<p id="a1_6">Begierde</p>
+<p id="a2_6">Genusssucht</p>
+<p id="a3_6"></p>
+
+<p id="q7">crudelitas</p>
+<p id="a1_7">Grausamkeit</p>
+<p id="a2_7"></p>
+<p id="a3_7"></p>
+
+<p id="q8">componere</p>
+<p id="a1_8">zusammenstellen</p>
+<p id="a2_8">ordnen</p>
+<p id="a3_8"></p>
+
+<p id="q9">utilis</p>
+<p id="a1_9">nützlich</p>
+<p id="a2_9">brauchbar</p>
+<p id="a3_9"></p>
+
+<p id="q10">ferox</p>
+<p id="a1_10">wild</p>
+<p id="a2_10"></p>
+<p id="a3_10"></p>
+
+<p id="q11">ferre</p>
+<p id="a1_11">tragen</p>
+<p id="a2_11">ertragen</p>
+<p id="a3_11">berichten</p>
+
+<p id="q12">ultrum…an…?</p>
+<p id="a1_12">…oder…?</p>
+<p id="a2_12"></p>
+<p id="a3_12"></p>
+
+<p id="q13">servire</p>
+<p id="a1_13">dienen</p>
+<p id="a2_13"></p>
+<p id="a3_13"></p>
+
+<p id="q14">quare</p>
+<p id="a1_14">wodurch</p>
+<p id="a2_14">warum</p>
+<p id="a3_14">daher</p>
+
+<p id="q15">servitus</p>
+<p id="a1_15">Sklaverei</p>
+<p id="a2_15"></p>
+<p id="a3_15"></p>
+
+<p id="q16">praeferre</p>
+<p id="a1_16">vorziehen</p>
+<p id="a2_16"><vorantragen/p>
+<p id="a3_16"></p>
+
+<p id="q17">perferre</p>
+<p id="a1_17">durchführen</p>
+<p id="a2_17">ertragen</p>
+<p id="a3_17">berichten</p>
+
+<p id="q18">nimius</p>
+<p id="a1_18">zu groß</p>
+<p id="a2_18">zu viel</p>
+<p id="a3_18"></p>
+
+<p id="q19">ignorare</p>
+<p id="a1_19">nicht wissen</p>
+<p id="a2_19">nicht kennen</p>
+<p id="a3_19"></p>
+
+<p id="q20">perspicere</p>
+<p id="a1_20">durchschauen</p>
+<p id="a2_20">erkennen</p>
+<p id="a3_20"></p>
+
+<p id="q21">inferre</p>
+<p id="a1_21">hineintragen</p>
+<p id="a2_21"></p>
+<p id="a3_21"></p>
+
+<p id="q22">acerbus</p>
+<p id="a1_22">scharf</p>
+<p id="a2_22">bitter</p>
+<p id="a3_22"></p>
+
+<p id="q23">numerare</p>
+<p id="a1_23">zählen</p>
+<p id="a2_23"></p>
+<p id="a3_23"></p>
+
+<p id="q24">etiamsi</p>
+<p id="a1_24">auch wenn</p>
+<p id="a2_24"></p>
+<p id="a3_24"></p>
+
+<p id="q25">avertere</p>
+<p id="a1_25">abwenden</p>
+<p id="a2_25">abwehren</p>
+<p id="a3_25"></p>
+
+<p id="q26">adulescens</p>
+<p id="a1_26">jung</p>
+<p id="a2_26">junger Mann</p>
+<p id="a3_26"></p>
+
+<p id="q27">furor</p>
+<p id="a1_27">Wut</p>
+<p id="a2_27">Raserei</p>
+<p id="a3_27"></p>
+
+<p id="q28">ardere</p>
+<p id="a1_28">brennen</p>
+<p id="a2_28"></p>
+<p id="a3_28"></p>
+
+<p id="q29">sponte</p>
+<p id="a1_29">aus eigenem Antrieb</p>
+<p id="a2_29"></p>
+<p id="a3_29"></p>
+
+<p id="q30">arcessere</p>
+<p id="a1_30">holen</p>
+<p id="a2_30"></p>
+<p id="a3_30"></p>
+
+<p id="q31">privatus</p>
+<p id="a1_31">privat</p>
+<p id="a2_31">persönlich</p>
+<p id="a3_31"></p>
+
+<p id="q32">ideo</p>
+<p id="a1_32">daher</p>
+<p id="a2_32"></p>
+<p id="a3_32"></p>
+
+<p id="q33">offerre</p>
+<p id="a1_33">anbieten</p>
+<p id="a2_33"></p>
+<p id="a3_33"></p>
+
+<p id="q34">per</p>
+<p id="a1_34">durch</p>
+<p id="a2_34"></p>
+<p id="a3_34"></p>
+
+<p id="q35">differre</p>
+<p id="a1_35">aufschieben</p>
+<p id="a2_35">sich unterscheiden</p>
+<p id="a3_35"></p>
+
+<p id="q36">referre</p>
+<p id="a1_36">zurückbringen</p>
+<p id="a2_36">berichten</p>
+<p id="a3_36"></p>
+		</div>
+		
+		<script src="../../main.js"></script>
+		<script src="../min/vokabeln-ck.js"></script>
+	</div>
+</body>

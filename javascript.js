@@ -79,32 +79,49 @@ function checkForCookiesMain () {
 function changeColor () {
 	getCookiesMain();
 	window.darkInLime = ".btn-nav, btn-go";
-	window.whatToChangeShort = ".btn-primary, .fa-users, .fa-cloud-download";
-	window.whatToChangeLong = ".btn-go, .btn-nav, .fa-cog, .fa-bar-chart-o, .fa-home, .fa-tachometer, .fa-rocket, .fa-arrow-circle-o-left";
+	window.whatToChangeShort = ".btn-primary";
+	window.whatToChangeLong = ".btn-go, .btn-nav";
 	console.log("Sheme: "+window.color);
 	if (window.color === "redGreen") {
-		$(window.whatToChangeLong).css('background-color', '#780a00');
-		$(window.whatToChangeShort).css('background-color', '#8ada53');
+		window.color1 = "#780a00";
+		window.color2 = "#8ada53";
 	}
 	if (window.color === "schluepfer") {
-		$(window.whatToChangeLong).css('background-color', 'pink');
-		$(window.whatToChangeShort).css('background-color', '#48c9b0');
+		window.color1 = "pink";
+		window.color2 = "#48c9b0";
 	}
 	if (window.color === "alalotti") {
-		$(window.whatToChangeLong).css('background-color', '#23A2AC');
-		$(window.whatToChangeShort).css('background-color', '#842151');
-		$(".fa-cloud-download, .fa-users").css('background-color', '#842151');
+		window.color1 = "#23A2AC";
+		window.color2 = "#842151";
 	}
 	if (window.color === "cristalBlue") {
-		$(window.whatToChangeLong).css('background-color', '#98a7e5');
-		$(window.whatToChangeShort).css('background-color', '#122678');
+		window.color1 = "#98a7e5";
+		window.color2 = "#122678";
+	}
+	if (window.color === "eirik") {
+		window.color1 = "#E1473E";
+		window.color2 = "#397F80";
 	}
 	$(window.darkInLime).css('color', '#fff');
 	if (window.color === "funkieLime") {
-		$(window.whatToChangeLong).css('background-color', '#C1FF2A');
-		$(window.whatToChangeShort).css('background-color', '#1E8015');
-		$(window.darkInLime).css('color', '#CED3C7');
+		window.color1 = "#C1FF2A";
+		window.color2 = "#1E8015";
+		$(window.darkInLime).css('color', '#C6C6C6');
 	}
+	/* DOES NOT WORK
+	$(window.whatToChangeLong).hover(function() {
+		$( this ).css('background-color', '#000');
+	}, function() {
+		$( this ).css('background-color', window.color1);
+	});
+	$(window.whatToChangeShort).hover(function() {
+		$( this ).css('background-color', '#fff');
+	}, function() {
+		$( this ).css('background-color', window.color2);
+	});
+	*/
+	$(window.whatToChangeLong).css('background-color', window.color1);
+	$(window.whatToChangeShort).css('background-color', window.color2);
 }
 
 function setColor (newColor) {
@@ -146,6 +163,9 @@ $( ".cristalBlueTitle" ).click(function() {
 });
 $( ".funkieLimeTitle" ).click(function() {
 	setColor("ffunkieLimee");
+});
+$( ".eirikTitle" ).click(function() {
+	setColor("eeirikk");
 });
 
 window.ckURL = document.URL;

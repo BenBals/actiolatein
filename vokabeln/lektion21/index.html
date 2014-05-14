@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<head>
+	<title>Vokabeln Lektion 20 - Actiolatein</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="../../al-logo.png">
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+</head>
+<body>
+	<div id="navben">
+			<button class="btn btn-nav" onclick="home();"><i class="fa fa-home"></i></button>
+			<button onclick="points();" class="btn btn-nav dpn showPoints"><i class="fa fa-tachometer"></i> Punkte Anzeigen</button>
+			<button class="btn btn-nav back" onclick="backVokSelect();"><i class="fa fa-arrow-circle-o-left"></i></button>
+			
+			<br>
+		</div>
+		<div id="go">
+			<h2>Willkommen zum Quiz zu den Vokabeln der Lektion 20!</h2>
+			<button class="btn btn-go btn-mghg" onclick="go(39);">Let´s GO!</button>
+			<p>Du bekommst für jede komplett richtige Antwort einen Punkt. Da die Fragen zufällig ausgesucht werden, kann es sein, dass eine Frage mehrmals hintereinander gestellt wird oder das einige Fragen öfter gestellt werden (dies gleicht sich mit der Zeit aus). Das hier ist ein Schülerprojekt, es können Fehler auftreten! <a href="mailto:benjustusbals@gmail.com">Fehler melden</a>. Ich übernehme für nichts Gewähr!</p>
+		</div>
+		<div id="questionScreen" class="dpn">
+			<h4 id="questionHere"></h4>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input1"type="text"></form>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input2"type="text"></form>
+			<form action="javascript:check();"><input class="form-control input-sm" id="input3"type="text"></form>
+			<button class="btn btn-primary" onclick="check()">Check</button>
+			<p class="rightEx" style="display:none">Richtig!</p>
+			<p class="wrongEx" style="display:none">Falsch!</p>
+			<p class="dpn answer" id="a1_screen"></p>
+			<p class="dpn answer" id="a2_screen"></p>
+			<p class="dpn answer" id="a3_screen"></p>
+		</div>
+		
+		<div id="data" class="dpn">
+			<p id="q1">consulere (außer sorgen für)</p>
+<p id="a1_1">um Rat fragen</p>
+<p id="a2_1">beraten</p>
+<p id="a3_1">beschließen</p>
+
+<p id="q2">accipere</p>
+<p id="a1_2">annehmen</p>
+<p id="a2_2">bekommen</p>
+<p id="a3_2">empfangen</p>
+
+<p id="q3">solere</p>
+<p id="a1_3">gewohnt sein</p>
+<p id="a2_3">gewöhnlich etwas tun</p>
+<p id="a3_3"></p>
+
+<p id="q4">an?</p>
+<p id="a1_4">oder?</p>
+<p id="a2_4">oder etwa?</p>
+<p id="a3_4"></p>
+
+<p id="q5">publicas</p>
+<p id="a1_5">öffentlich</p>
+<p id="a2_5"></p>
+<p id="a3_5"></p>
+
+<p id="q6">crudelis</p>
+<p id="a1_6">grausam</p>
+<p id="a2_6"></p>
+<p id="a3_6"></p>
+
+<p id="q7">damnare</p>
+<p id="a1_7">verurteilen</p>
+<p id="a2_7"></p>
+<p id="a3_7"></p>
+
+<p id="q8">ius</p>
+<p id="a1_8">Recht</p>
+<p id="a2_8"></p>
+<p id="a3_8"></p>
+
+<p id="q9">expellere</p>
+<p id="a1_9">vertreiben</p>
+<p id="a2_9">verbannen</p>
+<p id="a3_9"></p>
+
+<p id="q10">durus</p>
+<p id="a1_10">hart</p>
+<p id="a2_10"></p>
+<p id="a3_10"></p>
+
+<p id="q11">igitur</p>
+<p id="a1_11">also</p>
+<p id="a2_11"></p>
+<p id="a3_11"></p>
+
+<p id="q12">iniustus</p>
+<p id="a1_12">ungerecht</p>
+<p id="a2_12"></p>
+<p id="a3_12"></p>
+
+<p id="q13">tyrannus</p>
+<p id="a1_13">Gewaltherrscher</p>
+<p id="a2_13"></p>
+<p id="a3_13"></p>
+
+<p id="q14">liber</p>
+<p id="a1_14">frei</p>
+<p id="a2_14"></p>
+<p id="a3_14"></p>
+
+<p id="q15">libertas</p>
+<p id="a1_15">Freiheit</p>
+<p id="a2_15"></p>
+<p id="a3_15"></p>
+
+<p id="q16">iustitia</p>
+<p id="a1_16">Gerechtigkeit</p>
+<p id="a2_16"></p>
+<p id="a3_16"></p>
+
+<p id="q17">uterque</p>
+<p id="a1_17">jeder(von zweien)</p>
+<p id="a2_17">beide</p>
+<p id="a3_17"></p>
+
+<p id="q18">nobilitas</p>
+<p id="a1_18">Adel</p>
+<p id="a2_18"></p>
+<p id="a3_18"></p>
+
+<p id="q19">vexare</p>
+<p id="a1_19">quälen</p>
+<p id="a2_19"></p>
+<p id="a3_19"></p>
+
+<p id="q20">audere</p>
+<p id="a1_20">wagen</p>
+<p id="a2_20"></p>
+<p id="a3_20"></p>
+
+<p id="q21">communis</p>
+<p id="a1_21">gemeinsam</p>
+<p id="a2_21">allgemein</p>
+<p id="a3_21">Alltag</p>
+
+<p id="q22">significare</p>
+<p id="a1_22">bezeichnen</p>
+<p id="a2_22">bedeuten</p>
+<p id="a3_22"></p>
+
+<p id="q23">quasi</p>
+<p id="a1_23">gleichsam</p>
+<p id="a2_23">wie wenn</p>
+<p id="a3_23">als ob</p>
+
+<p id="q24">labi</p>
+<p id="a1_24">gleiten</p>
+<p id="a2_24">fallen</p>
+<p id="a3_24"></p>
+
+<p id="q25">arbitrari</p>
+<p id="a1_25">glauben</p>
+<p id="a2_25">meinen</p>
+<p id="a3_25">halten für</p>
+
+<p id="q26">verus</p>
+<p id="a1_26">wahr</p>
+<p id="a2_26">wirklich</p>
+<p id="a3_26"></p>
+
+<p id="q27">suspicare</p>
+<p id="a1_27">vermuten</p>
+<p id="a2_27">einen Verdacht haben</p>
+<p id="a3_27"></p>
+
+<p id="q28">comita</p>
+<p id="a1_28">Volksversammlung</p>
+<p id="a2_28"></p>
+<p id="a3_28"></p>
+
+<p id="q29">consul</p>
+<p id="a1_29">Konsul</p>
+<p id="a2_29"></p>
+<p id="a3_29"></p>
+
+<p id="q30">creare</p>
+<p id="a1_30">erschaffen</p>
+<p id="a2_30">wählen</p>
+<p id="a3_30"></p>
+
+<p id="q31">collega</p>
+<p id="a1_31">Kollege</p>
+<p id="a2_31"></p>
+<p id="a3_31"></p>
+
+<p id="q32">aadministrare</p>
+<p id="a1_32">verwalten</p>
+<p id="a2_32">leiten</p>
+<p id="a3_32"></p>
+
+<p id="q33">senatus</p>
+<p id="a1_33">Senat</p>
+<p id="a2_33"></p>
+<p id="a3_33"></p>
+
+<p id="q34">ratio</p>
+<p id="a1_34">Grund</p>
+<p id="a2_34">Vernunft</p>
+<p id="a3_34">Art und Weise</p>
+
+<p id="q35">postremo</p>
+<p id="a1_35">schließlich</p>
+<p id="a2_35"></p>
+<p id="a3_35"></p>
+
+<p id="q36">lex</p>
+<p id="a1_36">Gesetz</p>
+<p id="a2_36">Bedingung</p>
+<p id="a3_36"></p>
+
+<p id="q37">oboedire</p>
+<p id="a1_37">gehorchen</p>
+<p id="a2_37"></p>
+<p id="a3_37"></p>
+
+<p id="q38">exitus</p>
+<p id="a1_38">Ausgang</p>
+<p id="a2_38">Ende</p>
+<p id="a3_38">Ergebnis</p>
+
+<p id="q39">proficisci</p>
+<p id="a1_39">aufbrechen</p>
+<p id="a2_39">reisen</p>
+<p id="a3_39">marschieren</p>
+		</div>
+		
+		<script src="../../main.js"></script>
+		<script src="../min/vokabeln-ck.js"></script>
+	</div>
+</body>

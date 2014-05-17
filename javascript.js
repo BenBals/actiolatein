@@ -78,7 +78,6 @@ function checkForCookiesMain () {
 
 function changeColor () {
 	getCookiesMain();
-	window.darkInLime = ".btn-nav, btn-go";
 	window.whatToChangeShort = ".btn-primary";
 	window.whatToChangeLong = ".btn-go, .btn-nav";
 	console.log("Sheme: "+window.color);
@@ -106,7 +105,6 @@ function changeColor () {
 	if (window.color === "funkieLime") {
 		window.color1 = "#C1FF2A";
 		window.color2 = "#1E8015";
-		$(window.darkInLime).css('color', '#C6C6C6');
 	}
 	/* DOES NOT WORK
 	$(window.whatToChangeLong).hover(function() {

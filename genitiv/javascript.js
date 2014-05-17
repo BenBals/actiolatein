@@ -16,11 +16,15 @@ function homeGen () {
 }
 
 function newQ () {
+
 	window.random = Math.floor((Math.random()*window.n)+window.plusN);
+
 	window.question = $(".data div:nth-child("+window.random+") p:nth-child(1)").html();
 	window.answer = $(".data div:nth-child("+window.random+") p:nth-child(2)").html();
+
 	$("#quesionHere").html(window.question);
 	$("#answerHere").html(window.answer);
+
 	console.log(window.answer);
 	window.answer = window.answer.toLowerCase();
 	$(".right").css('display', 'none');
@@ -53,7 +57,6 @@ function check () {
 	else {
 	$("#answerHere").css('display', 'block');
 	$(".false").css('display', 'block');
-	console.log("Hi");
 		setTimeout (function(){
 				newQ();
 				}

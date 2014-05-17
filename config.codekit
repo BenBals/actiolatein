@@ -6390,6 +6390,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/javascript.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/javascript.js",
+		"outputAbbreviatedPath": "\/main.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/application.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -6634,6 +6645,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/lexikon\/min\/javascript-ck.js",
 		"outputAbbreviatedPath": "\/lexikon\/min\/min\/javascript-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/main.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/main.js",
+		"outputAbbreviatedPath": "\/min\/main-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -7765,6 +7787,20 @@
 		{
 			"followForSyntaxChecking": 0,
 			"linkedFileAbbreviatedPath": "\/bower_components\/DataTables\/media\/js\/jquery.dataTables.js",
+			"position": 1,
+			"type": 0
+			}
+		],
+	"\/javascript.js": [
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/jquery\/dist\/jquery.min.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/fastclick\/lib\/fastclick.js",
 			"position": 1,
 			"type": 0
 			}

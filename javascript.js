@@ -28,7 +28,9 @@ function genitiveGoTo () {
 function dictGoTo () {
 	window.location.href = 'dict/index.html';
 }
-
+function lexikonGoTo () {
+	window.location.href = 'lexikon/index.html';
+}
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function getCookiesMain () {

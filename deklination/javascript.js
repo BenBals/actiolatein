@@ -50,7 +50,7 @@ function showQs (klasseZahl) {
 	for (var i = 0; i<6; i++) {
 		window[window.allClasses[i]+"PlA"] = $("#"+window.allClasses[i]+"_pl_"+window.klasse).html();
 	}
-	
+
 	//setting the html() of the answers that are shown
 	for (var i = 0; i<6; i++) {
 		$("#answer"+window.allClassesUp[i]+"Sg").html(window[window.allClasses[i]+"SgA"]);
@@ -85,6 +85,7 @@ function checkDek () {
 	for (var i = 0; i<6; i++) {
 		window[window.allClasses[i]+"PlI"] = $("#input"+window.allClassesUp[i]+"Pl").val().toLowerCase();
 	}
+	console.log(upTo12);
 	for (var i = 0; i<6; i++) {
 		if (window[window.allClasses[i]+"SgI"] == window[window.allClasses[i]+"SgA"]) {
 			window.upTo12++;
@@ -95,6 +96,7 @@ function checkDek () {
 			$("#answer"+window.allClassesUp[i]+"Sg").css("display","inline");
 		}
 	}
+	console.log(upTo12);
 	for (var i = 0; i<6; i++) {
 		if (window[window.allClasses[i]+"PlI"] == window[window.allClasses[i]+"PlA"]) {
 			window.upTo12++;
@@ -106,14 +108,27 @@ function checkDek () {
 		}
 	}
 	$(".ex").css("display","none");
-	if (window.upTo12 !== 0) {if (window.vokSgA === "") {window.upTo12 = window.upTo12 + 2;}}
-	if (window.upTo12 == 12) {
-		$(".allRight").css("display","block");
+	console.log(upTo12);
+	if (window.vokSgA === "") {
+		console.log(upTo12);
+		window.upTo12 = window.upTo12 - 2;
+		console.log("i get executed");
+		if (window.upTo12 === 10) {$(".allRight").css("display","block");}
+		else {
+			if (window.upTo12 > 0) {$(".notAllRight").css("display","block");}
+			else {$(".nothingRight").css("display","block");}
+		}
 	}
 	else {
-		if (window.upTo12>0) {$(".notAllRight").css("display","block");}
-		else {$(".nothingRight").css("display","block");}
+		if (window.upTo12 == 12) {
+			$(".allRight").css("display","block");
+		}
+		else {
+			if (window.upTo12>0) {$(".notAllRight").css("display","block");}
+			else {$(".nothingRight").css("display","block");}
+		}
 	}
 	window.location.hash = "#home";
+	console.log(upTo12);
 	window.upTo12 = 0;
 }

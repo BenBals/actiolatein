@@ -2,7 +2,7 @@
 
 body
   background: $bg-color
-  font-size: 14px
+  font-size: 18px
   line-height: 1.6
   font-family: 'Open Sans' sans-serif
   color: $text-color
@@ -40,3 +40,30 @@ h2
   box-shadow: 2px 2px 0px lighten($primary-color, 4%), 4px 4px 0px lighten($primary-color, 6%), 6px 6px 0px lighten($primary-color, 4%), 8px 8px 0px lighten($primary-color, 8%)//, 7px 7px 0px lighten($primary-color, 6%), 6px 6px 0px lighten($primary-color, 7%)
   &:hover
     box-shadow: 2px 2px 0px lighten($primary-color, 4%)
+  &:active
+    +transition(all 0.15s)
+    box-shadow: none
+
+.btn-nav
+  font-size: 14px
+  padding: .5em 1em
+  margin-left: 1px
+  margin-right: 1px
+  background: none //$primary-color
+  border-radius: 0px
+  box-shadow: none
+  color: $text-color
+  border-bottom: 2px solid black
+  &:hover, &:active
+    padding: .5em 1em
+    box-shadow: none
+    color: white
+    border-radius: 3px
+    border: none
+    border-bottom: 2px solid $secondary-color
+  &:hover
+    background-color: $primary-color
+    text-decoration: underline
+  &:active
+    +transition(all 0.15s)
+    background-color: $secondary-color

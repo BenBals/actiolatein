@@ -212,14 +212,6 @@ function checkAnswer () {
 			window.totalRight++;
 			setTimeout (function(){
 				console.log("Richtig!");
-				$ ("*").css("color","#000000");
-				$ (".btn").css("color","#FFF");
-				$ (".fa-cog").css("color","white");
-				$ (".fa-tachometer").css("color","#FFF");
-				$ (".fa-home").css("color","#fff");
-				$ (".fa-bar-chart-o, .fa-arrow-circle-o-left").css("color","white");
-				$ (".rightEx").css("color","#69BB9C");
-				$ (".wrongEx").css("color","#e74c3c");
 				$ (".rightEx").css("display","none");
 				$ (".wrongEx").css("display","none");
 				$('#question'+window.random).css("display","none");
@@ -238,17 +230,6 @@ function checkAnswer () {
 			checkIfHigherScore ();
 			window.totalRight++;
 			console.log("Richtig!");
-			$ ("*").css("color","#000000");
-			$ (".btn").css("color","#FFF");
-			$ (".fa-arrow-circle-o-left").css('color', 'white');
-			$ (".fa-cog").css("color","white");
-			$ (".fa-tachometer").css("color","#FFF");
-			$ (".fa-home").css("color","#fff");
-			$ (".fa-bar-chart-o, .fa-arrow-circle-o-left").css("color","white");
-			$ (".rightEx").css("color","#69BB9C");
-			$ (".wrongEx").css("color","#e74c3c");
-			$ (".rightEx").css("display","none");
-			$ (".wrongEx").css("display","none");
 			$('#question'+window.random).css("display","none");
 			$("#input"+window.random).val("");
 			window.random = Math.floor((Math.random()*window.n)+window.plusN);
@@ -266,16 +247,6 @@ function checkAnswer () {
 		$('.wrongEx', $('#question'+window.random)).css("display","block");
 		$("#answer"+window.random).css("color","#69BB9C");
 		setTimeout(function(){
-			$ ("*").css("color","#000000");
-			$ (".btn").css("color","#FFF");
-			$ (".fa-cog").css("color","white");
-			$ (".fa-tachometer").css("color","#FFF");
-			$ (".fa-home").css("color","#fff");
-			$ (".fa-bar-chart-o, .fa-arrow-circle-o-left").css("color","white");
-			$ (".rightEx").css("color","#69BB9C");
-			$ (".wrongEx").css("color","#e74c3c");
-			$ (".rightEx").css("display","none");
-			$ (".wrongEx").css("display","none");
 			$('#question'+window.random).css("display","none");
 			$("input"+window.random).val("");
 			window.random = Math.floor((Math.random()*window.n)+window.plusN);

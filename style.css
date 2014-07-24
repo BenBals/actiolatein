@@ -78,6 +78,77 @@ h2 {
   font-weight: 700;
   color: #34495e; }
 
+a {
+  color: #01ff70; }
+
+.rightEx {
+  color: #01ff70; }
+
+.allRight {
+  color: #01ff70; }
+
+.notAllRight {
+  color: #e6c40a; }
+
+.nothingRight {
+  color: #cb4c39; }
+
+.lekSelect {
+  list-style-type: none; }
+
+.colorTest {
+  font-size: 0;
+  padding: 5%;
+  margin: 1;
+  display: inline-block;
+  border-radius: 5px; }
+
+.greenRedGreen {
+  background-color: #8ada53; }
+
+.redRedGreen {
+  background-color: #780a00; }
+
+.greenSchluepfer {
+  background-color: #48c9b0; }
+
+.pinkSchluepfer {
+  background-color: pink; }
+
+.alalottiTuerkis {
+  background-color: #23a2ac; }
+
+.alalottiLila {
+  background-color: #842151; }
+
+.cristalBlueDark {
+  background-color: #122678; }
+
+.cristalBlueLight {
+  background-color: #98a7e5; }
+
+.funkieLimeLight {
+  background-color: #c1ff2a; }
+
+.funkieLimeDark {
+  background-color: #1e8015; }
+
+.eirikRed {
+  background-color: #e1473e; }
+
+.eirikBlue {
+  background-color: #397f80; }
+
+.limeStandart {
+  background-color: #01ff70; }
+
+.blueStandart {
+  background-color: #0074d9; }
+
+.colorTitle:hover {
+  text-decoration: underline;
+  cursor: pointer; }
+
 .btn {
   display: inline-block;
   font-size: 14px;
@@ -91,8 +162,7 @@ h2 {
   boder: none;
   border-radius: 4px;
   outline: none;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin: 5px 3px;
   box-shadow: 1px 1px 0px #007fed, 3px 3px 0px #0084f8, 3px 3px 0px #007fed, 5px 5px 0px #038aff; }
   .btn:hover {
     box-shadow: 2px 2px 0px #007fed; }
@@ -104,7 +174,8 @@ h2 {
     background-color: #01ff70; }
 
 .btn-mghg {
-  font-size: 33px;
+  font-size: 35px;
+  padding: 0.5em 1em;
   border-radius: 8px;
   box-shadow: 2px 2px 0px #007fed, 4px 4px 0px #0084f8, 6px 6px 0px #007fed, 8px 8px 0px #038aff; }
   .btn-mghg:hover {
@@ -129,7 +200,7 @@ h2 {
     padding: 0.5em 1em;
     box-shadow: none;
     color: white;
-    border-radius: 3px;
+    border-radius: 3px 3px 0px 0px;
     border: none;
     border-bottom: 2px solid #01ff70; }
   .btn-nav:hover {

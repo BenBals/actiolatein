@@ -16,17 +16,39 @@ h2
 a
   color: $secondary-color
 
+//input stuff
+.form-control
+  border: 2px solid $form-border
+  border-radius: 8px
+  height: 42px
+  padding: 8px 12px
+  line-height: 1.467
+  font-size: 15px
+  &:focus
+    outline: 0
+    +transition(all .5s)
+    border: 2px solid $primary-color
+//input stuff end
+
 .rightEx
-  color: $standard-lime
+  color: $right-color
 
 .allRight
-  color: $standard-lime
+  color: $right-color
 
 .notAllRight
-  color: #E6C40A
+  color: $notAllRight-color
 
 .nothingRight
-  color: #CB4C39
+  color: $wrong-color
 
 .lekSelect
   list-style-type: none
+
+.activated
+  position: fixed
+  color: #fff
+  padding: 3px
+  background-color: $standard-lime
+  border-radius: 5px
+  margin: 1

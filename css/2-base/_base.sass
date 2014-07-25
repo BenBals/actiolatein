@@ -1,0 +1,54 @@
+// Basic Styles
+
+body
+  background: $bg-color
+  font-size: 18px
+  line-height: 1.6
+  font-family: 'Open Sans' sans-serif
+  color: $text-color
+  text-align: center
+
+h2
+  font-size: 54px
+  font-weight: 700
+  color: $light-text
+
+a
+  color: $secondary-color
+
+//input stuff
+.form-control
+  border: 2px solid $form-border
+  border-radius: 8px
+  height: 42px
+  padding: 8px 12px
+  line-height: 1.467
+  font-size: 15px
+  &:focus
+    outline: 0
+    +transition(all .5s)
+    border: 2px solid $primary-color
+//input stuff end
+
+.rightEx
+  color: $right-color
+
+.allRight
+  color: $right-color
+
+.notAllRight
+  color: $notAllRight-color
+
+.nothingRight
+  color: $wrong-color
+
+.lekSelect
+  list-style-type: none
+
+.activated
+  position: fixed
+  color: #fff
+  padding: 3px
+  background-color: $standard-lime
+  border-radius: 5px
+  margin: 1

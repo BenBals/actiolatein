@@ -78,6 +78,11 @@ function checkForCookiesMain () {
 	}
 }
 
+function resetColor () {
+	document.cookie = 'color="";expires='+window.now.toGMTString()+';path=/';
+	window.location.reload();
+}
+
 function changeColor () {
 	getCookiesMain();
 	window.whatToChangeShort = ".btn-primary";
@@ -120,8 +125,13 @@ function changeColor () {
 		$( this ).css('background-color', window.color2);
 	});
 	*/
-	$(window.whatToChangeLong).css('background-color', window.color1);
-	$(window.whatToChangeShort).css('background-color', window.color2);
+	if (window.color === '') {
+
+	}
+	else {
+		$(window.whatToChangeLong).css('background-color', window.color1);
+		$(window.whatToChangeShort).css('background-color', window.color2);
+	}
 }
 
 function setColor (newColor) {

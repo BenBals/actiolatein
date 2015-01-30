@@ -5,7 +5,7 @@ actiolatein
 
 Mit der Website kannst du folgendes lernen:
 
-Stammformen der Lektionen 1-17
+Stammformen der Lektionen 1-30
 
 Vokabeln der Lektionen: 1-20
 

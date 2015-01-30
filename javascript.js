@@ -1,5 +1,5 @@
 function stammformenGoTo () {
-	window.location.href = "stammformen/index.html";
+	window.location.href = "http://benbals.github.com/stammformen";
 }
 function vokabelnGoTo () {
 	window.location.href = "vokabeln/index.html";

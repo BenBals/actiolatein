@@ -1,5 +1,5 @@
 function stammformenGoTo () {
-	window.location.href = "http://benbals.github.com/stammformen";
+	window.location.href = "http://stammformen.benbals.ninja";
 }
 function vokabelnGoTo () {
 	window.location.href = "vokabeln/index.html";
